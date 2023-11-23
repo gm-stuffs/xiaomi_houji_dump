@@ -1,0 +1,65 @@
+service mimd-service /vendor/bin/hw/vendor.xiaomi.hardware.mimd@1.0-service
+    class hal
+    user root
+    group system wakelock
+    task_profiles ServiceCapacityLow
+
+on post-fs-data
+    start mimd-service
+
+    on init
+    # Create cgroup mount point for mimd(xiaomi memory deamon)
+    mkdir /dev/memcg/mimd 0755 system system
+    mkdir /dev/memcg/mimd/top-ten 0755 system system
+    mkdir /dev/memcg/mimd/top-ten/weixin 0755 system system
+    mkdir /dev/memcg/mimd/top-ten/douyin 0755 system system
+    mkdir /dev/memcg/mimd/top-ten/kuaishou 0755 system system
+    mkdir /dev/memcg/mimd/top-ten/kuaishou-lite 0755 system system
+    mkdir /dev/memcg/mimd/top-ten/qq 0755 system system
+    mkdir /dev/memcg/mimd/top-ten/douyin-lite 0755 system system
+    mkdir /dev/memcg/mimd/top-ten/toutiao 0755 system system
+    mkdir /dev/memcg/mimd/top-ten/bili 0755 system system
+    mkdir /dev/memcg/mimd/top-ten/tengxun-video 0755 system system
+    mkdir /dev/memcg/mimd/top-ten/toutiao-lite 0755 system system
+    mkdir /dev/memcg/mimd/camera 0755 system system
+    mkdir /dev/memcg/top-app 0755 system system
+    mkdir /dev/memcg/background 0755 system system
+    mkdir /dev/memcg/foreground 0755 system system
+    mkdir /dev/memcg/system 0755 system system
+    mkdir /dev/memcg/system-background 0755 system system
+    mkdir /dev/memcg/restricted 0755 system system
+
+    chown system system dev/memcg/mimd/top-ten/weixin/*
+    chown system system dev/memcg/mimd/top-ten/douyin/*
+    chown system system dev/memcg/mimd/top-ten/kuaishou/*
+    chown system system dev/memcg/mimd/top-ten/kuaishou-lite/*
+    chown system system dev/memcg/mimd/top-ten/qq/*
+    chown system system dev/memcg/mimd/top-ten/qouyin-lite/*
+    chown system system dev/memcg/mimd/top-ten/bili/*
+    chown system system dev/memcg/mimd/top-ten/tengxun-video/*
+    chown system system dev/memcg/mimd/top-ten/toutiao-lite/*
+    chown system system dev/memcg/mimd/camera/*
+    chown system system dev/memcg/top-app/*
+    chown system system dev/memcg/background/*
+    chown system system dev/memcg/foreground/*
+    chown system system dev/memcg/system/*
+    chown system system dev/memcg/system-background/*
+    chown system system dev/memcg/restricted/*
+
+    chmod 0664 /dev/memcg/mimd/top-ten/weixin/*
+    chmod 0664 /dev/memcg/mimd/top-ten/douyin/*
+    chmod 0664 /dev/memcg/mimd/top-ten/kuaishou/*
+    chmod 0664 /dev/memcg/mimd/top-ten/kuaishou-lite/*
+    chmod 0664 /dev/memcg/mimd/top-ten/qq/*
+    chmod 0664 /dev/memcg/mimd/top-ten/qouyin-lite/*
+    chmod 0664 /dev/memcg/mimd/top-ten/toutiao/*
+    chmod 0664 /dev/memcg/mimd/top-ten/bili/*
+    chmod 0664 /dev/memcg/mimd/top-ten/tengxun-video/*
+    chmod 0664 /dev/memcg/mimd/top-ten/toutiao-lite/*
+    chmod 0664 /dev/memcg/mimd/camera/*
+    chmod 0664 /dev/memcg/top-app/*
+    chmod 0664 /dev/memcg/background/*
+    chmod 0664 /dev/memcg/foreground/*
+    chmod 0664 /dev/memcg/system/*
+    chmod 0664 /dev/memcg/system-background/*
+    chmod 0664 /dev/memcg/restricted/*
