@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--MIUI ADD: Audio_VolumeCurve CE volumecurve-->
+<ce_regions_list>
+    <AR/> <!--Argentina-->
+    <AM/> <!--Armenia-->
+    <AU/> <!--Australia-->
+    <AT/> <!--Austria-->
+    <AZ/> <!--Azerbaijan-->
+
+    <BY/> <!--Belarus-->
+    <BE/> <!--Belgium-->
+    <BW/> <!--Botswana-->
+    <BR/> <!--Brazil-->
+    <BG/> <!--Bulgaria-->
+
+    <KH/> <!--Cambodia-->
+    <CA/> <!--Canada-->
+    <CL/> <!--Chile-->
+    <CN/> <!--China Mainland-->
+    <HR/> <!--Croatia-->
+    <CZ/> <!--Czech Republic-->
+
+    <DK/> <!--Denmark-->
+    <EG/> <!--Egypt-->
+    <EE/> <!--Estonia-->
+    <FI/> <!--Finland-->
+    <FR/> <!--France-->
+    <DE/> <!--Germany-->
+    <GH/> <!--Ghana-->
+    <GR/> <!--Greece-->
+
+    <HK/> <!--Hong Kong-->
+    <HU/> <!--Hungary-->
+    <IE/> <!--Ireland-->
+    <IL/> <!--Israel-->
+    <IT/> <!--Italy-->
+    <JP/> <!--Japan-->
+    <KZ/> <!--Kazakhstan-->
+    <KE/> <!--Kenya-->
+    <KR/> <!--Korea, Republic of-->
+    <KW/> <!--Kuwait-->
+    <KG/> <!--Kyrgyzstan-->
+
+    <LV/> <!--Latvia-->
+    <LT/> <!--Lithuania-->
+    <LU/> <!--LuxembOurg-->
+    <MY/> <!--Malaysia-->
+    <MD/> <!--Moldova-->
+    <MC/> <!--Morocco-->
+    <NL/> <!--Netherlands-->
+    <NZ/> <!--New Zealand-->
+    <NG/> <!--Nigeria-->
+    <NO/> <!--Norway-->
+
+    <OM/> <!--Oman-->
+    <PK/> <!--Pakistan-->
+    <PH/> <!--Philippines-->
+    <PL/> <!--Poland-->
+    <PT/> <!--Portugal-->
+    <KT/> <!--Republic of Ivory Coast-->
+    <RO/> <!--Romania-->
+    <RU/> <!--Russia-->
+
+    <SA/> <!--Saudi Arabia-->
+    <RS/> <!--Serbia-->
+    <SG/> <!--Singapore-->
+    <SK/> <!--Slovakia-->
+    <SI/> <!--Slovenia-->
+    <ZA/> <!--South Africa-->
+    <ES/> <!--Spain-->
+    <SE/> <!--Sweden-->
+    <CH/> <!--Switzerland-->
+    <SY/> <!--Syria-->
+
+    <TW/> <!--Taiwan China-->
+    <TJ/> <!--Tajikistan-->
+    <TZ/> <!--Tanzania-->
+    <TH/> <!--Thailand-->
+    <TN/> <!--Tunisia-->
+    <TR/> <!--Turkey-->
+
+    <UG/> <!--Uganda-->
+    <UA/> <!--Ukraine-->
+    <AE/> <!--United Arab Emirates-->
+    <GB/> <!--United Kingdom-->
+    <US/> <!--United States of America-->
+    <UZ/> <!--Uzbekistan-->
+    <VN/> <!--Vietnam-->
+</ce_regions_list>
+<!--END Audio_VolumeCurve CE volumecurve-->

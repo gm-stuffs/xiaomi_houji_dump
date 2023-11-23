@@ -1,0 +1,51 @@
+{
+  "packageName": "com.campmobile.snowcamera",
+  "forceDark": true,
+  "mainRule": 128,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.linecorp.b612.android.activity.ActivityCamera",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.linecorp.b612.android.view.NewMarkImageButton",
+          "id": "btn_image",
+          "forceDark": true,
+          "usage": 103
+        },
+        {
+          "viewName": "com.linecorp.b612.android.activity.activitymain.qualitymode.QualityModeSwitchView",
+          "id": "quality_mode_switch",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1,
+              "id": "layout_quality_mode"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.linecorp.b612.android.activity.activitymain.views.RootView",
+              "index": -1,
+              "id": "main_root_layout"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.linecorp.b612.android.activity.setting.SettingsActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "top_back_btn",
+          "forceDark": true,
+          "usage": 103
+        }
+      ]
+    }
+  ]
+}

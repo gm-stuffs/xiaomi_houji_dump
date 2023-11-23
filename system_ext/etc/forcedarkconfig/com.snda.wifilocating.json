@@ -1,0 +1,74 @@
+{
+  "packageName": "com.snda.wifilocating",
+  "forceDark": true,
+  "mainRule": 0,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.lantern.launcher.ui.MainActivityICS",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.view.View",
+          "id": "v_user_bg",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "com.scwang.smartrefresh.layout.SmartRefreshLayout",
+              "index": -1,
+              "id": "smart_refresh"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "iv_order_item_icon",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.support.constraint.ConstraintLayout",
+              "index": -1,
+              "id": "cl_order_layout"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.support.v4.view.ViewPager",
+              "index": -1,
+              "id": "view_pager"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.appara.feed.ui.ArticleDetailActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "comment_edit_emotion_toggle",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "feed_comment_edit_bottom_layout"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "forceDarkViewGlobalConfigList": []
+}

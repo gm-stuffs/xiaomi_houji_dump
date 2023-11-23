@@ -1,0 +1,104 @@
+{
+  "Profiles": [
+    {
+      "Name": "CameraProcessCapacityLevel0",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpuset",
+            "Path": "camera-daemon/limit-level0"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CameraProcessCapacityLevel1",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpuset",
+            "Path": "camera-daemon/limit-level1"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CameraProcessCapacityLevel2",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpuset",
+            "Path": "camera-daemon/limit-level2"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CameraProcessCapacityLevel3",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpuset",
+            "Path": "camera-daemon/limit-level3"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CameraProcessPerformanceLevel0",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpu",
+            "Path": "camera-daemon/limit-level0"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CameraProcessProviderMemcg",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "memory",
+            "Path": "camera/provider"
+          }
+        }
+      ]
+    }
+  ],
+  "AggregateProfiles": [
+    {
+      "Name": "CPUSET_SP_CAMERA_BACKGROUND_LIMIT_LEVEL0",
+      "Profiles": [ "CameraProcessCapacityLevel0" ]
+    },
+    {
+      "Name": "CPUSET_SP_CAMERA_BACKGROUND_LIMIT_LEVEL0_HIGHER",
+      "Profiles": [ "CameraProcessCapacityLevel0", "CameraProcessPerformanceLevel0"  ]
+    },
+    {
+      "Name": "CPUSET_SP_CAMERA_BACKGROUND_LIMIT_LEVEL1",
+      "Profiles": [ "CameraProcessCapacityLevel1"]
+    },
+    {
+      "Name": "CPUSET_SP_CAMERA_BACKGROUND_LIMIT_LEVEL2",
+      "Profiles": [ "CameraProcessCapacityLevel2"]
+    },
+    {
+      "Name": "CPUSET_SP_CAMERA_BACKGROUND_LIMIT_LEVEL3",
+      "Profiles": [ "HighEnergySaving", "CameraProcessCapacityLevel3", "LowIoPriority", "TimerSlackHigh" ]
+    }
+  ]
+}

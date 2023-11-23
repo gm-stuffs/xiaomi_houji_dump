@@ -1,0 +1,18 @@
+{
+	"Type":"EffectCategory",
+	"##":"后置拍照模式：e2e祛斑祛痘 + 磨皮",
+	"TrueSight":
+	[
+		{
+			"ParameterPath":"Parameter/mode_rear.json"
+		},
+		{
+			"ConfigurePath":"5_DLRetouch/mode_rear.json",
+			"Index":5
+		},
+		{
+			"ConfigurePath":"20_FaceRetouch/mode_rear.json",
+			"Index":20
+		}
+	]
+}

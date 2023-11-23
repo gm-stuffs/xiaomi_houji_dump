@@ -1,0 +1,339 @@
+on init
+    # set log buffersize
+    setprop persist.logd.size.radio "4M"
+    setprop persist.logd.size.system "4M"
+    setprop persist.logd.size.crash "1M"
+
+    # check device update type
+    setprop sys.ota.type recovery
+
+# reset device update type when use update_engine
+on init && property:ro.build.ab_update=true
+    setprop sys.ota.type update_engine
+
+# 1. system/core/rootdir/init.rc 里面on init阶段 mkdir /mnt/rescue
+# 2. vendor部分 on fs 阶段 mount_all 然后 mount /mnt/rescue
+# 3. 这里必须放到下一个节点, on post-fs 先进行restorecon 然后start mqsasd
+
+on late-init
+    # Xiaomi: Create game cgroup in memory cgroup
+    mkdir /dev/memcg/game 0750 system system
+    chown system system /dev/memcg/cgroup.procs
+    chmod 0660 /dev/memcg/cgroup.procs
+    chown system system /dev/memcg/game/tasks
+    chmod 0660 /dev/memcg/game/tasks
+    chown system system /dev/memcg/game/cgroup.procs
+    chmod 0660 /dev/memcg/game/cgroup.procs
+    chown system system /dev/memcg/game/memory.max_usage_in_bytes
+    chmod 0660 /dev/memcg/game/memory.max_usage_in_bytes
+    chown system system /dev/memcg/game/memory.memsw.max_usage_in_bytes
+    chmod 0660 /dev/memcg/game/memory.memsw.max_usage_in_bytes
+
+# use rescue partition
+on post-fs && property:sys.ota.type=update_engine
+    restorecon_recursive /mnt/rescue
+    mkdir /mnt/rescue/mqsas 0775 root system
+    mkdir /mnt/rescue/mqsas/dumpstateTemporary 0775 root system
+    mount tmpfs tmpfs /mnt/rescue/mqsas/dumpstateTemporary nodev noexec nosuid size=200M
+    mkdir /mnt/rescue/system_archives 0775 root system
+    restorecon_recursive /mnt/rescue/mqsas
+    restorecon_recursive /mnt/rescue/mqsas/dumpstateTemporary
+
+# use cache partition
+on post-fs && property:sys.ota.type=recovery
+    restorecon_recursive /cache
+    mkdir /cache/mqsas 0775 root system
+    mkdir /cache/mqsas/dumpstateTemporary 0775 root system
+    mount tmpfs tmpfs /cache/mqsas/dumpstateTemporary nodev noexec nosuid size=200M
+    mkdir /cache/system_archives 0775 root system
+    restorecon_recursive /cache/mqsas
+    restorecon_recursive /cache/mqsas/dumpstateTemporary
+
+on post-fs && property:ro.build.ab_update=true
+    restorecon_recursive /mnt/rescue
+    mkdir /mnt/rescue/system_optimize 0775 root system
+    restorecon_recursive /mnt/rescue/system_optimize
+    mkdir /mnt/rescue/system_optimize/performance 0775 root system
+    mkdir /mnt/rescue/system_optimize/power 0775 root system
+    mkdir /mnt/rescue/system_optimize/thermal 0775 root system
+
+on post-fs-data
+    mkdir /data/system 0775 system system
+    mkdir /data/system/mcd 0755 system system
+    mkdir /data/system/whetstone 0770 system system
+    mkdir /data/system/migt 0777 system system
+    restorecon_recursive /data/system/mcd
+    restorecon_recursive /data/system/whetstone
+    restorecon_recursive /data/system/migt
+    chmod 0777 /data/system/migt
+    chmod 0777 /data/system/migt/migt
+
+# MIUI ADD: Performance_APPCacheOptimization
+on post-fs-data
+    mkdir /data/system/app_cache_optimization 0770 system system
+# END Performance_APPCacheOptimization
+
+# rtmm
+on post-fs-data
+    chown system system /sys/kernel/mm/rtmm/reclaim/global_reclaim
+
+# migard on post-fs-data
+    mkdir /data/system/migard 0755 system system
+    mkdir /data/system/migard/game_trace 0755 system system
+    mkdir /data/system/migard/game_mem 0755 system system
+    restorecon_recursive /data/system/migard
+    restorecon_recursive /data/system/migard/game_trace
+    restorecon_recursive /data/system/migard/game_mem
+
+# mqsasd
+service mqsasd /system_ext/xbin/mqsasd daemon
+    user root
+    group system cache log everybody
+    socket mqsasd stream 0660 system system
+    socket mqsasd_pr dgram 0666 system system
+
+# system_perf_init
+service system_perf_init /system_ext/xbin/system_perf_init
+    class main
+    user root
+    disabled
+    oneshot
+
+on post-fs
+   start  mqsasd
+
+on post-fs && property:ro.debuggable=1
+   mount overlay overlay /system/xbin lowerdir=/mnt/vendor/mi_ext/root/xbin:/system/xbin,override_creds=off
+   mount none /mnt/vendor/mi_ext/root/bin/remount /system/bin/remount bind
+   setprop persist.debug.dalvik.vm.jdwp.enabled 1
+
+on post-fs-data
+    mkdir /data/mqsas 0775 system system
+    mkdir /data/miuilog 0775 system system
+
+    #create audio dump log dir
+    mkdir /data/miuilog/bsp 0775 system system
+    mkdir /data/miuilog/bsp/audio 0775 audioserver audioserver
+    mkdir /data/miuilog/bsp/audio/traces 0777 audioserver audioserver
+
+    mkdir /data/miuilog/stability 0775 system system
+    mkdir /data/miuilog/stability/hprof 0777 system system
+    mkdir /data/miuilog/stability/memleak 0775 system system
+    mkdir /data/miuilog/misight 0775 system system
+    mkdir /data/system/miuilog 0775 system system
+    mkdir /data/system/miuiofflinedb 0775 system system
+    # Setup /data/extm as per_boot directory
+    exec - system system -- /bin/rm -rf /data/extm
+    mkdir /data/extm 2770 root system encryption=Require key=per_boot_ref
+    restorecon_recursive /data/extm
+
+# system_perf_init: after load_persist_props_action && before zygote-start
+on load_bpf_programs
+    start system_perf_init
+
+on property:system_perf_init.dex2oat-threads=*
+    setprop dalvik.vm.dex2oat-threads ${system_perf_init.dex2oat-threads}
+
+on property:system_perf_init.bg-dex2oat-threads=*
+    setprop dalvik.vm.bg-dex2oat-threads ${system_perf_init.bg-dex2oat-threads}
+
+on property:system_perf_init.boot-dex2oat-threads=*
+    setprop dalvik.vm.boot-dex2oat-threads ${system_perf_init.boot-dex2oat-threads}
+
+
+# miui bugreport need to get bugreport
+service copy_bugreport_file /system/bin/sh /system_ext/bin/copy_bugreport_file.sh ${sys.miui.bugreport_file} ${sys.miui.dest_path}
+    user shell
+    group shell sdcard_rw system net_raw
+    oneshot
+    disabled
+    seclabel u:r:shell:s0
+
+# Auto enable/dump native memory monitor.
+service native_mem_monitor /system/bin/logwrapper /system/bin/sh /system_ext/bin/native_mem_monitor.sh
+    user root
+    group system shell
+    disabled
+    class main
+    seclabel u:r:su:s0
+
+on property:ro.debuggable=1
+    start native_mem_monitor
+
+# fdpp
+service fdpp /system_ext/bin/fdpp daemon
+    class main
+    user root
+    group system
+
+service shelld /system_ext/bin/shelld
+    class main
+
+# for system_theme
+on post-fs-data
+    mkdir /data/system/theme 0777 system_theme system_theme
+    chown system_theme system_theme /data/system/theme
+    chmod 0777 /data/system/theme
+    restorecon /data/system/theme
+    chown system_theme system_theme /data/system/theme/lock_wallpaper
+    chmod 0775 /data/system/theme/lock_wallpaper
+    restorecon /data/system/theme/lock_wallpaper
+    mkdir /data/system/theme_magic 0777 system_theme system_theme
+    chown system_theme system_theme /data/system/theme_magic
+    chmod 0777 /data/system/theme_magic
+    restorecon /data/system/theme_magic
+    mkdir /data/system/theme_magic/customized_icons 0775 system_theme system_theme
+    chown system_theme system_theme /data/system/theme_magic/customized_icons
+    chmod 0775 /data/system/theme_magic/customized_icons
+    restorecon /data/system/theme_magic/customized_icons
+    mkdir /data/system/theme_magic/ringtones 0775 system_theme system_theme
+    chown system_theme system_theme /data/system/theme_magic/ringtones
+    chmod 0775 /data/system/theme_magic/ringtones
+    restorecon /data/system/theme_magic/ringtones
+    mkdir /data/system/fonts/ 0775 system_theme system_theme
+    chown system_theme system_theme /data/system/fonts/
+    chmod 0775 /data/system/fonts/
+    restorecon /data/system/fonts/
+    mkdir /data/system/fonts/theme_webview/ 0775 system_theme system_theme
+    chown root root /data/system/fonts/theme_webview/
+    chmod 0777 /data/system/fonts/theme_webview/
+    restorecon /data/system/fonts/theme_webview/
+    copy /system/fonts/Roboto-Regular.ttf /data/system/fonts/theme_webview/Roboto-Regular.ttf
+    copy /data/system/theme/fonts/Roboto-Regular.ttf /data/system/fonts/theme_webview/Roboto-Regular.ttf
+    chown system_theme system_theme /data/system/fonts/theme_webview/Roboto-Regular.ttf
+    chmod 0644 /data/system/fonts/theme_webview/Roboto-Regular.ttf
+
+# service for mcd init
+service mcd_init /system_ext/bin/mcd init
+    user root
+    group system
+    class main
+    disabled
+    oneshot
+
+on property:init.svc.zygote=running
+    setprop mcd.extra.params "4"
+    start mcd_init
+
+#service for mcd main service
+service mcd_service /system_ext/bin/mcd
+    class main
+    disabled
+
+# umount memory partition when boot monitor completed!
+on property:sys.boot_monitor_completed=1 && property:sys.ota.type=update_engine
+    umount /mnt/rescue/mqsas/dumpstateTemporary
+
+# umount memory partition when boot monitor completed!
+on property:sys.boot_monitor_completed=1 && property:sys.ota.type=recovery
+    umount /cache/mqsas/dumpstateTemporary
+
+on property:sys.boot_completed=1
+    start mcd_service
+    start miui-post-boot
+
+#service for su
+service su_daemon /system/xbin/su --daemon
+    class main
+#-MI ADD
+# SNO prop
+on property:ro.vendor.oem.sno=*
+    setprop ro.ril.oem.sno ${ro.vendor.oem.sno}
+on property:ro.vendor.oem.psno=*
+    setprop ro.ril.oem.psno ${ro.vendor.oem.psno}
+
+on property:ro.product.device=liuqin && property:ro.vendor.ril.oem.sno=*
+    setprop ro.ril.oem.sno ${ro.vendor.ril.oem.sno}
+on property:ro.product.device=liuqin && property:ro.vendor.ril.oem.psno=*
+    setprop ro.ril.oem.psno ${ro.vendor.ril.oem.psno}
+
+#IMEI prop
+on property:persist.vendor.radio.imei=*
+    setprop persist.radio.imei ${persist.vendor.radio.imei}
+    setprop persist.radio.imei1 ${persist.vendor.radio.imei}
+on property:persist.vendor.radio.imei2=*
+    setprop persist.radio.imei2 ${persist.vendor.radio.imei2}
+on property:ro.vendor.oem.imei=*
+    setprop ro.ril.oem.imei ${ro.vendor.oem.imei}
+    setprop ro.ril.oem.imei1 ${ro.vendor.oem.imei}
+on property:ro.vendor.oem.imei2=*
+    setprop ro.ril.oem.imei2 ${ro.vendor.oem.imei2}
+#MEID prop
+on property:persist.vendor.radio.meid=*
+    setprop persist.radio.meid ${persist.vendor.radio.meid}
+on property:ro.vendor.oem.meid=*
+    setprop ro.ril.oem.meid ${ro.vendor.oem.meid}
+
+on boot
+    # reclaim
+    chown system system /sys/kernel/mi_reclaim/event
+    # psi
+    chown system system /proc/pressure/cpu
+    chown system system /proc/pressure/io
+    chmod 0664 /proc/pressure/io
+    chmod 0664 /proc/pressure/cpu
+
+# ODM-HQ ADD：START
+# separate launcher of Redmi and POCO
+on init && property:ro.product.brand=POCO
+    setprop ro.miui.product.home "com.mi.android.globallauncher"
+on init && property:ro.product.brand=Redmi
+    setprop ro.miui.product.home "com.miui.home"
+on init && property:ro.product.brand=Xiaomi
+    setprop ro.miui.product.home "com.miui.home"
+# END
+
+# virtual camera
+on property:vendor.miui.vcamera.state=1
+    start vendor.camera-provider-2-7-ext
+on property:vendor.miui.vcamera.state=0
+    stop vendor.camera-provider-2-7-ext
+
+# download root pub cert only one time
+service pubcert_download /system/bin/sh /system_ext/bin/init.rootpub.sh
+    user root
+    group root system
+    oneshot
+    disabled
+    seclabel u:r:shell:s0
+
+on property:odm.security.rootpub.trigger=1
+    start pubcert_download
+
+# download rotate key regularly
+service rotatekey_download /system/bin/sh /system_ext/bin/init.rotatekey.sh
+    user root
+    group root system
+    oneshot
+    disabled
+    seclabel u:r:shell:s0
+
+on property:odm.security.rotatekey.trigger=1
+    start rotatekey_download
+
+# SNO prop on android T
+on property:ro.vendor.ril.oem.sno=*
+    setprop ro.ril.oem.sno ${ro.vendor.ril.oem.sno}
+on property:ro.vendor.ril.oem.psno=*
+    setprop ro.ril.oem.psno ${ro.vendor.ril.oem.psno}
+
+service dump_lightweight_trace /system/bin/sh /system_ext/bin/dump_lightweight_trace.sh
+    user shell
+    group shell system
+    seclabel u:r:shell:s0
+    disabled
+    oneshot
+
+service check_lightweight_trace /system/bin/sh /system_ext/bin/check_lightweight_trace.sh
+    user shell
+    group shell system
+    seclabel u:r:shell:s0
+    disabled
+    oneshot
+
+on property:dump_lightweight_trace.switch=0
+    stop dump_lightweight_trace
+    start check_lightweight_trace
+
+on property:dump_lightweight_trace.switch=1
+    start dump_lightweight_trace

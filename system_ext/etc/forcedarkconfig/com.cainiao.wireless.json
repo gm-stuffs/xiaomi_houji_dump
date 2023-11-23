@@ -1,0 +1,102 @@
+{
+  "packageName": "com.cainiao.wireless",
+  "forceDark": true,
+  "mainRule": 16,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.cainiao.wireless.homepage.view.activity.HomePageActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "forceDark": true,
+          "viewName": "SimpleDraweeView",
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "DXRootView",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "RecyclerView",
+              "parent": 1,
+              "index": -1,
+              "id": "cubex_container"
+            }
+          ]
+        },
+        {
+          "forceDark": true,
+          "viewName": "AppCompatImageView",
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "FrameLayout",
+              "parent": 0,
+              "id": "elder_recommend_feed_title",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "forceDark": true,
+          "viewName": "SimpleDraweeView",
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "DXNativeLinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "DXRootView",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 2,
+              "id": "cubex_linearLayout_container",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "WrapHeightView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "id": "home_page_iv_bg",
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "HomeActionBar",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "id": "home_action_bar_float",
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "home_action_bar_anchor_layout"
+            }
+          ]
+        },
+        {
+          "forceDark": true,
+          "viewName": "AppCompatImageView",
+          "usage": 103,
+          "id": "iv_title_bar_icon"
+        }
+      ]
+    }
+  ]
+}

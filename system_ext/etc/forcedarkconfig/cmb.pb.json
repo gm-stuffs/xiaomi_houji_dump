@@ -1,0 +1,80 @@
+{
+  "packageName": "cmb.pb",
+  "forceDark": true,
+  "mainRule": 16,
+  "secondaryRule": 32,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.pb.tpstore.PBAppletWebViewActivity",
+      "forceDark": false
+    },
+    {
+      "activityName": "cmb.pb.app.mainframe.container.PBMainActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "forceDark": false,
+          "blackMask": true,
+          "viewName": "LinearLayout",
+          "id": "ll_remind_platform"
+        },
+        {
+          "forceDark": false,
+          "blackMask": true,
+          "viewName": "ImageView",
+          "id": "ivTopImage"
+        },
+        {
+          "forceDark": true,
+          "viewName": "ImageView",
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "forceDark": true,
+          "viewName": "RecyclingImageView",
+          "id": "ivFuncIcon",
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "CmbGridViewPager",
+              "id": "gdPager",
+              "parent": 4,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "cmb.pb.app.allmenu.FunctionGroupActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "forceDark": true,
+          "viewName": "RecyclingImage",
+          "usage": 103,
+          "id": "ivFuncIcon",
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

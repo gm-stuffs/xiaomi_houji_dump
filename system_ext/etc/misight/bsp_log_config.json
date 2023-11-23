@@ -1,0 +1,163 @@
+[
+    {
+        "folderName": "modem",
+        "children": [
+            {
+                "folderName": "ssr_dump",
+                "inVendor": true,
+                "compress": true,
+                "delayCompress": false,
+                "maxSize": 409600,
+                "reuseMaxSize": 204800,
+                "compressLatestAfterSec": 180,
+                "maxValidDay": 30,
+                "maxLogNumber": 3
+            }
+        ]
+    },
+    {
+        "folderName": "charge",
+        "children": [
+            {
+                "folderName": "charge_logger",
+                "inVendor": true,
+                "pushEventOnly": true,
+                "maxSize": 20480
+            }
+        ]
+    },
+    {
+        "folderName": "camera",
+        "children": [
+            {
+                "folderName": "ssr_dump",
+                "inVendor": true,
+                "compress": true,
+                "delayCompress": false,
+                "maxSize": 102400,
+                "reuseMaxSize": 51200,
+                "maxValidDay": 7,
+                "maxLogNumber": 5
+            }
+        ]
+    },
+    {
+        "folderName": "touch",
+        "inVendor": true,
+        "compress": true,
+        "delayCompress": true,
+        "maxSize": 51200,
+        "reuseMaxSize": 25600
+    },
+    {
+        "folderName": "audio",
+        "children": [
+            {
+                "folderName": "ssr_dump",
+                "inVendor": true,
+                "compress": true,
+                "delayCompress": false,
+                "maxSize": 204800,
+                "reuseMaxSize": 102400,
+                "maxValidDay": 7,
+                "maxLogNumber": 5
+            },
+            {
+                "folderName": "traces",
+                "compress": false,
+                "delayCompress": false,
+                "maxSize": 51200,
+                "reuseMaxSize": 25600,
+                "maxValidDay": 7,
+                "maxLogNumber": 5
+            }
+        ]
+    },
+    {
+        "folderName": "sensor",
+        "children": [
+            {
+                "folderName": "ssr_dump",
+                "inVendor": true,
+                "compress": true,
+                "delayCompress": false,
+                "maxSize": 102400,
+                "reuseMaxSize": 51200,
+                "maxValidDay": 7,
+                "maxLogNumber": 5
+            }
+        ]
+    },
+    {
+        "folderName": "secure",
+        "children": [
+            {
+                "folderName": "ssr_dump",
+                "inVendor": true,
+                "compress": true,
+                "delayCompress": false,
+                "maxSize": 102400,
+                "reuseMaxSize": 51200,
+                "maxValidDay": 7,
+                "maxLogNumber": 5
+            }
+        ]
+    },
+    {
+        "folderName": "wlan",
+        "children": [
+            {
+                "folderName": "ssr_dump",
+                "inVendor": true,
+                "compress": false,
+                "delayCompress": false,
+                "maxSize": 102400,
+                "maxValidDay": 7,
+                "maxLogNumber": 5
+            }
+        ]
+    },
+    {
+        "folderName": "system",
+        "children": [
+            {
+                "folderName": "offlinelog",
+                "maxSize": 1048576,
+                "pushEventOnly": true
+            }
+        ]
+    },
+    {
+        "folderName": "other",
+        "children": [
+            {
+                "folderName": "ssr_dump",
+                "inVendor": true,
+                "compress": true,
+                "delayCompress": false,
+                "maxSize": 20480,
+                "reuseMaxSize": 10240,
+                "maxValidDay": 7,
+                "maxLogNumber": 2
+            }
+        ]
+    },
+    {
+        "folderPath": "/data/vendor/ramdump",
+        "inVendor": true,
+        "maxSize": 1048576,
+        "watchSSRRamdumpHack": true,
+        "maxValidDay": 30
+    },
+    {
+        "folderPath": "/sdcard/diag_logs",
+        "maxSize": 1048576,
+        "pushEventOnly": true
+    },
+    {
+        "folderPath": "/sdcard/ramdump",
+        "maxSize": 1048576,
+        "watchSSRRamdumpHack": true,
+        "maxValidDay": 30
+    }
+]

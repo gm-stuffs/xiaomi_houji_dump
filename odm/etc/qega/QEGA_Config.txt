@@ -1,0 +1,3 @@
+#GameID   GameAPK    MaxTemperature  MaxCurrent  AvgCurrent //Current here means device consuming current (1000 means device is consuming 1000 mA)
+100001    hok         46000          1100        1000
+0         Default     46000          1100        1000

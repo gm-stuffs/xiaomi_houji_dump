@@ -1,0 +1,339 @@
+{
+  "packageName": "com.handsgo.jiakao.android",
+  "forceDark": true,
+  "mainRule": 1040,
+  "secondaryRule": 34,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "cn.mucang.android.mars.student.refactor.business.school.activity.SchoolDetailActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "top_more",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "ll_icons"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "top_back",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "trueTitle"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.handsgo.jiakao.android.main.activity.MainActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.widget.TextView",
+          "id": "ai_school_name",
+          "forceDark": false,
+          "usage": 1,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "cn.mucang.android.image.view.MucangImageView",
+          "id": "iv_recommend_activity",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "cn.mucang.android.mars.student.refactor.business.apply.mvp.view.ApplyRecommendView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "iv_brand_list_item_image",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "rootView"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatTextView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "androidx.recyclerview.widget.RecyclerView",
+              "index": -1,
+              "id": "base_x_recycler_view"
+            },
+            {
+              "parent": 3,
+              "viewName": "androidx.coordinatorlayout.widget.CoordinatorLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.view.View",
+          "id": "v_second",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "androidx.recyclerview.widget.RecyclerView",
+              "index": -1,
+              "id": "base_x_recycler_view"
+            },
+            {
+              "parent": 3,
+              "viewName": "androidx.coordinatorlayout.widget.CoordinatorLayout",
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "cn.mucang.android.mars.student.refactor.business.apply.activity.ApplySearchActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "iv_return",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.handsgo.jiakao.android.practice_refactor.activity.PracticeActivity",
+      "forceDark": false
+    },
+    {
+      "activityName": "cn.mucang.android.saturn.core.refactor.detail.activity.TopicDetailActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "image_view",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatTextView",
+          "id": "sortTv",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "cn.mucang.android.mars.student.refactor.business.school.activity.PicListViewActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "backIv",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.handsgo.jiakao.android.record_rank.RankAndExamRecordActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatTextView",
+          "id": "predictTitleTv",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "cn.mucang.android.mars.student.refactor.business.school.activity.ShowAllCoachActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "ui_framework__common_title_view_left_button",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "ui_framework__common_title_view_left_container"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "cn.mucang.android.mars.student.refactor.business.ranking.activity.CitySchoolRankingActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "iv_return",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "cn.mucang.android.mars.student.refactor.business.ranking.mvp.view.RankingTitleView",
+              "index": -1,
+              "id": "title_view"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "iv_share",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "cn.mucang.android.mars.student.refactor.business.ranking.mvp.view.RankingTitleView",
+              "index": -1,
+              "id": "title_view"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "cn.mucang.android.mars.student.refactor.business.ranking.activity.CoachRankingActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "iv_return",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "cn.mucang.android.mars.student.refactor.business.ranking.mvp.view.RankingTitleView",
+              "index": -1,
+              "id": "title_view"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "iv_share",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "cn.mucang.android.mars.student.refactor.business.ranking.mvp.view.RankingTitleView",
+              "index": -1,
+              "id": "title_view"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "cn.mucang.android.mars.student.refactor.business.school.activity.SchoolDetailActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "topMore",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

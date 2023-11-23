@@ -1,0 +1,86 @@
+{
+  "packageName": "com.ygkj.chelaile.standard",
+  "forceDark": true,
+  "mainRule": 0,
+  "secondaryRule": 0,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "dev.xesam.chelaile.app.module.PanelHostActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "cll_mapview_my_location",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "cll_transit",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "cll_location_icon",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "dev.xesam.chelaile.app.module.transit.gray.widget.TransitLocationItem"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "dev.xesam.chelaile.app.module.subwaymap.SubwayMapInfoActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "dev.xesam.chelaile.app.module.subwaymap.view.MetroMapView",
+          "id": "metro_map",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "dev.xesam.chelaile.app.module.subwaymap.zoom.ZoomLayout",
+              "index": -1,
+              "id": "zoomLayout"
+            },
+            {
+              "parent": 1,
+              "viewName": "dev.xesam.chelaile.app.module.subwaymap.view.SubwayView",
+              "index": -1,
+              "id": "cll_subway_map"
+            },
+            {
+              "parent": 5,
+              "viewName": "androidx.appcompat.widget.ContentFrameLayout",
+              "index": -1,
+              "id": "content"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

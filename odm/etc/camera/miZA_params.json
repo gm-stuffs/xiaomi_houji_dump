@@ -1,0 +1,9 @@
+{
+  "//": "Calib parameters",
+
+  "SetRatio": {
+    "uw2w": 1.0,
+    "w2t": 2.6,
+    "t2ut": 1500.0
+  }
+}

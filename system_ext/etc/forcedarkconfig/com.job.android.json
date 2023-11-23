@@ -1,0 +1,87 @@
+{
+  "packageName": "com.job.android",
+  "forceDark": true,
+  "mainRule": 1040,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.job.android.pages.apphome.AppHomeActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.widget.LinearLayout",
+          "id": "rightItem",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103
+        },
+        {
+          "viewName": "android.widget.LinearLayout",
+          "id": "leftItem",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103
+        },
+        {
+          "viewName": "LinearLayout",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "id": "llContent",
+          "conditions": [
+            {
+              "viewName": "DataBindingRecyclerView",
+              "parent": 0,
+              "index": -1,
+              "id": "recyclerView"
+            },
+            {
+              "viewName": "StatesLayout",
+              "parent": 1,
+              "index": -1,
+              "id": "statesLayout"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "bg_content",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "bg_status",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "right_icons_bg",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "viewName": "FrameLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "com.job.android.pages.common.home.NoScrollViewPager",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

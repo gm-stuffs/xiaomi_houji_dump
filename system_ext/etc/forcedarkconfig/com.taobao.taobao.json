@@ -1,0 +1,1322 @@
+{
+  "packageName": "com.taobao.taobao",
+  "forceDark": true,
+  "mainRule": 1040,
+  "secondaryRule": 4,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.taobao.taolive.room.TaoLiveVideoActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.taobao.uikit.extend.feature.view.TUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "id": "taolive_edit_switch"
+        }
+      ]
+    },
+    {
+      "activityName": "com.taobao.ugc.framework.UGCContainerActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.widget.LinearLayout",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.taobao.ugc.rate.widget.SksRateStructureView",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.taobao.ugc.rate.widget.TagFlowLayout",
+              "index": -1,
+              "id": "rate_ugc_flowlayout"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "rate_ugc_structure"
+            }
+          ]
+        },
+        {
+          "viewName": "android.support.v7.widget.AppCompatTextView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "rate_ugc_structure_tag_layout"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.taobao.ugc.rate.widget.TagFlowLayout",
+              "index": -1,
+              "id": "rate_ugc_flowlayout"
+            },
+            {
+              "parent": 3,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "rate_ugc_structure"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.taobao.android.order.bundle.TBOrderListActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.taobao.android.AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.taobao.android.dinamicx.view.DXNativeLinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.taobao.android.dinamicx.view.DXNativeFrameLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "com.taobao.android.dinamicx.view.DXNativeRecyclerView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.taobao.android.AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.taobao.android.dinamicx.view.DXNativeFrameLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.taobao.android.dinamicx.DXRootView",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.taobao.android.AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.taobao.android.dinamicx.DXRootView",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.taobao.tao.welcome.Welcome",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.taobao.android.home.component.view.HImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.taobao.android.dinamicx.view.DXNativeFrameLayout",
+              "index": -1
+            },
+            {
+              "parent": 4,
+              "viewName": "com.taobao.android.dinamicx.DXRootView",
+              "index": -1
+            },
+            {
+              "parent": 6,
+              "viewName": "com.taobao.homepage.view.widgets.HomeSearchBar",
+              "index": -1,
+              "id": "sv_search_view"
+            }
+          ]
+        },
+        {
+          "viewName": "com.taobao.uikit.extend.feature.view.TUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.taobao.android.tbtheme.kit.ThemeFrameLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "com.taobao.homepage.view.widgets.bgcontainer.BGContainerView",
+              "index": -1,
+              "id": "home_bg_container"
+            }
+          ]
+        },
+        {
+          "viewName": "AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "DXNativeLinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "DXRootView",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "MTPtrRecyclerView",
+              "id": "recycler_view",
+              "parent": 2,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "DXNativeLinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "DXRootView",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "GestureRoundCornerFrameLayout",
+              "parent": 2,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.taobao.android.dinamicx.DXRootView",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.taobao.mytaobao.view.MTPtrRecyclerView",
+              "index": -1,
+              "id": "recycler_view"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.taobao.ptr.PtrBase",
+              "index": -1,
+              "id": "mtb_refresh"
+            }
+          ]
+        },
+        {
+          "viewName": "com.taobao.uikit.extend.feature.view.TUrlImageView",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 1,
+              "viewName": "com.taobao.android.tbtheme.kit.ThemeFrameLayout",
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.taobao.tao.TBMainActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "DXNativeLinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "DXRootView",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "MTPtrRecyclerView",
+              "id": "recycler_view",
+              "parent": 2,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "DXNativeLinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "DXRootView",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "GestureRoundCornerFrameLayout",
+              "parent": 2,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "TUrlImageView",
+          "forceDark": true,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "NavigationTabIndicatorView",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "DXNativeFrameLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "DXNativeLinearLayout",
+              "parent": 2,
+              "index": -1
+            },
+            {
+              "viewName": "DXRecyclerView",
+              "parent": 5,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "DXNativeFrameLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "DXNativeLinearLayout",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "DXRecyclerView",
+              "parent": 4,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "DXNativeLinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "DXRecyclerView",
+              "parent": 3,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "HImageView",
+          "forceDark": true,
+          "usage": 2,
+          "conditions": [
+            {
+              "viewName": "HGifView",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "DXNativeLinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "DXNativeFrameLayout",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "DXRootView",
+              "parent": 2,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.taobao.uikit.extend.feature.view.TUrlImageView",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 1,
+              "viewName": "com.taobao.android.tbtheme.kit.ThemeFrameLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "AliUrlImageView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "viewName": "DXNativeLinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "SwipeFrameLayout",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "CartRecyclerView",
+              "id": "cart_recycler_view",
+              "parent": 4,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "DXNativeLinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "DXNativeLinearLayout",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "MTPtrRecyclerView",
+              "id": "recycler_view",
+              "parent": 3,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.taobao.android.dinamicx.DXRootView",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.taobao.mytaobao.view.MTPtrRecyclerView",
+              "index": -1,
+              "id": "recycler_view"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.taobao.ptr.PtrBase",
+              "index": -1,
+              "id": "mtb_refresh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "WXActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "AliWXImageView",
+          "forceDark": false
+        }
+      ]
+    },
+    {
+      "activityName": "com.taobao.android.detail.wrapper.activity.DetailActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "WXTextView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "viewName": "com.taobao.weex.ui.view.WXFrameLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "com.taobao.weex.RenderContainer",
+              "parent": 4,
+              "index": -1
+            },
+            {
+              "viewName": "com.taobao.vessel.weex.VesselWeexView",
+              "parent": 5,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.taobao.android.AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.taobao.android.dinamicx.view.DXNativeFrameLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.taobao.android.dinamicx.view.DXNativeRecyclerView",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "com.taobao.android.dinamicx.view.DXNativeFrameLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.taobao.android.AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.taobao.android.dinamicx.view.DXNativeLinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.taobao.android.dinamicx.view.DXNativeLinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "com.taobao.android.dinamicx.view.DXNativeLinearLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.taobao.android.AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.taobao.android.dinamicx.view.DXNativeLinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.taobao.android.dinamicx.view.DXNativeLinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "com.taobao.android.dinamicx.view.DXNativeFrameLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.taobao.android.dinamicx.view.DXNativeFastText",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.taobao.android.dinamicx.view.DXNativeFrameLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.taobao.android.dinamicx.DXRootView",
+              "index": -1
+            },
+            {
+              "parent": 5,
+              "viewName": "com.taobao.android.dinamicx.widget.recycler.view.DXRecyclerView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.alibaba.aliweex.adapter.component.AliWXImageView",
+          "forceDark": false
+        },
+        {
+          "viewName": "LinearLayout",
+          "forceDark": false,
+          "id": "frame_content_layout"
+        },
+        {
+          "viewName": "PhotoView",
+          "forceDark": false,
+          "id": "imageviewtouch"
+        },
+        {
+          "viewName": "TouchImageView",
+          "forceDark": false
+        }
+      ]
+    },
+    {
+      "activityName": "com.taobao.search.sf.MainSearchResultActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "MUSImageView",
+          "forceDark": false
+        },
+        {
+          "viewName": "com.taobao.android.weex_uikit.ui.MUSView",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "dynamic_container"
+            },
+            {
+              "parent": 3,
+              "viewName": "com.taobao.search.musie.MuiseContainer",
+              "index": -1
+            },
+            {
+              "parent": 4,
+              "viewName": "com.taobao.android.searchbaseframe.business.srp.list.uikit.PartnerRecyclerView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.taobao.android.weex_uikit.ui.MUSView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.taobao.search.musie.InterceptFrameLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "com.taobao.android.searchbaseframe.meta.uikit.MetaLayout",
+              "index": -1
+            },
+            {
+              "parent": 4,
+              "viewName": "com.taobao.android.searchbaseframe.business.srp.viewpager.uikit.SearchViewPager",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.taobao.android.weex_uikit.ui.MUSView",
+          "forceDark": true,
+          "usage": 104,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.taobao.android.weex_uikit.widget.scroller.MUSHorizontalScrollView",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.taobao.android.weex_uikit.widget.scroller.ScrollerContainer",
+              "index": -1
+            },
+            {
+              "parent": 4,
+              "viewName": "com.taobao.search.sf.newsearch.widgets.NSSceneHeaderMuiseWidget$NSSceneHeaderContainer",
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.alipay.android.msp.ui.views.MspContainerActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "FBRootFrameLayout",
+          "forceDark": true,
+          "backgroundUsage": 103
+        },
+        {
+          "viewName": "com.alipay.mobile.antui.keyboard.AUNumberKeyboardView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.alipay.android.app.safepaybase.alikeyboard.AlipayKeyboard",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "content"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.taobao.message.activity.ChatActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "TUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "ToolImageView",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.taobao.android.dinamicx.view.DXNativeFrameLayout",
+          "forceDark": false,
+          "blackMask": true,
+          "conditions": [
+            {
+              "viewName": "com.taobao.android.dinamicx.DXRootView",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "com.taobao.message.chat.component.messageflow.view.extend.unitcenter.LongClickListenRelativeLayout",
+              "parent": 2,
+              "index": -1
+            },
+            {
+              "viewName": "com.taobao.message.chat.component.messageflow.view.widget.ListenClickRelativeLayout",
+              "parent": 3,
+              "index": -1,
+              "id": "tv_chatcontent"
+            }
+          ]
+        },
+        {
+          "viewName": "com.taobao.android.dinamicx.view.DXNativeTextView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "viewName": "com.taobao.android.dinamicx.view.DXNativeFrameLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "com.taobao.message.chat.component.messageflow.view.extend.unitcenter.LongClickListenRelativeLayout",
+              "parent": 3,
+              "index": -1
+            },
+            {
+              "viewName": "com.taobao.message.chat.component.messageflow.view.widget.ListenClickRelativeLayout",
+              "parent": 4,
+              "index": -1,
+              "id": "tv_chatcontent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.taobao.android.layoutmanager.container.CommonContainerTransActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.taobao.tao.flexbox.layoutmanager.view.TNodeImageView",
+          "forceDark": true,
+          "usage": 2,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.taobao.tao.flexbox.layoutmanager.view.FlatViewGroup",
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.taobao.android.interactive.timeline.TransparentVideoListActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "TNodeImageView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "viewName": "FlatViewGroup",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "MaskLayerView",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.alibaba.triver.triver_shop.newShop.NativeShopActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "DXRootView",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "FrameLayout",
+              "parent": 1,
+              "index": -1,
+              "id": "shopView_bottom_container"
+            }
+          ]
+        },
+        {
+          "viewName": "TUrlImageView",
+          "forceDark": true,
+          "usage": 105,
+          "id": "shopView_background_img"
+        },
+        {
+          "viewName": "AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "DXRootView",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "FrameLayout",
+              "parent": 2,
+              "index": -1,
+              "id": "shopView_top_header_container"
+            }
+          ]
+        },
+        {
+          "viewName": "com.alibaba.aliweex.adapter.component.AliWXImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "com.taobao.weex.ui.view.WXFrameLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "com.taobao.weex.RenderContainer",
+              "parent": 5,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.taobao.search.searchdoor.SearchDoorActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.view.View",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.taobao.search.sf.uikit.SearchInsetFrameLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "tbsearch_searchbar_container"
+            }
+          ]
+        },
+        {
+          "viewName": "com.taobao.search.common.uikit.SearchUrlImageView",
+          "forceDark": true,
+          "backgroundUsage": 103,
+          "id": "bottom_bar"
+        },
+        {
+          "viewName": "com.taobao.android.weex_uikit.ui.MUSView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "dynamic_container"
+            },
+            {
+              "parent": 1,
+              "viewName": "com.taobao.android.xsearchplugin.muise.MuiseHolderContainer",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "com.taobao.uikit.feature.view.TRecyclerView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.taobao.android.weex_uikit.ui.MUSView",
+          "forceDark": true,
+          "usage": 104,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.taobao.android.weex_uikit.widget.slide.SlideViewPager",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.taobao.android.weex_uikit.widget.slide.SlideContainer",
+              "index": -1
+            },
+            {
+              "parent": 3,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "dynamic_container"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.taobao.taolivehome.TaoLiveHomepageActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.support.v7.widget.AppCompatButton",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "id": "homepage2_back"
+        },
+        {
+          "viewName": "com.taobao.uikit.extend.feature.view.TUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "id": "live_tab_img"
+        },
+        {
+          "viewName": "com.taobao.uikit.extend.feature.view.TUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "id": "live_home_top_background"
+        }
+      ]
+    },
+    {
+      "activityName": "com.taobao.weex.WXActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.alibaba.aliweex.adapter.component.AliWXImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.taobao.weex.ui.view.WXFrameLayout",
+              "index": -1
+            },
+            {
+              "parent": 5,
+              "viewName": "com.taobao.weex.RenderContainer",
+              "index": -1,
+              "id": "weex_render_view"
+            },
+            {
+              "parent": 6,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "wa_plus_root_layout"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.taobao.weex.weexv2.page.WeexV2Activity",
+      "forceDark": false,
+      "blackMask": true
+    },
+    {
+      "activityName": "com.alibaba.triver.triver_shop.newShop.ShopActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.taobao.uikit.extend.feature.view.TUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "id": "taolive_edit_switch"
+        },
+        {
+          "viewName": "com.taobao.uikit.extend.feature.view.TUrlImageView",
+          "id": "new_shop_view_backGround_img",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.support.constraint.ConstraintLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.alibaba.triver.triver_shop.newShop.view.ShopSwipeListenerLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "AliUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "com.taobao.android.dinamicx.view.DXNativeLinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "com.taobao.android.dinamicx.DXRootView",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "com.alibaba.triver.triver_shop.newShop.view.PerceptionSizeFrameLayout",
+              "parent": 2,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.taobao.android.layoutmanager.container.CommonContainerActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.taobao.tao.flexbox.layoutmanager.view.TNodeImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "com.taobao.tao.flexbox.layoutmanager.view.FlatViewGroup",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "com.taobao.tao.flexbox.layoutmanager.core.TNodeView",
+              "parent": 2,
+              "index": -1
+            },
+            {
+              "viewName": "com.taobao.tao.flexbox.layoutmanager.view.PullDownCloseLayout",
+              "parent": 3,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "forceDarkViewGlobalConfigList": [
+    {
+      "viewName": "FlutterView",
+      "forceDark": false,
+      "blackMask": true
+    },
+    {
+      "viewName": "com.taobao.pha.webview.PHAWVUCWebView",
+      "forceDark": false,
+      "blackMask": true
+    },
+    {
+      "viewName": "com.alibaba.triver.triver_shop.newShop.view.extend.ShopWrapWebView",
+      "forceDark": false,
+      "blackMask": true
+    },
+    {
+      "viewName": "com.taobao.browser.BrowserHybridWebView",
+      "forceDark": false,
+      "blackMask": true
+    },
+    {
+      "viewName": "com.taobao.android.home.component.view.HImageView",
+      "forceDark": true,
+      "usage": 105,
+      "conditions": [
+        {
+          "parent": 0,
+          "viewName": "com.taobao.android.dinamicx.view.DXNativeFrameLayout",
+          "index": -1
+        },
+        {
+          "parent": 5,
+          "viewName": "com.taobao.android.dinamicx.DXRootView",
+          "index": -1
+        },
+        {
+          "parent": 7,
+          "viewName": "com.taobao.homepage.view.widgets.HomeSearchBar",
+          "index": -1,
+          "id": "sv_search_view"
+        }
+      ]
+    },
+    {
+      "viewName": "com.taobao.android.home.component.view.HImageView",
+      "forceDark": true,
+      "usage": 105,
+      "conditions": [
+        {
+          "parent": 0,
+          "viewName": "com.taobao.android.dinamicx.view.DXNativeFrameLayout",
+          "index": -1
+        },
+        {
+          "parent": 3,
+          "viewName": "com.taobao.android.dinamicx.DXRootView",
+          "index": -1
+        },
+        {
+          "parent": 5,
+          "viewName": "com.taobao.homepage.view.widgets.HomeSearchBar",
+          "index": -1,
+          "id": "sv_search_view"
+        }
+      ]
+    },
+    {
+      "viewName": "com.taobao.android.home.component.view.HImageView",
+      "forceDark": true,
+      "usage": 105,
+      "conditions": [
+        {
+          "parent": 0,
+          "viewName": "com.taobao.android.dinamicx.view.DXNativeFrameLayout",
+          "index": -1
+        },
+        {
+          "parent": 4,
+          "viewName": "com.taobao.android.dinamicx.view.DXNativeLinearLayout",
+          "index": -1
+        },
+        {
+          "parent": 7,
+          "viewName": "com.taobao.android.dinamicx.view.DXNativeLinearLayout",
+          "index": -1
+        }
+      ]
+    },
+    {
+      "viewName": "com.taobao.android.dinamicx.view.DXNativeFastText",
+      "forceDark": false,
+      "conditions": [
+        {
+          "parent": 0,
+          "viewName": "com.taobao.android.dinamicx.view.DXNativeFrameLayout",
+          "index": -1
+        },
+        {
+          "parent": 1,
+          "viewName": "com.taobao.android.dinamicx.DXRootView",
+          "index": -1
+        },
+        {
+          "parent": 2,
+          "viewName": "android.widget.FrameLayout",
+          "index": -1
+        }
+      ]
+    },
+    {
+      "viewName": "com.taobao.infoflow.core.subservice.framework.container.mainfeeds.recycleview.view.InfoFlowRecyclerView",
+      "forceDark": true,
+      "usage": 105,
+      "conditions": [
+        {
+          "parent": 0,
+          "viewName": "com.taobao.infoflow.core.subservice.framework.container.containerservice.rootcontainer.InfoFlowRootContainer",
+          "index": -1
+        },
+        {
+          "parent": 2,
+          "viewName": "com.taobao.tao.topmultitab.view.WrapFrameLayout",
+          "index": -1
+        },
+        {
+          "parent": 3,
+          "viewName": "com.taobao.tao.topmultitab.view.HomeViewPager",
+          "index": -1
+        }
+      ]
+    },
+    {
+      "viewName": "com.taobao.android.AliUrlImageView",
+      "forceDark": true,
+      "usage": 103,
+      "backgroundUsage": 103,
+      "conditions": [
+        {
+          "viewName": "com.taobao.android.dinamicx.view.DXNativeFrameLayout",
+          "parent": 0,
+          "index": -1
+        },
+        {
+          "viewName": "com.taobao.uikit.immersive.TBInsetLinearLayout",
+          "parent": 2,
+          "index": -1,
+          "id": "cart_top_layout"
+        },
+        {
+          "viewName": "com.taobao.android.icart.widget.touch.DragParentFrameLayout",
+          "parent": 3,
+          "index": -1,
+          "id": "drag_parent_layout"
+        }
+      ]
+    }
+  ]
+}

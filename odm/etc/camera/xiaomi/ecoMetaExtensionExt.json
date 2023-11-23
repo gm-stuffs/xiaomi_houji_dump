@@ -1,0 +1,72 @@
+/*
+说明：
+    ecoMetaExtension.json 的附加文件，不同项目需要不同配置的，放在这里，相同Signature同版本的选项会合并
+*/
+[
+    {
+        "Signature":"BokehRearNormal",
+        "Target":{
+            "Meta": [
+                {
+                    "CamOpt" : "Characteristics",
+                    "Name": "xiaomi.camera.bokehinfo.masterCameraId1X",
+                    "Value": "2",
+                    "Type" : "Byte"
+                } , {
+                    "CamOpt" : "Characteristics",
+                    "Name": "xiaomi.camera.bokehinfo.slaveCameraId1X",
+                    "Value": "3",
+                    "Type" : "Byte"
+                } , {
+                    "CamOpt" : "Characteristics",
+                    "Name": "xiaomi.camera.bokehinfo.masterOptimalSize1X",
+                    "Value": ["4096","3072","4096","2304","4096","1844"],
+                    "Size": 6,
+                    "Type" : "Int"
+                } , {
+                    "CamOpt" : "Characteristics",
+                    "Name": "xiaomi.camera.bokehinfo.slaveOptimalSize1X",
+                    "Value": ["3680", "2760", "3680", "2072", "3680", "1656"],
+                    "Size": 6,
+                    "Type" : "Int"
+                } , {
+                    "CamOpt" : "Characteristics",
+                    "Name": "xiaomi.camera.bokehinfo.masterOptimalRawSize1X",
+                    "Value": ["4096","3072","4096","3072","4096","3072"],
+                    "Size": 6,
+                    "Type" : "Int"
+                } , {
+                    "CamOpt" : "Characteristics",
+                    "Name": "xiaomi.camera.bokehinfo.slaveOptimalRawSize1X",
+                    "Value": ["3680", "2760","3680", "2760","3680", "2760"],
+                    "Size": 6,
+                    "Type" : "Int"
+                },
+                {
+                    "CamOpt" : "Characteristics",
+                    "Name": "xiaomi.camera.bokehinfo.MDEvList",
+                    "Value": ["0","-12"],
+                    "Size": 2,
+                    "Type" : "Int"
+                }
+            ]
+        }
+    },
+    {
+        "Signature":"SATZoomRange",//set satZoomRatioRange static meta by sdk
+        "Source":{
+            "CameraRoleId": 60 // RoleIdRearSat
+        },
+        "Target":{
+            "Meta": [
+                {
+                    "CamOpt" : "Characteristics",
+                    "Name": "com.xiaomi.algo.satZoomRatioRange",//miui disuse this tag but sdk use
+                    "Value": ["0.6","60.0"],//0.6:ultra min zoom ratio,60.0:tele max zoom ratio
+                    "Size": 2,
+                    "Type" : "Float"
+                }
+            ]
+        }
+    }
+]

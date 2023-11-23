@@ -1,0 +1,10 @@
+on property:ro.hardware=qcom
+    start misight
+
+service misight /system_ext/bin/misight
+   class main
+   user root
+   disabled
+   group system cache log readproc media_rw everybody
+   seclabel u:r:misight:s0
+   onrestart restart vendor.mi_misight

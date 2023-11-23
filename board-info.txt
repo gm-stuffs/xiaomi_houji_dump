@@ -1,0 +1,2 @@
+require version-trustzone=TZ.XF.5.0-07375.2-LANAIAAAAANAZT-1.43264.11
+require version-vendor=1698150524

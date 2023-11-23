@@ -1,0 +1,15 @@
+{
+	"Type":"Effect",
+	"ExtraOption":
+	{
+		"UVMapping": false
+	},
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/3_ModeVideo/effect.json",
+			"Index":0,
+			"Mode":"Preview"
+		}
+	]
+}

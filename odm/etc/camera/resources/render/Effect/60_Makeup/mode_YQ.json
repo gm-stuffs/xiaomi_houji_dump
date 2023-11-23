@@ -1,0 +1,33 @@
+{
+	"##":"元气妆",
+	"Type":"Effect",
+	"ExtraOption":
+	{
+		"EnvLightType": 1,
+		"EnableGenderMakeup":true,
+		"MaleMakeupFlag":306
+	},
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/6_ModeYQ/effect_preview.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/0_ModeMAN/effect_preview.json",
+			"Index":1,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/6_ModeYQ/effect_capture.json",
+			"Index":2,
+			"Mode":"Capture"
+		},
+		{
+			"ConfigurePath":"Effects/0_ModeMAN/effect_capture.json",
+			"Index":3,
+			"Mode":"Capture"
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+  "packageName": "com.qiyi.video.lite",
+  "forceDark": true,
+  "mainRule": 128,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.qiyi.video.lite.homepage.HomeActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.widget.LinearLayout",
+          "id": "unused_res_a",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "com.qiyi.video.lite.homepage.mine.listcontent.HomeMineContentPtr",
+              "index": -1,
+              "id": "unused_res_a"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

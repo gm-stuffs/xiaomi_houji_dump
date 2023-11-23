@@ -1,0 +1,11 @@
+ro.carrier.name=cu
+ro.miui.region=CN
+ro.miui.mcc=9460
+ro.miui.mnc=9001
+ro.miui.cust_variant=cn_chinaunicom
+ro.com.android.mobiledata=true
+ro.build.hardware.version=V1
+ro.vendor.miui.region=CN
+ro.vendor.miui.mcc=9460
+ro.vendor.miui.mnc=9001
+ro.vendor.miui.cust_variant=cn_chinaunicom

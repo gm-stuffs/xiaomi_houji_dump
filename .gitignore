@@ -1,0 +1,12 @@
+modem.img
+recovery.img
+product/data-app/SmartHome/SmartHome.apk
+product/data-app/MiMediaEditor/MiMediaEditor.apk
+product/priv-app/MIUIBrow\ser/MIUIBrow\ser.apk
+product/priv-app/Gm\sCore/Gm\sCore.apk
+product/priv-app/MiuiCamera/MiuiCamera.apk
+product/app/VoiceA\s\si\stAndroidT/VoiceA\s\si\stAndroidT.apk
+product/app/AiA\s\stVi\sion/AiA\s\stVi\sion.apk
+product/app/TrichromeLibrary64/TrichromeLibrary64.apk
+\sy\stem_ext/priv-app/Setting\s/Setting\s.apk
+bootRE/boot.elf

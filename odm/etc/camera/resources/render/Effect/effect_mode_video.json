@@ -1,0 +1,27 @@
+{
+	"Type":"EffectCategory",
+	"ForVideo": true,
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"5_DLRetouch/mode_video.json",
+			"Index":5
+		},
+		{
+			"ConfigurePath":"20_FaceRetouch/mode_video.json",
+			"Index":20
+		},
+		{
+			"ConfigurePath":"40_FaceStereo/mode_video.json",
+			"Index":40
+		},
+		{
+			"ConfigurePath":"60_Makeup/mode_video.json",
+			"Index":60
+		},
+		{
+			"ConfigurePath":"70_FacialRefine/mode_video.json",
+			"Index":70
+		}
+	]
+}

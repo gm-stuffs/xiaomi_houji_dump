@@ -1,0 +1,12 @@
+{
+  "packageName": "com.tencent.weishi",
+  "forceDark": true,
+  "mainRule": 16,
+  "secondaryRule": 34,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.tencent.oscar.module.main.MainActivity",
+      "forceDark": false
+    }
+  ]
+}

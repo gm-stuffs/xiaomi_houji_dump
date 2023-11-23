@@ -1,0 +1,402 @@
+#line 1 "miui/system/sepolicy/generic/private/property_contexts"
+# ctl. properties
+ctl.mcd_init            u:object_r:system_prop:s0
+persist.fastboot.       u:object_r:system_prop:s0
+
+# misc properties for vm optimize
+events.cpu              u:object_r:exported_system_prop:s0
+mcd.extra.params        u:object_r:exported_system_prop:s0
+
+# miui default prop support
+ro.miui.                       u:object_r:exported_system_prop:s0
+ro.vendor.miui.                u:object_r:exported_system_prop:s0
+ro.com.google.clientidbase     u:object_r:exported_system_prop:s0
+ro.product.locale.region            u:object_r:exported_system_prop:s0
+ro.product.locale.language        u:object_r:exported_system_prop:s0
+miui.usb.dialog                   u:object_r:exported_system_prop:s0
+miui.reverse.charge               u:object_r:exported_system_prop:s0
+persist.vendor.otg_control        u:object_r:exported_system_prop:s0
+persist.vendor.charge.oneTrack    u:object_r:exported_system_prop:s0
+ro.cust.test                      u:object_r:exported_system_prop:s0
+
+#Access denied finding property "ro.fota.oem"
+ro.fota.oem     u:object_r:exported_default_prop:s0 exact string
+#Access denied finding property "ro.product.mod_device"
+ro.product.mod_device    u:object_r:exported_default_prop:s0 exact string
+
+# persist prop for dex2oat-threads
+persist.dalvik.vm.dex2oat-threads  u:object_r:dalvik_prop:s0
+
+# prop to support system_perf_init setting dex2oat-threads
+system_perf_init.dex2oat-threads            u:object_r:system_perf_init_prop:s0
+system_perf_init.bg-dex2oat-threads         u:object_r:system_perf_init_prop:s0
+system_perf_init.boot-dex2oat-threads       u:object_r:system_perf_init_prop:s0
+
+radio.dataroaming.enable.suffix.subid  u:object_r:radio_prop:s0
+
+radio.newapn.secretcode u:object_r:radio_prop:s0
+
+radio.editims.secretcode u:object_r:radio_prop:s0
+
+persist.radio.restart_rild u:object_r:radio_control_prop:s0
+
+radio.wechat.secretcode u:object_r:radio_prop:s0
+
+# MIUI-1598578 Allow settings to set the smart-dark property
+persist.hwui.force_dark     u:object_r:system_prop:s0 exact bool
+
+#get camera using info
+vendor.sys.camerainfo         u:object_r:system_prop:s0
+
+#unfold selfie
+persist.vendor.camera.selfie.unfold u:object_r:exported_system_prop:s0 exact int
+
+# wechat front camera flash current persist
+persist.vendor.vcf.enable u:object_r:exported_system_prop:s0 exact int
+persist.vendor.vcf.colorsupport u:object_r:exported_system_prop:s0 exact int
+
+# multiwin-camera-prop
+persist.vendor.multiwin.3appcam u:object_r:exported_system_prop:s0 exact string
+persist.vendor.device.orientation u:object_r:exported_system_prop:s0 exact string
+
+# freeform-camera-prop
+persist.vendor.freeform.3appcam u:object_r:exported_system_prop:s0 exact string
+persist.vendor.freeform.cam.orientation u:object_r:exported_system_prop:s0 exact string
+
+ro.boot.hwc             u:object_r:exported_default_prop:s0
+
+persist.dalvik.vm.flush_tcache  u:object_r:dalvik_prop:s0
+persist.dalvik.vm.disable_tcache  u:object_r:dalvik_prop:s0
+
+# persist prop for fakecell and sleep mode
+persist.sys.support_fakecell       u:object_r:joyose_app_prop:s0
+persist.sys.support_detect_fc      u:object_r:joyose_app_prop:s0
+persist.sys.detect_fc_enable       u:object_r:joyose_app_prop:s0
+persist.sys.rtc.wakeup_record      u:object_r:joyose_app_prop:s0
+persist.sys.sport_collect          u:object_r:joyose_app_prop:s0
+
+# Allow settings to set the videocall beauty enable property
+persist.vendor.vcb.enable  u:object_r:exported_system_prop:s0
+persist.vendor.vcb.video   u:object_r:exported_system_prop:s0
+persist.vendor.vcb.snapshot  u:object_r:exported_system_prop:s0
+persist.vendor.vcb.activity  u:object_r:exported_system_prop:s0
+persist.vendor.miface.registration.scenes u:object_r:exported_system_prop:s0
+persist.vendor.camera.3rdhighResolutionBlob.scenes u:object_r:exported_system_prop:s0
+persist.vendor.camera.3rdvideocall.scenes u:object_r:exported_system_prop:s0
+persist.vendor.camera.3rdvideo.scenes u:object_r:exported_system_prop:s0
+
+# persist prop for trans opcust_spn
+persist.sys.opcust_spn    u:object_r:exported_system_prop:s0
+
+# persist prop for apex
+persist.sys.cota.carrier  u:object_r:exported_system_prop:s0
+
+# persist prop for miupdater
+persist.sys.cota.package  u:object_r:exported_system_prop:s0
+persist.sys.cota.partition  u:object_r:exported_system_prop:s0
+
+#support set prop for COTA
+persist.sys.facebook.partnerid  u:object_r:exported_system_prop:s0
+ro.facebook.partnerid                       u:object_r:exported_system_prop:s0
+persist.sys.netflix.channel  u:object_r:exported_system_prop:s0
+ro.netflix.channel                       u:object_r:exported_system_prop:s0
+
+#Add otrp property type
+vendor.otrp.time                    u:object_r:system_prop:s0
+persist.vendor.otrp.key             u:object_r:system_prop:s0
+
+# package manager service prop
+ro.miui.pm.install. u:object_r:system_pm_install_prop:s0
+
+# persist prop for miui boot audio
+persist.sys.boot_audio.enabled    u:object_r:exported_system_prop:s0
+
+#support rsa update
+persist.com.miui.rsa_region      u:object_r:exported_system_prop:s0
+ro.com.miui.rsa_setted         u:object_r:exported_system_prop:s0
+
+#preinstall app
+ro.channel.com.snapchat.android u:object_r:exported_system_prop:s0
+ro.microsoft.bing_partner_code u:object_r:exported_system_prop:s0
+ro.netflix.signup u:object_r:exported_system_prop:s0
+ro.csc.spotify.music.referrerid u:object_r:exported_system_prop:s0
+ro.csc.spotify.music.partnerid u:object_r:exported_system_prop:s0
+
+# camera-camlog-CatchLog-persist add by xiaomi start
+persist.vendor.camlog.logswitch u:object_r:exported_system_prop:s0 exact string
+persist.vendor.camlog.tuning u:object_r:exported_system_prop:s0 exact string
+persist.vendor.camlog.logmask u:object_r:exported_system_prop:s0 exact string
+persist.vendor.camlog.readback u:object_r:exported_system_prop:s0 exact int
+persist.vendor.camlog.readback.type u:object_r:exported_system_prop:s0 exact int
+persist.vendor.camlog.offlinelogNum u:object_r:exported_system_prop:s0 exact int
+persist.vendor.camlog.logSize u:object_r:exported_system_prop:s0 exact int
+persist.vendor.camlog.overrideloglevels u:object_r:exported_system_prop:s0 exact string
+persist.vendor.camlog.camxinfologlevels u:object_r:exported_system_prop:s0 exact string
+persist.vendor.camlog.camxverboseloglevels u:object_r:exported_system_prop:s0 exact string
+
+# camera cloud properties
+persist.vendor.camera.cloud.    u:object_r:exported_system_prop:s0
+
+# camera trace
+persist.vendor.camera.traceGroupsEnable u:object_r:exported_system_prop:s0 exact string
+
+#persist prop for night charge
+persist.vendor.night.charge        u:object_r:exported_system_prop:s0
+
+#persist prop for smartchg
+persist.vendor.smartchg       u:object_r:exported_system_prop:s0
+
+#persist prop for moisture detection
+persist.vendor.moisture.detection      u:object_r:exported_system_prop:s0
+
+#persist prop for battery health
+persist.vendor.battery.health      u:object_r:exported_system_prop:s0
+persist.vendor.battery.health.optimise      u:object_r:exported_system_prop:s0
+
+#persist prop for low cut off
+persist.vendor.low.cutoff      u:object_r:exported_system_prop:s0
+
+#persist prop for high temp notice
+persist.vendor.hightemp.notice     u:object_r:exported_system_prop:s0
+
+#persist prop for time domain charge function
+persist.vendor.domain.charge       u:object_r:exported_system_prop:s0
+
+#persist prop for accelerate charge
+persist.vendor.accelerate.charge        u:object_r:exported_system_prop:s0
+
+#persist prop for close haptic when reverse wireless charge
+persist.vendor.revchg.shutmotor     u:object_r:exported_system_prop:s0
+
+#persist prop for firmware update
+persist.vendor.firmware.update      u:object_r:exported_system_prop:s0
+
+#persist prop for remove shutdown phone
+persist.vendor.extreme.mode       u:object_r:exported_system_prop:s0
+
+#persist prop for settings add wechat video beauty switch
+persist.vendor.vcb.ability              u:object_r:system_prop:s0
+
+# sno
+ro.ril.oem.psno           u:object_r:sno_prop:s0
+ro.ril.oem.sno            u:object_r:sno_prop:s0
+ro.ril.miui.psno          u:object_r:miui_sno_prop:s0
+ro.ril.miui.sno           u:object_r:miui_sno_prop:s0
+
+# imei prop
+persist.radio.imei      u:object_r:deviceid_prop:s0
+persist.radio.meid      u:object_r:deviceid_prop:s0
+ro.ril.oem.imei         u:object_r:deviceid_prop:s0
+ro.ril.oem.meid         u:object_r:deviceid_prop:s0
+ro.ril.miui.imei        u:object_r:miui_deviceid_prop:s0
+
+# persist prop for extm
+persist.miui.extm.version             u:object_r:system_perf_init_prop:s0
+persist.miui.extm.enable              u:object_r:system_perf_init_prop:s0
+persist.miui.extm.bdsize              u:object_r:system_perf_init_prop:s0
+miui.extm.low_data                    u:object_r:system_perf_init_prop:s0
+
+#Add privacy test mode for CTA
+persist.miui.cta.privacy_test_mode    u:object_r:system_cta_prop:s0
+
+# persist prop for autoui
+persist.miui.auto_ui_enable           u:object_r:system_prop:s0
+
+#select interpolation mi algo
+ro.vendor.camera.interpolation.mialgo.support        u:object_r:exported_system_prop:s0
+
+#prop for camera logsystem
+vendor.camera.sensor.logsystem.unrelease u:object_r:exported_system_prop:s0 exact string
+
+# persist prop for mibackup
+persist.sys.brokenscreenservice.disable         u:object_r:exported_system_prop:s0
+persist.sys.miui.virtualpartition.cust.uncrypt  u:object_r:exported_system_prop:s0
+
+# persist prop for btsnooplog
+persist.vendor.service.bt.adv_snoop   u:object_r:exported_system_prop:s0
+
+# persist prop for sensor hal
+persist.vendor.sensors.hal.log       u:object_r:vendor_sensors_log_prop:s0
+persist.debug.sensors.hal            u:object_r:persist_debug_prop:s0
+persist.vendor.debug.sensors.hal     u:object_r:vendor_debug_sensors_prop:s0
+persist.vendor.debug.sensors.daemon  u:object_r:vendor_debug_sensors_prop:s0
+
+# prop for camera debug info
+camera.preview.enable.log            u:object_r:exported_system_prop:s0 exact string
+camera.preview.debug.debugInfo_view  u:object_r:exported_system_prop:s0 exact string
+camera.preview.debug.sat_info        u:object_r:exported_system_prop:s0 exact string
+persist.vendor.enable.sat.screeninfo u:object_r:exported_system_prop:s0 exact string
+
+# enable face center properties
+persist.vendor.camera.facetracker.active   u:object_r:exported_system_prop:s0 exact int
+persist.vendor.camera.facetracker.enable   u:object_r:exported_system_prop:s0 exact int
+persist.vendor.camera.facetracker.fpsrange u:object_r:exported_system_prop:s0 exact string
+persist.vendor.camera.facetracker.rrzosize u:object_r:exported_system_prop:s0 exact string
+
+# persist prop for unreached port filter
+persist.miui.wifi.upf.enable      u:object_r:exported_system_prop:s0
+
+# persist prop for entry of camera property
+persist.vendor.camera.logentry      u:object_r:exported_system_prop:s0
+
+# persist prop for ab reuse
+persist.sys.abreuse.otastatus               u:object_r:abreuse_prop:s0
+persist.sys.abreuse.abstatus                u:object_r:abreuse_prop:s0
+persist.sys.stability.abreuse_status        u:object_r:abreuse_prop:s0
+
+
+# xiaomi add start
+# Data 2023/08/17
+# Purpose : allow cameraserver set nfc_prop (1/2)
+nfc.polling.disable               u:object_r:nfc_prop:s0
+#xiaomi add end
+
+# persist prop for misight
+persist.sys.perfdebug.                    u:object_r:exported_system_prop:s0
+persist.sys.log_time_gap_sec              u:object_r:exported_system_prop:s0
+persist.sys.log_max_line                  u:object_r:exported_system_prop:s0
+persist.sys.log_filter_flag               u:object_r:exported_system_prop:s0
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/system_ext_property_contexts/android_common/gen/newline"
+
+#line 1 "vendor/xiaomi/proprietary/32bit_translator/sepolicy/system/private/property_contexts"
+tango.   u:object_r:tango_prop:s0
+
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/system_ext_property_contexts/android_common/gen/newline"
+
+#line 1 "device/qcom/sepolicy/generic/private/property_contexts"
+# Copyright (c) 2017, 2019, 2021 The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above
+#       copyright notice, this list of conditions and the following
+#       disclaimer in the documentation and/or other materials provided
+#       with the distribution.
+#     * Neither the name of The Linux Foundation nor the names of its
+#       contributors may be used to endorse or promote products derived
+#       from this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+# ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+# BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+# OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+# IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+ro.vendor.qti.va_aosp.support       u:object_r:vendor_exported_system_prop:s0 exact bool
+ro.vendor.qti.va_odm.support       u:object_r:vendor_exported_odm_prop:s0 exact bool
+ro.vendor.perf.scroll_opt        u:object_r:vendor_exported_system_prop:s0 exact bool
+ro.vendor.perf.scroll_opt.heavy_app        u:object_r:vendor_exported_system_prop:s0 exact int
+ro.netflix.bsp_rev                         u:object_r:vendor_exported_system_prop:s0 exact string
+
+persist.vendor.dpm.                        u:object_r:vendor_persist_dpm_prop:s0
+persist.vendor.rcs.                        u:object_r:vendor_persist_rcs_prop:s0
+persist.vendor.tcmd.                       u:object_r:vendor_persist_tcm_prop:s0
+persist.vendor.btstack                     u:object_r:bluetooth_prop:s0
+persist.vendor.bluetooth.emailaccountcount u:object_r:bluetooth_prop:s0
+persist.vendor.bt.a2dp                     u:object_r:bluetooth_prop:s0
+persist.vendor.bt_logger.                  u:object_r:bluetooth_prop:s0
+persist.vendor.service.bt.                 u:object_r:bluetooth_prop:s0
+ro.vendor.btstack.                         u:object_r:bluetooth_prop:s0
+vendor.pts.                                u:object_r:bluetooth_prop:s0
+vendor.bt.pts.                             u:object_r:bluetooth_prop:s0
+vendor.bluetooth.                          u:object_r:bluetooth_prop:s0
+vendor.camera.aux.packagelist              u:object_r:vendor_persist_camera_prop:s0
+persist.vendor.camera.privapp.list         u:object_r:vendor_persist_camera_prop:s0
+
+#mm-parser
+vendor.mm.enable.qcom_parser       u:object_r:vendor_mm_parser_prop:s0
+vendor.qcom_parser.                u:object_r:vendor_mm_parser_prop:s0
+#mm-osal
+vendor.debug.mmosal.config         u:object_r:vendor_mm_osal_prop:s0
+
+#perf
+vendor.perf.workloadclassifier.enable      u:object_r:vendor_wlc_prop:s0
+persist.vendor.build.date.utc              u:object_r:vendor_wlc_prop:s0
+vendor.mpctl.init.complete                 u:object_r:vendor_wlc_public_prop:s0
+vendor.perf.framepacing.                   u:object_r:vendor_afp_prop:s0
+
+#mm-video
+persist.vendor.debug.av.logs.lvl          u:object_r:debug_prop:s0
+persist.vendor.debug.en.drpcrpt           u:object_r:vendor_mm_video_prop:s0
+persist.vendor.media.hls.                 u:object_r:vendor_mm_video_prop:s0
+persist.vendor.sys.media.rtp-ports        u:object_r:vendor_mm_video_prop:s0
+vendor.encoder.video.profile              u:object_r:vendor_mm_video_prop:s0
+vendor.sys.media.target.version           u:object_r:vendor_sys_video_prop:s0
+vendor.sys.video.disable.ubwc             u:object_r:vendor_sys_video_prop:s0
+vendor.sys.media.target.qssi              u:object_r:vendor_sys_video_prop:s0
+
+#Wifi Display
+vendor.wfdservice                         u:object_r:vendor_wfd_service_prop:s0
+persist.vendor.debug.wfd.wfdsvc           u:object_r:vendor_wfd_sys_debug_prop:s0
+persist.vendor.debug.wfdcdbg              u:object_r:vendor_wfd_sys_debug_prop:s0
+persist.vendor.debug.wfdcdbgv             u:object_r:vendor_wfd_sys_debug_prop:s0
+persist.vendor.sys.debug.mux.             u:object_r:vendor_wfd_sys_debug_prop:s0
+persist.vendor.sys.debug.rtp.             u:object_r:vendor_wfd_sys_debug_prop:s0
+persist.vendor.sys.debug.wfd.             u:object_r:vendor_wfd_sys_debug_prop:s0
+vendor.sys.debug.wfd.                     u:object_r:vendor_wfd_sys_debug_prop:s0
+persist.vendor.setWFDInfo.R2              u:object_r:vendor_wfd_sys_prop:s0
+
+# WIGIG
+persist.vendor.wigig.                      u:object_r:vendor_wigig_core_prop:s0
+persist.vendor.fst.                        u:object_r:vendor_fst_prop:s0
+persist.dpm.feature                        u:object_r:vendor_persist_dpm_prop:s0
+ctl.stop$dpmd                              u:object_r:ctl_dpmd_prop:s0
+ctl.stop$tcmd                              u:object_r:ctl_tcmd_prop:s0
+
+# Beluga
+ro.vendor.beluga.p                         u:object_r:vendor_exported_system_prop:s0
+ro.vendor.beluga.c                         u:object_r:vendor_exported_system_prop:s0
+ro.vendor.beluga.s                         u:object_r:vendor_exported_system_prop:s0
+ro.vendor.beluga.t                         u:object_r:vendor_exported_system_prop:s0
+
+#XRCB prop
+vendor.xrcb.                               u:object_r:vendor_xrcb_prop:s0
+vendor.sxrauxd                             u:object_r:vendor_xrcb_prop:s0
+
+# bootreceiver config props
+ro.vendor.bootreceiver.enable              u:object_r:vendor_bootreceiver_prop:s0 exact bool
+
+#Power Module
+ro.vendor.power.tuning.support             u:object_r:vendor_exported_system_prop:s0 exact bool
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/system_ext_property_contexts/android_common/gen/newline"
+
+#line 1 "device/xiaomi/sepolicy/generic/private/property_contexts"
+pm.dexopt.first-use    u:object_r:exported_pm_prop:s0 exact string
+pm.dexopt.baseline     u:object_r:exported_pm_prop:s0 exact string
+
+# MIUI ADD: Camera_MIUICameraFrame
+# Add sepolicy for system server to read aperture property.
+persist.vendor.camera.IsVariableApertureSupported u:object_r:camera_config_prop:s0 exact bool
+# END Camera_MIUICameraFrame
+
+# MIUI ADD: Performance_AppInstallEnhance
+pm.dexopt.install-create-dm    u:object_r:exported_pm_prop:s0 exact string
+# END Performance_AppInstallEnhance
+
+# MIUI ADD: BSPSecurity_MIUIBSPSecurityFrame
+# add context for attestation props
+ro.product.device_for_attestation  u:object_r:build_attestation_prop:s0 exact string
+ro.product.manufacturer_for_attestation  u:object_r:build_attestation_prop:s0 exact string
+# END BSPSecurity_MIUIBSPSecurityFrame
+
+# offline_log
+persist.offlinelog.           u:object_r:log_prop:s0
+persist.sys.offlinelog.       u:object_r:log_prop:s0
+service.offlinelog.bootloader u:object_r:log_prop:s0
+# END offline_log
+
+# wallpapaer
+persist.sys.wallpapercolor          u:object_r:log_prop:s0
+wallpaper.color.flag                u:object_r:log_prop:s0
+# END wallpapaer
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/system_ext_property_contexts/android_common/gen/newline"
+

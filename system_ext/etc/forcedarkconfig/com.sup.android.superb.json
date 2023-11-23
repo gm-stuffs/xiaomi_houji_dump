@@ -1,0 +1,127 @@
+{
+  "packageName": "com.sup.android.superb",
+  "forceDark": true,
+  "mainRule": 1024,
+  "secondaryRule": 0,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.sup.android.webui.BrowserActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.sup.android.webui.DefaultBrowserFragment$1",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1
+            },
+            {
+              "parent": 4,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "browser_fragment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.sup.android.base.MainActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.airbnb.lottie.LottieAnimationView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.sup.android.uikit.base.RelativeLayout",
+              "index": -1
+            },
+            {
+              "parent": 4,
+              "viewName": "com.sup.android.detail.view.DetailBottomView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            },
+            {
+              "parent": 3,
+              "viewName": "com.sup.android.detail.view.DetailBottomView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            },
+            {
+              "parent": 4,
+              "viewName": "com.sup.android.detail.view.DetailBottomView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.airbnb.lottie.LottieAnimationView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.sup.android.uikit.base.LoadingLayout",
+              "index": -1
+            },
+            {
+              "parent": 5,
+              "viewName": "com.sup.android.detail.view.DetailBottomView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.sup.android.uikit.base.LoadingLayout",
+              "index": -1
+            },
+            {
+              "parent": 5,
+              "viewName": "com.sup.android.detail.view.DetailBottomView",
+              "index": -1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "packageName": "com.tencent.zebra",
+  "forceDark": true,
+  "mainRule": 1024,
+  "secondaryRule": 0,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.tencent.zebra.ui.settings",
+      "forceDark": false,
+      "blackMask": true
+    }
+  ]
+}

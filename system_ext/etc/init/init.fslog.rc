@@ -1,0 +1,19 @@
+on post-fs-data
+	mkdir /cache/filesystem_log  0770 system cache
+	mkdir /cache/filesystem_log/pmlog  0770 system cache
+	mkdir /cache/filesystem_log/lglog  0770 system cache
+
+service fslog /system_ext/bin/fslog
+	class main
+	user root
+	capabilities SYS_ADMIN
+	group root system cache everybody media_rw readproc
+	disabled
+	seclabel u:r:bpfloader:s0
+	rlimit memlock 1073741824 1073741824
+	oneshot
+
+on property:sys.fslog.ctrl=true
+    start fslog
+on property:sys.fslog.ctrl=false
+    stop fslog

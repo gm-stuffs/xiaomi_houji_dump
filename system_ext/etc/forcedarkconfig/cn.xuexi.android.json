@@ -1,0 +1,191 @@
+{
+  "packageName": "cn.xuexi.android",
+  "forceDark": true,
+  "mainRule": 16,
+  "secondaryRule": 34,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.alibaba.android.user.login.SignUpWithPwdActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.alibaba.android.dingtalkbase.widgets.views.ClearableEditText",
+          "id": "et_phone_input",
+          "forceDark": true,
+          "usage": 103
+        },
+        {
+          "viewName": "com.alibaba.android.dingtalkbase.widgets.views.ClearableEditText",
+          "id": "et_pwd_login",
+          "forceDark": true,
+          "usage": 103
+        }
+      ]
+    },
+    {
+      "activityName": "com.alibaba.android.rimet.biz.home.activity.HomeActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.alibaba.android.uc.business.feeds.channel.widget.base.TextNumberIndicator",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 3,
+              "viewName": "com.alibaba.android.uc.business.feeds.channel.widget.carousel.STCarouselWidget",
+              "index": -1
+            },
+            {
+              "parent": 5,
+              "viewName": "com.alibaba.android.uc.business.feeds.channel.widget.carousel.STCarouselCard",
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.alibaba.android.search.activity.GlobalSearchActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.torch.open.theme.extra.widget.ThemeLinearLayout",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.torch.open.theme.extra.widget.ThemeLinearLayout",
+              "index": -1,
+              "id": "item_scroller_layout"
+            },
+            {
+              "parent": 1,
+              "viewName": "com.alibaba.android.search.widget.DelicacySideslipView",
+              "index": -1,
+              "id": "horizontal_view"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.alibaba.android.search.widget.ResilienceScrollView",
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.alibaba.android.dingtalkim.activities.ChatMsgActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "forceDark": true,
+          "viewName": "LinearLayout",
+          "backgroundUsage": 103,
+          "id": "container"
+        },
+        {
+          "forceDark": true,
+          "viewName": "LinearLayout",
+          "backgroundUsage": 103,
+          "id": "ll_container"
+        }
+      ]
+    },
+    {
+      "activityName": "com.alibaba.android.user.profile.v2.UserProfileActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "forceDark": true,
+          "viewName": "RelativeLayout",
+          "backgroundUsage": 103,
+          "id": "header"
+        }
+      ]
+    },
+    {
+      "activityName": "com.alibaba.android.user.contact.activities.MyQrcodeActivity",
+      "forceDark": false
+    },
+    {
+      "activityName": "com.alibaba.android.uc.base.navi.window2.Window2Activity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.alibaba.android.uc.business.webmedia.widget.WeMediaAuthorHeaderView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.alibaba.android.uc.business.webmedia.WeMediaAuthorWindow",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "androidx.appcompat.widget.ContentFrameLayout",
+              "index": -1,
+              "id": "content"
+            },
+            {
+              "parent": 2,
+              "viewName": "androidx.appcompat.widget.FitWindowsLinearLayout",
+              "index": -1,
+              "id": "action_bar_root"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.alibaba.android.rimet.biz.home.activity.MineHomeActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.torch.open.theme.extra.widget.ThemeLinearLayout",
+          "id": "my_score_card",
+          "forceDark": true,
+          "usage": 1,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.torch.open.theme.extra.widget.ThemeFrameLayout",
+              "index": -1,
+              "id": "my_fl_view"
+            },
+            {
+              "parent": 1,
+              "viewName": "androidx.core.widget.NestedScrollView",
+              "index": -1,
+              "id": "scroll_view"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "forceDarkViewGlobalConfigList": [
+    {
+      "viewName": "RimetWebView",
+      "forceDark": false,
+      "blackMask": true
+    },
+    {
+      "viewName": "AvatarImageView",
+      "forceDark": false
+    },
+    {
+      "viewName": "FlutterView",
+      "forceDark": false,
+      "blackMask": true
+    }
+  ]
+}

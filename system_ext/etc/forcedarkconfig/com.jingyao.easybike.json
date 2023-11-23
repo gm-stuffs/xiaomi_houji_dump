@@ -1,0 +1,465 @@
+{
+  "packageName": "com.jingyao.easybike",
+  "forceDark": true,
+  "mainRule": 142,
+  "forceDarkViewGlobalConfigList": [
+    {
+      "viewName": "FlutterTextureView",
+      "forceDark": false,
+      "blackMask": true
+    }
+  ],
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.hellobike.atlas.business.portal.PortalActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "backgroundUsage": 103,
+          "usage": 103,
+          "id": "scanIv",
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "FrameLayout",
+              "parent": 1,
+              "index": -1,
+              "id": "scanLayout"
+            },
+            {
+              "viewName": "RelativeLayout",
+              "parent": 2,
+              "index": -1,
+              "id": "barContentView"
+            }
+          ]
+        },
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "backgroundUsage": 103,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "NewTopWithScanLayout",
+              "parent": 3,
+              "index": -1,
+              "id": "scanTopBar"
+            },
+            {
+              "viewName": "RelativeLayout",
+              "parent": 1,
+              "index": -1,
+              "id": "barContentView"
+            }
+          ]
+        },
+        {
+          "viewName": "WebView",
+          "forceDark": false,
+          "blackMask": true,
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "phWebLayout"
+            },
+            {
+              "viewName": "FrameLayout",
+              "parent": 4,
+              "index": -1,
+              "id": "carlife_container"
+            }
+          ]
+        },
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "backgroundUsage": 103,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "RegisterTabView",
+              "parent": 5,
+              "index": -1
+            },
+            {
+              "viewName": "TabItemView",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "backgroundUsage": 103,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "ConstraintLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "NestedScrollView",
+              "parent": 5,
+              "index": -1,
+              "id": "scroll_view"
+            },
+            {
+              "viewName": "ExposeFrameLayout",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "NewStickyScrollLayout",
+          "forceDark": false,
+          "id": "stickyScrollLayout"
+        },
+        {
+          "viewName": "com.hellobike.magiccube.widget.BorderTextView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.hellobike.magiccube.widget.BorderImageView",
+              "index": 0
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "iv_tab_icon",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "tabIconContainer"
+            }
+          ]
+        },
+        {
+          "viewName": "com.hellobike.userbundle.widget.SafeRatioImageView",
+          "id": "topIv",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "ratioFl"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "imgBackground",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1
+            },
+            {
+              "parent": 3,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "register_tab_cnt_llt"
+            },
+            {
+              "parent": 4,
+              "viewName": "com.hellobike.middleware.tablibrary.view.DispatchLinearLayout",
+              "index": -1,
+              "id": "ll_home_page"
+            }
+          ]
+        },
+        {
+          "viewName": "com.hellobike.magiccube.widget.BorderTextView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.hellobike.magiccube.widget.MagicYogaLayout",
+              "index": -1
+            },
+            {
+              "parent": 5,
+              "viewName": "com.hellobike.magiccube.widget.MagicBoxLayout",
+              "index": -1
+            },
+            {
+              "parent": 7,
+              "viewName": "com.hellobike.library.lego.core.LegoRecyclerView",
+              "index": -1,
+              "id": "legoRecyclerView"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.hellobike.ui.selectable.HMUISelectableLinearLayout",
+              "index": -1,
+              "id": "vgService"
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "viewButtons"
+            },
+            {
+              "parent": 2,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1,
+              "id": "vgContainer"
+            }
+          ]
+        },
+        {
+          "viewName": "com.hellobike.magiccube.widget.BorderImageView",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.hellobike.magiccube.widget.MagicYogaLayout",
+              "index": -1
+            },
+            {
+              "parent":3,
+              "viewName":"com.hellobike.magiccube.widget.MagicBoxLayout",
+              "index":-1
+            },
+            {
+              "parent":4,
+              "viewName":"com.hellobike.library.lego.core.LegoRecyclerView",
+              "index":-1,
+              "id":"user_fragment_wallet_dsl_lego_rv"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "user_fragment_wallet_dsl_state_img",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "containerView"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.hellobike.evehicle.business.main.EVehicleHomeManagerActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "AppCompatTextView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "FrameLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "FitWindowsLinearLayout",
+              "parent": 4,
+              "index": -1,
+              "id": "action_bar_root"
+            }
+          ]
+        },
+        {
+          "viewName": "AppCompatTextView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "ConstraintLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "FitWindowsLinearLayout",
+              "parent": 4,
+              "index": -1,
+              "id": "action_bar_root"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.hellobike.moments.refector.business.dynamic.MTFeedDetailActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "AppCompatTextView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "FrameLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "FitWindowsLinearLayout",
+              "parent": 4,
+              "index": -1,
+              "id": "action_bar_root"
+            }
+          ]
+        },
+        {
+          "viewName": "AppCompatTextView",
+          "forceDark": true,
+          "usage": 103,
+          "id": "mtTvLikeCount"
+        },
+        {
+          "viewName": "AppCompatTextView",
+          "forceDark": true,
+          "usage": 103,
+          "id": "mtTvCommentCount"
+        }
+      ]
+    },
+    {
+      "activityName": "com.hellobike.hitch.business.home.HitchMainActivityNew",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "AppCompatTextView",
+          "forceDark": true,
+          "usage": 103,
+          "id": "tvCommonAddress"
+        },
+        {
+          "viewName": "WebView",
+          "forceDark": false,
+          "blackMask": true,
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "phWebLayout"
+            },
+            {
+              "viewName": "FrameLayout",
+              "parent": 4,
+              "index": -1,
+              "id": "carlife_container"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.hellobike.bundlelibrary.phWeb.PhAgencyActivity",
+      "forceDark": false,
+      "blackMask": true
+    },
+    {
+      "activityName": "com.hellobike.bundlelibrary.web.WebActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "WebView",
+          "forceDark": false,
+          "blackMask": true,
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "web_layout"
+            },
+            {
+              "viewName": "FrameLayout",
+              "parent": 4,
+              "index": -1,
+              "id": "http_root_view"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.hellobike.platform.scan.v2.NewPlatformScanActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "HelloScanViewFinder",
+          "forceDark": false,
+          "id": "scan_view_finder"
+        }
+      ]
+    },
+    {
+      "activityName": "com.hellobike.userbundle.business.login.VerificationCodeActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.hellobike.userbundle.widget.LoginHeaderBgTextView",
+          "id": "header_bg_text_view",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "androidx.appcompat.widget.FitWindowsLinearLayout",
+              "index": -1,
+              "id": "action_bar_root"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

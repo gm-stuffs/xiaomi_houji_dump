@@ -1,0 +1,14 @@
+# missi_phone_cn_only64-user 14 UKQ1.230804.001 V816.0.9.0.UNCCNXM release-keys
+- manufacturer: xiaomi
+- platform: pineapple
+- codename: houji
+- flavor: missi_phone_cn_only64-user
+- release: 14
+- id: UKQ1.230804.001
+- incremental: V816.0.9.0.UNCCNXM
+- tags: release-keys
+- fingerprint: Xiaomi/houji/houji:14/UKQ1.230804.001/V816.0.9.0.UNCCNXM:user/release-keys
+- is_ab: true
+- brand: Xiaomi
+- branch: missi_phone_cn_only64-user-14-UKQ1.230804.001-V816.0.9.0.UNCCNXM-release-keys
+- repo: xiaomi_houji_dump

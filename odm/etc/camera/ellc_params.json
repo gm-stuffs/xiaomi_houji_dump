@@ -1,0 +1,115 @@
+{
+    "ellc": {
+		"phone_version":"N3",
+		"model_version":"v2.3",
+		"hdr":"false",
+		"resize":"false",
+        "shape_patch":[784,1040],
+        "overlap": [32, 32],
+		"snpe":{
+			"runtime": "dsp",
+			"dlcs": [
+			{
+				"dlc_name": "ovx9000_24c_quantized.dlc",
+				"input": {
+					"name": "Placeholder:0",
+					"shape": [1,784,1040,24],
+					"offset": 0,
+					"delta": 0.0000152590218931436538696289062500000000,
+					"encoding": "tf16"
+				},
+				"output": {
+					"name": "g_conv10/Conv2D:0",
+					"shape": [1,784,1040,4],
+					"offset": 0,
+					"delta": 0.0000152590218931436538696289062500000000,
+					"encoding": "tf16"
+				}
+			},
+			{
+				"dlc_name": "jn1_24c_quantized.dlc",
+				"input": {
+					"name": "Placeholder:0",
+					"shape": [1,784,1040,24],
+					"offset": 0,
+					"delta": 0.0000152590218931436538696289062500000000,
+					"encoding": "tf16"
+				},
+				"output": {
+					"name": "g_conv10/Conv2D:0",
+					"shape": [1,784,1040,4],
+					"offset": 0,
+					"delta": 0.0000152590218931436538696289062500000000,
+					"encoding": "tf16"
+				}
+			}]
+		},
+
+
+		"relight_setting": [
+			{
+				"camera_type": "UltraWide",
+				"range_luxindex": [470, 500, 530, 550, 560, 590, 610, 1000],
+				"range_ratio": [0.7, 0.6, 0.45, 0.4, 0.25, 0.05, 0.01, 0.01]
+			},
+			{
+				"camera_type": "Wide",
+				"range_luxindex": [520, 540, 590, 620, 640, 700, 720, 1250],
+				"range_ratio": [1.05, 1.05, 1.05, 0.5, 0.15, 0.05, 0.01, 0.01]
+			},
+			{
+				"camera_type": "Tele",
+				"range_luxindex": [490, 510, 530, 560, 580, 610, 650, 1000],
+				"range_ratio": [1.25, 1.15, 1.1, 0.3, 0.15, 0.05, 0.01, 0.01]
+			},
+			{
+				"camera_type": "Tele5x",
+				"range_luxindex": [500, 525, 530, 540, 550, 580],
+				"range_ratio": [1.0, 1.0, 1.0, 1.0, 0.2, 0.1]
+			}
+
+		],
+
+		"after_relight_setting": [
+			{
+				"camera_type": "UltraWide",
+				"range_luxindex": [460, 540, 590, 620, 700],
+				"range_ratio": [1.05, 1.05, 1.05, 1.05, 1.05]
+			},
+			{
+				"camera_type": "Wide",
+				"range_luxindex": [520, 540, 590, 620, 640, 700],
+				"range_ratio": [1.05, 1.05, 1.05, 1.05, 1.05, 1.05]
+			},
+			{
+				"camera_type": "Tele",
+				"range_luxindex": [490, 510, 530, 560, 580],
+				"range_ratio": [1.05, 1.05, 1.05, 1.05, 1.05]
+			},
+			{
+				"camera_type": "Tele5x",
+				"range_luxindex": [500, 525, 530, 550, 580],
+				"range_ratio": [1.05, 1.05, 1.05, 1.05, 1.05]
+			}
+		],
+		"Threshold":{
+			"T_brightness":60,
+			"T_dark_scene":0,
+			"T_hdr_ratio_threshold": 0.0001,
+			"T_motion_1": 35000,
+			"T_motion_2": 100000000,
+			"T_over_expose_threshold": 2000,
+			"T_over_expose_ratio": 0.4,
+			"T_first_frame_luxindex": 750,
+			"T_apart_ratio_threshold": 60,
+			"T_apart_ratio_scale": 0.8,
+			"T_max_relight_ratio": 60,
+			"T_use_tm": 1,
+			"T_max_tm_ratio": 10,
+			"T_align_fallback": 560,
+			"T_use_merge":1,
+			"T_merge_ratio": 0.87
+		}
+	}
+}
+

@@ -1,0 +1,14 @@
+{
+    "Type":"EffectCategory",
+    "##":"后置人像(含虚化)模式单独的美型配置",
+    "TrueSight":
+    [
+        {
+            "ParameterPath":"Parameter/mode_portraitureRear_deformation.json"
+        },
+        {
+            "ConfigurePath":"70_FacialRefine/mode_rear_portrait.json",
+            "Index":70
+        }
+    ]
+}

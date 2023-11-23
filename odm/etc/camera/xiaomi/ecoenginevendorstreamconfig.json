@@ -1,0 +1,104 @@
+{
+    "ModeList": {
+        "Mode": [
+            {
+                // CameraUser::SDK
+                "CameraUser": 1,
+                // 0x800A, StreamConfigModeMiuiSuperNight
+                "VendorOpMode": 32778,
+                "MialgoOpMode": 32778,
+                "LensFacing": 64,
+                "FeatureMask" : 258,
+                "Signature": "SuperNight",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 28,
+                "StreamConfig": [
+                    // raw16 stream of ultra wide
+                    {
+                        "roleId": 21,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 32,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // raw16 stream of wide
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 32,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // normal yuv stream of ultra wide
+                    {
+                        "roleId": 21,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // normal yuv stream of wide
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x9000, StreamConfigModeAlgoDual
+                "VendorOpMode": 36864,
+                // 0x8002, StreamConfigModeBokeh
+                "MialgoOpMode": 32770,
+                "LensFacing": 64,
+                "Signature": "DualBokeh",
+                "BufferLimitCnt": 6,
+                // Bokeh 12/1, HDRBokeh 12/3, SNBokeh 12/6
+                "VendorSnapshotBufferQueueSize": 17,
+                "FlushWaitTimeMs": 4000,
+                // 0001 0001 0000, 0x110, hdrBokeh/snBokeh
+                "FeatureMask" : 272,
+                "StreamConfig": [
+                    // yuv stream of master
+                    {
+                        // BokehCamSig::masterYuv
+                        "bokehSig": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // yuv stream of slave
+                    {
+                        // BokehCamSig::slaveYuv
+                        "bokehSig": 2,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // raw16 stream of master for sebokeh
+                    {
+                        // BokehCamSig::masterRaw
+                        "bokehSig": 1,
+                        "ratio": 1.33,
+                        "isPhysicalStream": true,
+                        "format": 32,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    }
+                ]
+            }
+        ]
+    }
+}

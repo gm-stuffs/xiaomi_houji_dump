@@ -1,0 +1,178 @@
+{
+  "packageName": "com.gotokeep.keep",
+  "forceDark": true,
+  "mainRule": 1152,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.gotokeep.keep.refactor.business.main.activity.MainActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.gotokeep.keep.commonui.image.view.KeepImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "id": "weekBg",
+          "conditions": [
+            {
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "bgContainer"
+            },
+            {
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "parent": 1,
+              "index": -1,
+              "id": "bgSuperContainer"
+            },
+            {
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "parent": 2,
+              "index": -1,
+              "id": "layoutMineSport"
+            }
+          ]
+        },
+        {
+          "viewName": "com.gotokeep.keep.commonui.image.view.KeepImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.gotokeep.keep.refactor.business.main.mvp.view.MainSlideItemView",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "androidx.recyclerview.widget.RecyclerView",
+              "index": -1,
+              "id": "listItems"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.gotokeep.keep.refactor.business.main.mvp.view.MainSlideView",
+              "index": -1,
+              "id": "view_main_slide"
+            }
+          ]
+        },
+        {
+          "viewName": "com.gotokeep.keep.commonui.image.view.KeepImageView",
+          "id": "imgEntrance",
+          "forceDark": true,
+          "usage": 103
+        },
+        {
+          "viewName": "com.gotokeep.keep.mo.business.store.ui.ImageViewGradient",
+          "id": "immersiveGradientImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.coordinatorlayout.widget.CoordinatorLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.gotokeep.keep.tc.business.homepage.view.ImageViewGradient",
+          "id": "imgGradient",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "trainLayoutRoot"
+            },
+            {
+              "parent": 1,
+              "viewName": "com.gotokeep.keep.commonui.widget.tab.container.WindowInsetsViewPager",
+              "index": -1,
+              "id": "view_pager"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "main_tab_container"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.gotokeep.keep.wt.business.course.detail.activity.CourseDetailActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatTextView",
+          "id": "tvRightNormal",
+          "forceDark": false
+        }
+      ]
+    },
+    {
+      "activityName": "com.keep.trainingengine.host.TrainingEngineActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.keep.trainingengine.widget.CircleRestView",
+          "id": "circleProgressInTrainingLandscape",
+          "forceDark": false
+        }
+      ]
+    },
+    {
+      "activityName": "com.gotokeep.keep.mo.business.store.activity.detail.general.GoodsDetailGeneralActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatTextView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.gotokeep.keep.mo.business.store.mvp.view.ProductGeneralCheckBox",
+              "index": -1,
+              "id": "mo_single_select_chk"
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "mo_item_single_select_root"
+            },
+            {
+              "parent": 3,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "single_select_root"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.gotokeep.keep.km.guide.activity.PopupPrimeGuideActivity",
+      "forceDark": false,
+      "blackMask": true
+    }
+  ],
+  "forceDarkViewGlobalConfigList": []
+}

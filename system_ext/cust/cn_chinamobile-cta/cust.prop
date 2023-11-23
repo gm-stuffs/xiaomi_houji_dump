@@ -1,0 +1,11 @@
+ro.carrier.name=cm
+ro.miui.region=CN
+ro.miui.mcc=9460
+ro.miui.mnc=9000
+ro.miui.cust_variant=cn_cta
+ro.miui.cta=1
+ro.vendor.miui.region=CN
+ro.vendor.miui.mcc=9460
+ro.vendor.miui.mnc=9000
+ro.vendor.miui.cust_variant=cn_cta
+ro.vendor.miui.cta=1

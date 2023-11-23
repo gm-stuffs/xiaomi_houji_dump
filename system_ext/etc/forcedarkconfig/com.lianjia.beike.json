@@ -1,0 +1,1608 @@
+{
+  "packageName": "com.lianjia.beike",
+  "forceDark": true,
+  "mainRule": 142,
+  "forceDarkViewGlobalConfigList": [
+    {
+      "forceDark": true,
+      "viewName": "ImageView",
+      "usage": 103,
+      "id": "iv_bg_left"
+    },
+    {
+      "viewName": "ImageView",
+      "forceDark": true,
+      "usage": 1,
+      "id": "commute_guide_iv_middle_pic"
+    },
+    {
+      "viewName": "ImageView",
+      "forceDark": true,
+      "usage": 103,
+      "id": "iv_rental_help"
+    },
+    {
+      "viewName": "ImageView",
+      "forceDark": true,
+      "usage": 103,
+      "id": "img_icon",
+      "conditions": [
+        {
+          "viewName": "RecyclerView",
+          "parent": 2,
+          "index": -1,
+          "id": "rv_tools"
+        },
+        {
+          "viewName": "LinearLayout",
+          "parent": 0,
+          "index": -1
+        }
+      ]
+    },
+    {
+      "viewName": "android.widget.ImageView",
+      "id": "iv_top_bg",
+      "forceDark": true,
+      "usage": 103,
+      "conditions": [
+        {
+          "parent": 0,
+          "viewName": "android.widget.FrameLayout",
+          "index": -1,
+          "id": "fl_iv_container"
+        }
+      ]
+    }
+  ],
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.lianjia.activity.MainActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "forceDark": true,
+          "viewName": "ImageView",
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "SafeRecyclerView",
+              "parent": 4,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "forceDark": true,
+          "viewName": "ImageView",
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "SafeRecyclerView",
+              "parent": 4,
+              "index": -1
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "forceDark": true,
+          "viewName": "RecyclerView",
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "ConstraintLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "ParentRecyclerView",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "forceDark": true,
+          "viewName": "ImageView",
+          "backgroundUsage": 2,
+          "conditions": [
+            {
+              "viewName": "NavView",
+              "parent": 3,
+              "index": -1
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "forceDark": false,
+          "viewName": "RelativeLayout",
+          "conditions": [
+            {
+              "viewName": "RoundedCornerFrameLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "forceDark": true,
+          "viewName": "ImageView",
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "FrameLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "TabWidget",
+              "parent": 2,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "ll_homepage3_map"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "iv_nav_center_scan",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "ll_tv_nav_center_container"
+            }
+          ]
+        },
+        {
+          "viewName": "com.bk.uilib.view.rounder.RoundedCornerImageView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": " com.bk.uilib.view.rounder.RoundedCornerFrameLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.TextView",
+          "id": "tv_entrance_title",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.bk.uilib.view.rounder.RoundedCornerImageView",
+              "index": 0
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.bk.base.commonview.SafeRecyclerView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.TextView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1,
+              "id": "fl_mid"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.lianjia.platc.view.MyHomeGuideView",
+              "index": -1
+            },
+            {
+              "parent": 3,
+              "viewName": "androidx.appcompat.widget.ContentFrameLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "ll_top_module_container"
+            },
+            {
+              "parent": 1,
+              "viewName": "com.bk.base.commonview.SafeRecyclerView",
+              "index": -1,
+              "id": "base_recyclerview"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1,
+              "id": "ll_top_module_container"
+            },
+            {
+              "parent": 1,
+              "viewName": "com.bk.base.commonview.SafeRecyclerView",
+              "index": -1,
+              "id": "base_recyclerview"
+            }
+          ]
+        },
+        {
+          "viewName": "com.bk.uilib.view.LJLottieAnimationView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "fl_iv_container"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.TabWidget",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "iv_tab",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "fl_iv_container"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.TabWidget",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "iv_bg",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.bk.uilib.view.rounder.RoundedCornerConstraintLayout",
+              "index": -1,
+              "id": "cl_container"
+            },
+            {
+              "parent": 1,
+              "viewName": "com.homelink.content.home.view.homecard.feed.HpDecorCaseContentV3View",
+              "index": -1,
+              "id": "view_case_v3"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.homelink.content.home.view.MonitorChildRecyclerView",
+              "index": -1,
+              "id": "base_recyclerview"
+            }
+          ]
+        },
+        {
+          "viewName": "com.bk.uilib.view.rounder.RoundedCornerImageView",
+          "id": "ll_fake_chart_image",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.beike.biz.myhome.view.chartViews.FakeChartView",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "ll_fake_chart_container"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "iv_entrance_icon",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "ll_item_container"
+            },
+            {
+              "parent": 2,
+              "viewName": "androidx.recyclerview.widget.RecyclerView",
+              "index": -1,
+              "id": "recycleview_category"
+            },
+            {
+              "parent": 3,
+              "viewName": "com.homelink.content.home.view.homecard.v4.HomePageSubBallEntranceV4ViewPager",
+              "index": -1,
+              "id": "small_entrance_view_pager"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "iv_follow_tip_bg",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1,
+              "id": "fl_follow_tip"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.bk.base.commonview.SafeRecyclerView",
+              "index": -1,
+              "id": "base_recyclerview"
+            },
+            {
+              "parent": 3,
+              "viewName": "com.bk.uilib.view.MonitorFrameLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.TextView",
+          "id": "tv_desc",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.bk.uilib.view.rounder.RoundedCornerConstraintLayout",
+              "index": -1,
+              "id": "cl_container"
+            },
+            {
+              "parent": 1,
+              "viewName": "com.bk.uilib.view.HpDecorCaseContentV3View",
+              "index": -1,
+              "id": "view_case_v3"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.homelink.content.home.view.MonitorChildRecyclerView",
+              "index": -1,
+              "id": "base_recyclerview"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.TextView",
+          "id": "tv_hotspot_topic_title",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "ll_card_container"
+            },
+            {
+              "parent": 1,
+              "viewName": "com.lianjia.platform.hotspotv2.card.HotSpotFeedTopicSingleCard",
+              "index": -1,
+              "id": "card_feed_topic_single"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.bk.uilib.view.ChildRecyclerView",
+              "index": -1,
+              "id": "base_recyclerview"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatTextView",
+          "id": "text_left_action_desc",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.bk.uilib.view.rounder.RoundedCornerFrameLayout",
+              "index": -1,
+              "id": "fl_left_action"
+            },
+            {
+              "parent": 4,
+              "viewName": "com.ke.live.channel.ui.ChannelBannerLayout",
+              "index": -1,
+              "id": "banner_layout"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatTextView",
+          "id": "text_left_action",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.bk.uilib.view.rounder.RoundedCornerFrameLayout",
+              "index": -1,
+              "id": "fl_left_action"
+            },
+            {
+              "parent": 4,
+              "viewName": "com.ke.live.channel.ui.ChannelBannerLayout",
+              "index": -1,
+              "id": "banner_layout"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatTextView",
+          "id": "text_right_action",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.bk.uilib.view.rounder.RoundedCornerFrameLayout",
+              "index": -1,
+              "id": "fl_right_action"
+            },
+            {
+              "parent": 4,
+              "viewName": "com.ke.live.channel.ui.ChannelBannerLayout",
+              "index": -1,
+              "id": "banner_layout"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.matrix.houseplugin.housedetail.activity.RentHouseDetailActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "forceDark": true,
+          "viewName": "ImageView",
+          "backgroundUsage": 2,
+          "usage": 2,
+          "conditions": [
+            {
+              "viewName": "LikeButton",
+              "parent": 0,
+              "index": -1,
+              "id": "likeButton"
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 4,
+              "index": -1,
+              "id": "llBottom"
+            }
+          ]
+        },
+        {
+          "forceDark": true,
+          "viewName": "ImageView",
+          "backgroundUsage": 2,
+          "usage": 2,
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 3,
+              "index": -1,
+              "id": "llBottom"
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "ll_contact_phone"
+            }
+          ]
+        },
+        {
+          "forceDark": true,
+          "viewName": "ImageView",
+          "backgroundUsage": 103,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "FrameLayout",
+              "parent": 3,
+              "index": -1,
+              "id": "content"
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "forceDark": true,
+          "viewName": "ImageView",
+          "backgroundUsage": 103,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "MyTitleBar",
+              "parent": 3,
+              "index": -1,
+              "id": "titleBar"
+            }
+          ]
+        },
+        {
+          "forceDark": false,
+          "viewName": "RelativeLayout",
+          "backgroundUsage": 1,
+          "usage": 1,
+          "id": "rl_true_house",
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "llContainer"
+            },
+            {
+              "viewName": "ObservableNestedScrollView",
+              "parent": 1,
+              "index": -1,
+              "id": "svDetail"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.beike.flutter.portal.FlutterPageActivity",
+      "forceDark": false,
+      "blackMask": true
+    },
+    {
+      "activityName": "com.homelink.android.newhouse.libcore.web.CommonWebActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "forceDark": false,
+          "viewName": "ScrollWebView",
+          "blackMask": true,
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "ExposureFrameLayout",
+              "parent": 2,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.lianjia.biz.multiplesearch.index.MultipleSearchActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "forceDark": true,
+          "viewName": "LinearLayout",
+          "backgroundUsage": 103,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "FrameLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.homelink.android.secondhouse.activity.SecondHandHouseHomePageActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "forceDark": true,
+          "viewName": "ImageView",
+          "backgroundUsage": 2,
+          "usage": 2,
+          "conditions": [
+            {
+              "viewName": "NavView",
+              "parent": 3,
+              "index": -1,
+              "id": "nav_view_second_hp"
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "forceDark": true,
+          "viewName": "ImageView",
+          "backgroundUsage": 2,
+          "usage": 2,
+          "conditions": [
+            {
+              "viewName": "NavView",
+              "parent": 5,
+              "index": -1,
+              "id": "nav_view_second_hp"
+            },
+            {
+              "viewName": "FrameLayout",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.homelink.android.homepage.view.activity.SelectCityActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "RecyclerView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103
+        },
+        {
+          "viewName": "ImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "NavView",
+              "parent": 3,
+              "index": -1
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.homelink.android.homepagesearch.SearchActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "LinearLayout",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "MyViewPager",
+              "parent": 3,
+              "index": -1
+            },
+            {
+              "viewName": "FrameLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "EditText",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "MyViewPager",
+              "parent": 4,
+              "index": -1
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "LinearLayout",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "NavView",
+              "parent": 2,
+              "index": -1
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.matrix.houseplugin.entrance.RentMainActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "ImageView",
+          "forceDark": true,
+          "backgroundUsage": 2,
+          "usage": 2,
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "home_title_bar_two_ll_heart"
+            },
+            {
+              "viewName": "FrameLayout",
+              "parent": 3,
+              "index": -1,
+              "id": "container"
+            }
+          ]
+        },
+        {
+          "viewName": "ImageView",
+          "forceDark": true,
+          "backgroundUsage": 2,
+          "usage": 2,
+          "conditions": [
+            {
+              "viewName": "FrameLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "home_title_bar_two_fl_back"
+            },
+            {
+              "viewName": "FrameLayout",
+              "parent": 3,
+              "index": -1,
+              "id": "container"
+            }
+          ]
+        },
+        {
+          "viewName": "ImageView",
+          "forceDark": true,
+          "backgroundUsage": 2,
+          "usage": 2,
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "FrameLayout",
+              "parent": 4,
+              "index": -1,
+              "id": "container"
+            }
+          ]
+        },
+        {
+          "viewName": "ImageView",
+          "forceDark": true,
+          "backgroundUsage": 103,
+          "usage": 103,
+          "id": "iv_img",
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "RoundLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "MyViewPager",
+              "parent": 2,
+              "index": -1,
+              "id": "pager"
+            }
+          ]
+        },
+        {
+          "viewName": "ImageView",
+          "forceDark": true,
+          "backgroundUsage": 103,
+          "usage": 103,
+          "id": "iv_img_one"
+        },
+        {
+          "viewName": "ImageView",
+          "forceDark": false,
+          "blackMask": true,
+          "id": "iv_rental_help"
+        },
+        {
+          "viewName": "FrameLayout",
+          "forceDark": false,
+          "blackMask": true,
+          "id": "fl_top"
+        },
+        {
+          "viewName": "TextView",
+          "forceDark": false,
+          "id": "tv_title",
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "ImageView",
+              "parent": 1,
+              "index": 0,
+              "id": "iv_brand"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.matrix.houseplugin.commute.activity.CommuteGuide2Activity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "LinearLayout",
+          "forceDark": false,
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "commute_guide_ll_title"
+            },
+            {
+              "viewName": "FrameLayout",
+              "parent": 2,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "TextView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "commute_guide_ll_title"
+            },
+            {
+              "viewName": "FrameLayout",
+              "parent": 2,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.homelink.android.newhouse.house.home.NewHouseMainActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "ImageView",
+          "forceDark": true,
+          "backgroundUsage": 103,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "ConstraintLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "SearchTitleBarView",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "MonitorRelativeLayout",
+              "parent": 3,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "ImageView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "viewName": "ConstraintLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "SearchTitleBarView",
+              "parent": 2,
+              "index": -1
+            },
+            {
+              "viewName": "MonitorRelativeLayout",
+              "parent": 4,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "ConstraintLayout",
+          "forceDark": false,
+          "conditions": [
+            {
+              "viewName": "ConstraintLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "ParentRecyclerView",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "MonitorRelativeLayout",
+              "parent": 3,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.FrameLayout",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.homelink.android.newhouse.house.homev1.view.HPParentRecyclerView",
+              "index": -1,
+              "id": "recyclerview"
+            },
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": 0,
+              "id": "fl_container"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.lianjia.platform.activity.PlatListActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "ImageView",
+          "forceDark": true,
+          "usage": 2,
+          "backgroundUsage": 2,
+          "conditions": [
+            {
+              "viewName": "NavView",
+              "parent": 3,
+              "index": -1
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "ll_nav_left_container"
+            }
+          ]
+        },
+        {
+          "viewName": "ImageView",
+          "forceDark": true,
+          "usage": 2,
+          "backgroundUsage": 2,
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 2,
+              "index": -1,
+              "id": "ll_nav_right_container"
+            },
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "NavView",
+              "parent": 5,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.homelink.merchandise.community.activity.CommunityListActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "ImageView",
+          "forceDark": true,
+          "usage": 2,
+          "backgroundUsage": 2,
+          "conditions": [
+            {
+              "viewName": "NavView",
+              "parent": 3,
+              "index": -1,
+              "id": "nav_view_community_list"
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "ll_nav_left_container"
+            }
+          ]
+        },
+        {
+          "viewName": "ImageView",
+          "forceDark": true,
+          "usage": 2,
+          "backgroundUsage": 2,
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 2,
+              "index": -1,
+              "id": "ll_nav_right_container"
+            },
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "NavView",
+              "parent": 5,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.lianjia.secondhouse.activity.StoreSearchListActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "ImageView",
+          "forceDark": true,
+          "usage": 2,
+          "backgroundUsage": 2,
+          "conditions": [
+            {
+              "viewName": "NavView",
+              "parent": 3,
+              "index": -1
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1,
+              "id": "ll_nav_left_container"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.lianjia.jinggong.store.mainpage.StoreMainActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "usage": 2,
+          "backgroundUsage": 2,
+          "conditions": [
+            {
+              "viewName": "StoreIndexTitle",
+              "parent": 2,
+              "index": -1
+            },
+            {
+              "viewName": "ConstraintLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "usage": 2,
+          "backgroundUsage": 2,
+          "conditions": [
+            {
+              "viewName": "TabLayout$TabView",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "TabLayout$SlidingTabIndicator",
+              "parent": 2,
+              "index": -1
+            },
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.homelink.android.newhouse.house.search.NewHouseSearchActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "LinearLayout",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "MonitorRelativeLayout",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "FrameLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "ExposureFrameLayout",
+              "parent": 4,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.homelink.android.secondhouse.activity.SecondHandHouseDetailActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.bk.uilib.card.SHDetailCommuteFindHouseCard",
+          "forceDark": false,
+          "blackMask": true,
+          "id": "commute_card"
+        }
+      ]
+    },
+    {
+      "activityName": "com.second.community.activity.CommunityDetailActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.widget.ImageView",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "rl_root"
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "fl_root"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.bk.base.commonview.SafeRecyclerView",
+              "index": -1,
+              "id": "base_recyclerview"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "iv_map_icon",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "com.bk.base.commonview.SafeRecyclerView",
+              "index": -1,
+              "id": "base_recyclerview"
+            },
+            {
+              "parent": 3,
+              "viewName": "com.bk.base.commonview.HeadZoomLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.view.View",
+          "id": "v_header_footer_container",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.bk.base.commonview.SafeRecyclerView",
+              "index": -1,
+              "id": "base_recyclerview"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.bk.uilib.view.MonitorRelativeLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.view.View",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "ll_root_container"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.bk.base.commonview.HeadZoomLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "face_icon",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "face_level_4"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.bk.heaven.view.meta.FaceMetaHorizontal",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.bk.base.commonview.SafeRecyclerView",
+              "index": -1,
+              "id": "base_recyclerview"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.bk.uilib.view.MonitorRelativeLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.LinearLayout",
+          "id": "ll_tabs",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "rl_root"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.lianjia.platform.activity.DemandCardDetailActivityV2",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.widget.TextView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.ke.bmui.view.navbar.BMUITitleBar",
+              "index": -1,
+              "id": "title_bar"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.bk.uilib.view.MonitorRelativeLayout",
+              "index": -1,
+              "id": "ll_root"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.TextView",
+          "id": "tv_title",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "rl_header"
+            },
+            {
+              "parent": 1,
+              "viewName": "com.bk.uilib.view.ParentRecyclerView",
+              "index": -1,
+              "id": "base_recycleview"
+            },
+            {
+              "parent": 3,
+              "viewName": "com.lianjia.platform.view.PullToRefreshParentRecycleView",
+              "index": -1,
+              "id": "base_recycleview"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.TextView",
+          "id": "tv_tab_rent",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "ll_tabs_container"
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "rl_header"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.bk.uilib.view.ParentRecyclerView",
+              "index": -1,
+              "id": "base_recycleview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.liajia.biz.msearch.index.MultipleSearchActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.widget.EditText",
+          "id": "ev_nav_center_search_text",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "ll_input_content"
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "ll_ev_nav_center_container"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "ll_nav_center_container"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.LinearLayout",
+          "id": "layout_search_title",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "search_ll_title_bar"
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "new_house_search_fl_search_bar_container"
+            },
+            {
+              "parent": 3,
+              "viewName": "com.bk.base.commonview.MyViewPager",
+              "index": -1,
+              "id": "vp_search_fragment"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

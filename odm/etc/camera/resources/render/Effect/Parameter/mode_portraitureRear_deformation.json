@@ -1,0 +1,16 @@
+{
+	"Type":"ParameterCategory",
+	"Parameters":
+	{
+		"##": "后置滑杆关联操作",
+        "UniqueSlider":[
+            {
+                "Mode": "Capture",
+                "ProcessFlag": [20000, 10301, 10200],
+                "FlagForward":[200, 201],
+                "NonLinearUIData": [[0.0, 1.0], [0.0, 1.0]],
+                "NonLinearValueData":[[0.0, 1.0], [0.0, 1.0]]
+            }
+        ]
+	}
+}

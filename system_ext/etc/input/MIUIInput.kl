@@ -1,0 +1,50 @@
+#Overlay keylayout for miui
+
+#自拍杆
+# 配置了IDC文件后,使用的name
+Overlay Vendor_0957_Product_0001
+key 241   FUNCTION
+key 380   HELP
+key 418   ZOOM_IN
+key 419   ZOOM_OUT
+key 320   HELP
+
+# 未配置IDC文件时,默认的name
+Overlay Vendor_248a_Product_8266
+key 241   FUNCTION
+key 380   HELP
+key 418   ZOOM_IN
+key 419   ZOOM_OUT
+key 320   HELP
+#自拍杆 END
+
+#配置IIC文件映射
+Overlay Vendor_15d9_Product_00a3
+#锁屏
+key 191     BUTTON_1
+# 休眠
+key 193     BUTTON_2
+# 小爱
+key 194     BUTTON_3
+#静音
+key 190     BUTTON_4
+# 小爱转文字
+key 192     BUTTON_5
+
+#配置IIC文件映射
+Overlay Vendor_bf01_Product_0040
+#锁屏
+key 191     BUTTON_1
+# 休眠
+key 193     BUTTON_2
+# 小爱
+key 194     BUTTON_3
+#静音
+key 190     BUTTON_4
+# 小爱转文字
+key 192     BUTTON_5
+
+#配置手写笔映射
+Overlay Vendor_0022_Product_4d80
+#激光
+key 189     BUTTON_6

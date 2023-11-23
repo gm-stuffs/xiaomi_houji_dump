@@ -1,0 +1,11 @@
+{
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/2_ModeRear/effect.json",
+			"Index":0,
+			"Mode":"Capture"
+		}
+	]
+}

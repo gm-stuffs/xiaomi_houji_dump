@@ -1,0 +1,20 @@
+{
+	"Type":"Effect",
+	"ExtraOption":
+	{
+		"RetouchFactorType": 1
+	},
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/0_Spotless/effect.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/5_SkinSmooth/effect.json",
+			"Index":1,
+			"Mode":"Preview"
+		}
+	]
+}

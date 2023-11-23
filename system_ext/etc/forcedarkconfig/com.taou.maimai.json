@@ -1,0 +1,10 @@
+{
+  "packageName": "com.taou.maimai",
+  "forceDark": false,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.cmic.gen.sdk.view.GenLoginAuthActivity",
+      "forceDark": false
+    }
+  ]
+}

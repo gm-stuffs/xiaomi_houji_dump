@@ -1,0 +1,67 @@
+actionitem {
+
+[
+name:dropcache
+path:/proc/sys/vm/drop_caches
+]
+
+[
+name:watermark_scale_factor
+path:/proc/sys/vm/watermark_scale_factor
+]
+
+[
+name:global_reclaim
+path:/proc/global_reclaim
+]
+
+[
+name:compact_memory
+path:/proc/sys/vm/compact_memory
+]
+
+}
+
+policy {
+
+[
+name:		global_reclaim_8g
+memitem:	memitem_init	memitem_init
+algo:	        low		high
+threshold:	7		1
+actionitem:	global_reclaim
+target:		262144
+mem_size:	8
+]
+
+[
+name:		global_reclaim_12g
+memitem:	memitem_init	memitem_init
+algo:	        low		high
+threshold:	7		1
+actionitem:	global_reclaim
+target:		393216
+mem_size:	12
+]
+
+[
+name:		global_reclaim_16g
+memitem:	memitem_init	memitem_init
+algo:	        low		high
+threshold:	7		1
+actionitem:	global_reclaim
+target:		393216
+mem_size:	16
+]
+
+[
+name:		sleep_compact
+memitem:	memitem_misc
+algo:		equal
+threshold:	1
+actionitem:	dropcache	global_reclaim	compact_memory
+target:		1		262144		1
+policy_type:	1
+]
+
+}

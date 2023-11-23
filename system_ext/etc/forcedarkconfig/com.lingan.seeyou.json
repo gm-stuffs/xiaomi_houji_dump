@@ -1,0 +1,246 @@
+{
+  "packageName": "com.lingan.seeyou",
+  "forceDark": true,
+  "mainRule": 0,
+  "secondaryRule": 0,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.lingan.seeyou.ui.activity.main.identifynew.IdentifyNewActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.view.View",
+          "id": "view_top_bg",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "base_layout"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "content"
+            }
+          ]
+        },
+        {
+          "viewName": "android.view.View",
+          "id": "tr_status_bar",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "base_layout"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "content"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.lingan.seeyou.ui.activity.main.identifynew.IdentifyPeriodSettingActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.view.View",
+          "id": "view_top_bg",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "base_layout"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "content"
+            }
+          ]
+        },
+        {
+          "viewName": "android.view.View",
+          "id": "tr_period_status_bar",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "base_layout"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "content"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.lingan.seeyou.ui.activity.main.identifynew.yunqi.IdentifyYunqiSettingABActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.view.View",
+          "id": "top_bg",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.lingan.seeyou.ui.activity.main.identifynew.yunqi.view.YunqiModeSettingABLayout",
+              "index": -1,
+              "id": "layout_mode_setting"
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "base_layout"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "content"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.lingan.seeyou.ui.activity.main.identifynew.mother.IdentityMotherSettingActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.widget.ImageView",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "base_layout"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "content"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.lingan.seeyou.ui.activity.main.identifynew.IdentifyBeiyunSettingActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.view.View",
+          "id": "view_top_bg",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "base_layout"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "content"
+            }
+          ]
+        },
+        {
+          "viewName": "android.view.View",
+          "id": "tr_period_status_bar",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "base_layout"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "content"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

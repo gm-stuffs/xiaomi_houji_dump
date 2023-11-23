@@ -1,0 +1,10 @@
+{
+	"Type":"EffectCategory",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"50_SkinTone/mode_IQ.json",
+			"Index":50
+		}
+	]
+}

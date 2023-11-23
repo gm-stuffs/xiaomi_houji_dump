@@ -1,0 +1,16 @@
+{
+    "configs": [
+        {
+            "name": "videocall_list",
+            "config": [
+                "default"
+            ]
+        },
+        {
+            "name": "highresolutionblob_list",
+            "config": [
+                "default"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,317 @@
+{
+  "packageName": "com.immomo.momo",
+  "forceDark": true,
+  "mainRule": 1024,
+  "secondaryRule": 0,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.immomo.momo.maintab.MaintabActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.immomo.momo.android.view.EmoteTextView",
+          "id": "share_text_view",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "feed_layout_resource"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "section_icon",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "section_icon_layout"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "iv_menu",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "filter",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "menu_friend_feed_filter"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "menu_search_icon",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "action_search"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "fl_universe_menu_msg"
+            }
+          ]
+        },
+        {
+          "viewName": "com.immomo.svgaplayer.view.MomoSVGAImageView",
+          "id": "iv_tab_profile",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.immomo.svgaplayer.view.MomoSVGAImageView",
+          "id": "iv_tab_nearby",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "flDefaultIcon"
+            }
+          ]
+        },
+        {
+          "viewName": "com.immomo.svgaplayer.view.MomoSVGAImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "ll_tab_item_tv_label"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "filter",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.immomo.svgaplayer.view.MomoSVGAImageView",
+          "id": "iv_tab",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "flDefaultIcon"
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "ll_tab_item_tv_label"
+            }
+          ]
+        },
+        {
+          "viewName": "com.immomo.mls.fun.ui.LuaImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.immomo.mls.fun.ui.LuaLinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 5,
+              "viewName": "com.immomo.mls.fun.weight.MLSRecyclerView",
+              "index": -1
+            },
+            {
+              "parent": 6,
+              "viewName": "com.immomo.mls.fun.ui.LuaRecyclerView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.immomo.mls.fun.ui.LuaImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.immomo.mls.fun.ui.LuaLinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 5,
+              "viewName": "com.immomo.mls.fun.weight.MLSRecyclerView",
+              "index": -1
+            },
+            {
+              "parent": 6,
+              "viewName": "com.immomo.mls.fun.ui.LuaRecyclerView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageView",
+          "id": "v_home_bg",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.immomo.momo.moment.widget.HomePageLayout",
+              "index": -1,
+              "id": "home_page_layout"
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "tabcontent"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.immomo.momo.maintab.DraggableContentLayout",
+              "index": -1,
+              "id": "draggable_content"
+            }
+          ]
+        },
+        {
+          "viewName": "android.view.View",
+          "id": "top_background_view",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "root_container"
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "tabcontent"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.immomo.momo.maintab.DraggableContentLayout",
+              "index": -1,
+              "id": "draggable_content"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.immomo.momo.luaview.LuaViewActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.immomo.momo.android.view.EmoteTextView",
+          "id": "share_text_view",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "feed_layout_resource"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.immomo.momo.message.activity.ChatActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatImageButton",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.appcompat.widget.Toolbar",
+              "index": -1,
+              "id": "toolbar_id"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

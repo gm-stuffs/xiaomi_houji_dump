@@ -1,0 +1,11 @@
+service dfc-installd /system_ext/bin/DfcNativeService
+    class main
+    user root
+    group root
+    disabled
+    seclabel u:r:installd:s0
+
+on property:sys.dfcservice.ctrl=true
+    start dfc-installd
+on property:sys.dfcservice.ctrl=false
+    stop dfc-installd

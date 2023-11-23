@@ -1,0 +1,80 @@
+{
+	"##":"质感模式: E2E祛斑祛痘(预览&拍后) + 匀肤(拍后) + 去纹(拍后) + 眉毛去杂乱(拍后)",
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"Index":1,
+			"Mode":"Preview",
+			"E2ESpotless":
+			{
+				"Enable":true,
+				"ParamFlag":0,
+				"MaleDegreeFactor":0.5
+			}
+		},
+		{
+			"Index":2,
+			"Mode":"Capture",
+			"E2ESpotless":
+			{
+				"Enable":true,
+				"KeepNevus":true,
+				"ParamFlag":0,
+				"MaleDegreeFactor":0.3
+			}
+		},
+		{
+			"Index":3,
+			"Mode":"Capture",
+			"SkinUnify":
+			{
+				"Enable":true,
+				"ParamFlag":1,
+				"DefaultDegree":0.4,
+				"DegreeFactor":1.0,
+				"MaleDegreeFactor":0.5,
+				"NonLinearUIData": [ 0, 0.4, 1.0],
+				"NonLinearValueData":[0, 0.3, 1.0]
+			}
+		},
+		{
+			"Index":4,
+			"Mode":"Capture",
+			"E2EWrinkle":
+			{
+				"Enable":true,
+				"EnableUniqueDegree":false,
+				"DegreeList":{
+					"ForeheadLine":1.0,
+					"EyeLine":1.0,
+					"LegalLine":0.6,
+					"DarkCircle":1.0,
+					"Unique":1.0
+				},
+				"DegreeFactorList":{
+					"ForeheadLine":1.0,
+					"EyeLine":1.0,
+					"LegalLine":1.0,
+					"DarkCircle":1.0,
+					"Unique":1.0
+				},
+				"MaleFactorList": {
+					"ForeheadLine": 1.0,
+					"EyeLine": 1.0,
+					"LegalLine": 0.0,
+					"DarkCircle": 0.7,
+					"Unique": 1.0
+				}
+			}
+		},
+		{
+			"Index":5,
+			"Mode":"Capture",
+			"Eyebrow":
+			{
+				"Enable":true
+			}
+		}
+	]
+}

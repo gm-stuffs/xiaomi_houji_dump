@@ -1,0 +1,172 @@
+{
+  "singleKeyRules": [
+    {
+      "primaryKey": 26,
+      "singlePress": [
+        {
+          "type": "longPress",
+          "action": "long_press_power_key",
+          "functions": [
+            {
+              "function": "launch_google_search",
+              "global": 1
+            }
+          ]
+        }
+      ],
+      "multiPress": [
+        {
+          "type": "doubleClick",
+          "action": "double_click_power_key",
+          "functions": [
+            {
+              "function": "mi_pay"
+            }
+          ],
+          "maxCount": 2
+        },
+        {
+          "type": "fiveClick",
+          "action": "five_click_power_key",
+          "maxCount": 5
+        }
+      ]
+    },
+    {
+      "primaryKey": 3,
+      "singlePress": [
+        {
+          "type": "longPress",
+          "action": "long_press_home_key",
+          "functions": [
+            {
+              "function": "launch_voice_assistant"
+            },
+            {
+              "function": "launch_google_search",
+              "global": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "primaryKey": 4,
+      "singlePress": [
+        {
+          "type": "longPress",
+          "action": "long_press_back_key"
+        }
+      ]
+    },
+    {
+      "primaryKey": 82,
+      "singlePress": [
+        {
+          "type": "longPress",
+          "action": "long_press_menu_key",
+          "functions": [
+            {
+              "function": "show_menu",
+              "global": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "primaryKey": 25,
+      "multiPress": [
+        {
+          "type": "doubleClick",
+          "action": "volumekey_launch_camera",
+          "global": 2,
+          "maxCount": 2
+        }
+      ]
+    }
+  ],
+  "combinationKeyRules": [
+    {
+      "primaryKey": 26,
+      "combinationKey": 4,
+      "action": "key_combination_power_back"
+    },
+    {
+      "primaryKey": 26,
+      "combinationKey": 3,
+      "action": "key_combination_power_home"
+    },
+    {
+      "primaryKey": 26,
+      "combinationKey": 82,
+      "action": "key_combination_power_menu"
+    },
+    {
+      "primaryKey": 26,
+      "combinationKey": 25,
+      "action": "key_combination_power_volume_down",
+      "functions": [
+        {
+          "function": "screen_shot",
+          "global": 2
+        }
+      ]
+    },
+    {
+      "primaryKey": 25,
+      "combinationKey": 82,
+      "action": "key_combination_volume_down_menu",
+      "functions": [
+        {
+          "function": "screen_shot",
+          "global": 2
+        }
+      ]
+    }
+  ],
+  "gestureRules": [
+    {
+      "action": "knock_slide_shape"
+    },
+    {
+      "action": "knock_vertical_slid"
+    },
+    {
+      "action": "knock_long_press_horizontal_slid"
+    },
+    {
+      "action": "knock_gesture_v"
+    },
+    {
+      "action": "double_knock"
+    },
+    {
+      "action": "three_gesture_down",
+      "functions": [
+        {
+          "function": "screen_shot",
+          "global": 2
+        }
+      ]
+    },
+    {
+      "action": "three_gesture_long_press",
+      "functions": [
+        {
+          "function": "partial_screen_shot",
+          "global": 2
+        }
+      ]
+    },
+    {
+      "action": "fingerprint_double_tap"
+    },
+    {
+      "action": "back_double_tap"
+    },
+    {
+      "action": "back_triple_tap"
+    }
+  ]
+}

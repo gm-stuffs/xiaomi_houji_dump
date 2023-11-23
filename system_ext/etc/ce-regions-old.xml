@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--MIUI ADD: Audio_VolumeCurve CE volumecurve-->
+<ce_regions_list>
+    <BH/> <!--Bahrain-->
+    <!--Macau NOT YET-->
+    <HK/> <!--Hong Kong-->
+    <IL/> <!--Israel-->
+    <JO/> <!--ordan-->
+    <KW/> <!--Kuwait-->
+    <LB/> <!--Lebanon-->
+    <MY/> <!--Malaysia-->
+    <OM/> <!--Oman-->
+    <PK/> <!--Pakistan-->
+    <PH/> <!--Philippine-->
+    <QA/> <!--Qatar-->
+    <YE/> <!--Yemen-->
+    <NP/> <!--Nepal-->
+    <KR/> <!--South Korea-->
+    <BD/> <!--Bangladesh-->
+    <IQ/> <!--Iraq-->
+    <LK/> <!--Sri Lanka-->
+    <!--Cambodia NOT YET-->
+    <KZ/> <!--Kazakhstan-->
+    <!--Mongolia NOT YET-->
+    <!--Tajikistan NOT YET-->
+    <TM/> <!--Turkmenistan-->
+    <UZ/> <!--Uzbekistan-->
+    <!--Laos NOT YET-->
+
+    <GH/> <!--Ghana-->
+    <MU/> <!--Mauritius-->
+    <MA/> <!--Morocco-->
+    <MZ/> <!--Mozambique-->
+    <ZA/> <!--South Africa-->
+    <TZ/> <!--Tanzania-->
+    <UG/> <!--Uganda-->
+    <TN/> <!--Tunisia-->
+    <ET/> <!--Ethiopia-->
+    <ZM/> <!--Zambia-->
+    <LY/> <!--Libya-->
+    <DZ/> <!--Algeria-->
+    <AO/> <!--Angola -->
+    <BW/> <!--Botswana-->
+    <ZW/> <!--Zimbabwe-->
+    <NA/> <!--Namibia-->
+    <KE/> <!--Kenya-->
+
+    <GB/> <!--United Kingdom-->
+    <NO/> <!--Norway-->
+    <RO/> <!--Romania-->
+    <!--Ireland NOT YET-->
+    <HU/> <!--Hungary-->
+    <FI/> <!--Finland-->
+    <GR/> <!--Greece-->
+    <CZ/> <!--Czech Republic-->
+    <SK/> <!--Slovakia-->
+    <NL/> <!--Netherlands-->
+    <IT/> <!--Italy-->
+    <FR/> <!--France-->
+    <ES/> <!--Spain-->
+    <RU/> <!--Russia-->
+    <SE/> <!--Sweden-->
+    <CH/> <!--Switzerland-->
+    <!--Austria NOT YET-->
+    <BE/> <!--Belgium-->
+    <PT/> <!--Portugal-->
+    <PL/> <!--Poland-->
+    <DK/> <!--Denmark-->
+    <UA/> <!--Ukraine-->
+    <DE/> <!--Germany-->
+</ce_regions_list>
+<!--END Audio_VolumeCurve CE volumecurve-->

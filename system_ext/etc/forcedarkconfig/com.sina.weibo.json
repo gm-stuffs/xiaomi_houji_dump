@@ -1,0 +1,1117 @@
+{
+  "packageName": "com.sina.weibo",
+  "forceDark": true,
+  "mainRule": 158,
+  "secondaryRule": 40,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.sina.weibo.MainTabActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.widget.ImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "com.sina.weibo.feed.hotchannel.tablayout.HotSlideTabLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.sina.weibo.card.widget.GridView",
+          "forceDark": true,
+          "usage": 106,
+          "backgroundUsage": 106,
+          "conditions": [
+            {
+              "viewName": "com.sina.weibo.card.view.CardHotSearchHeader",
+              "parent": 0,
+              "index": 0
+            }
+          ]
+        },
+        {
+          "viewName": "IconGifView$NativeGif",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103
+        },
+        {
+          "viewName": "CollapsableGridView",
+          "forceDark": true,
+          "usage": 104,
+          "conditions": [
+            {
+              "viewName": "CardCollapsableGridView",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "iv_bg_view1",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "mIvBg2",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "mRootView"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "iv_bg_view2",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.sina.weibo.card.widget.GridView",
+          "forceDark": true,
+          "usage": 104,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.sina.weibo.card.view.Card202View",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.TextView",
+          "id": "composer_btn_text",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "composer_btn_layout"
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "composer_btn_layout"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "composer"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.TextView",
+          "id": "composer_content",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "composer"
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "header_layout"
+            },
+            {
+              "parent": 3,
+              "viewName": "androidx.core.widget.NestedScrollView",
+              "index": -1,
+              "id": "scrollview"
+            }
+          ]
+        },
+        {
+          "viewName": "com.sina.weibo.view.RoundedImageView",
+          "id": "iv_background",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "line_activity"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.sina.weibo.card.view.CardSGNewGuideView",
+              "index": -1
+            },
+            {
+              "parent": 3,
+              "viewName": "androidx.recyclerview.widget.RecyclerView",
+              "index": -1,
+              "id": "view_recycler"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.TextView",
+          "id": "tvGuide",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.sina.weibo.feed.view.FlowDataComposeEntryView",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "androidx.recyclerview.widget.FeedFlingRecyclerView",
+              "index": -1,
+              "id": "view_recycler"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.TextView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "ll_compose_action_container"
+            },
+            {
+              "parent": 4,
+              "viewName": "com.sina.weibo.feed.view.FlowDataComposeEntryView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.sina.weibo.flow.component.avatar.FlowAvatarView2",
+              "index": -1,
+              "id": "avatar_info_avatar"
+            },
+            {
+              "parent": 1,
+              "viewName": "com.sina.weibo.componentservice.root.flex.RootFlexLayerView",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "com.sina.weibo.flow.stream.view.HorizontalRecyclerView2",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "mIvBg1",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "mRootView"
+            },
+            {
+              "parent": 1,
+              "viewName": "com.sina.weibo.minev2.component.vipview.VipLayoutView",
+              "index": -1,
+              "id": "mine_vip_view"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.TextView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "mTextContainer"
+            },
+            {
+              "parent": 3,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "mRootView"
+            },
+            {
+              "parent": 4,
+              "viewName": "com.sina.weibo.minev2.component.vipview.VipLayoutView",
+              "index": -1,
+              "id": "mine_vip_view"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.TextView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.TextSwitcher",
+              "index": -1,
+              "id": "mSwitcher"
+            },
+            {
+              "parent": 3,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "mRootView"
+            },
+            {
+              "parent": 4,
+              "viewName": "com.sina.weibo.minev2.component.vipview.VipLayoutView",
+              "index": -1,
+              "id": "mine_vip_view"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.TextView",
+          "id": "mRightBtnText",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "mRightButtonContainer"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "mRootView"
+            },
+            {
+              "parent": 3,
+              "viewName": "com.sina.weibo.minev2.component.vipview.VipLayoutView",
+              "index": -1,
+              "id": "mine_vip_view"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "mRightBtnBg",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "mRightButtonContainer"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "mRootView"
+            },
+            {
+              "parent": 3,
+              "viewName": "com.sina.weibo.minev2.component.vipview.VipLayoutView",
+              "index": -1,
+              "id": "mine_vip_view"
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.recyclerview.widget.RecyclerView",
+              "index": -1,
+              "id": "rv_list"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.sina.weibo.card.view.CardPagerListView",
+              "index": -1
+            },
+            {
+              "parent": 3,
+              "viewName": "androidx.recyclerview.widget.FrictionableRecyclerView",
+              "index": -1,
+              "id": "view_recycler"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.sina.weibo.page.DiscoverActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.sina.weibo.card.widget.CollapsableGridView",
+          "forceDark": true,
+          "usage": 104
+        }
+      ]
+    },
+    {
+      "activityName": "com.sina.weibo.feed.SubCommentActiity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.widget.ListView",
+          "id": "list_comment",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.sina.weibo.view.ListViewWrapPullDownView",
+              "index": -1,
+              "id": "pulldownview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.sina.weibo.feed.DetailWeiboActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.widget.ImageView",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "detail_operation_bottom_bar"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "rl_topContainer"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "iv_dialog_item",
+          "forceDark": false
+        },
+        {
+          "viewName": "com.sina.weibo.feed.view.BigImageView",
+          "id": "livSinglePic",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "rlSingPic"
+            }
+          ]
+        },
+        {
+          "viewName": "com.sina.weibo.feed.view.MBlogDetailTextView",
+          "id": "tweet_message",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "weibo_content"
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "ll_weibo_content"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "lyHeader"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.sina.weibo.page.ProfileInfoActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "RelativeLayout",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "id": "rlEdit"
+        },
+        {
+          "viewName": "com.sina.weibo.card.widget.GridView",
+          "forceDark": true,
+          "usage": 106,
+          "backgroundUsage": 106,
+          "conditions": [
+            {
+              "viewName": "com.sina.weibo.card.view.CardHotSearchHeader",
+              "parent": 0,
+              "index": 0
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "iv_dialog_item",
+          "forceDark": false
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "img_more",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "img_back",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "img_search",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.sina.weibo.page.profilev2.container.head.ProfileHeadBackGroundView",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.sina.weibo.page.profilev2.container.head.ProfileHeaderLayoutRefactor2",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "com.sina.weibo.page.view.mhvp.layout.SizeSensitiveLinearLayout",
+              "index": -1,
+              "id": "mhvp_headerCustom"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "bubble_img",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.sina.weibo.page.profile.view.ProfileBubbleMenuLayout",
+              "index": -1,
+              "id": "bubble_view_container"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "content"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.sina.weibo.SplashActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "ImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "id": "image_logo"
+        }
+      ]
+    },
+    {
+      "activityName": "com.sina.weibo.VisitorMainTabActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.sina.weibo.card.widget.GridView",
+          "forceDark": true,
+          "usage": 106,
+          "backgroundUsage": 106,
+          "conditions": [
+            {
+              "viewName": "com.sina.weibo.card.view.CardHotSearchHeader",
+              "parent": 0,
+              "index": 0
+            }
+          ]
+        },
+        {
+          "viewName": "CollapsableGridView",
+          "forceDark": true,
+          "usage": 104,
+          "conditions": [
+            {
+              "viewName": "CardCollapsableGridView",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.sina.weibo.card.widget.GridView",
+          "forceDark": true,
+          "usage": 104,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.sina.weibo.card.view.Card202View",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "androidx.constraintlayout.widget.ConstraintLayout",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.recyclerview.widget.RecyclerView",
+              "index": -1,
+              "id": "rv_list"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.sina.weibo.card.view.CardPagerListView",
+              "index": -1
+            },
+            {
+              "parent": 3,
+              "viewName": "androidx.recyclerview.widget.FrictionableRecyclerView",
+              "index": -1,
+              "id": "view_recycler"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.sina.weibo.supergroup.SuperGroupActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "LinearLayout",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "id": "welcome_bg"
+        },
+        {
+          "viewName": "android.widget.RelativeLayout",
+          "id": "welcome_bg",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.sina.weibo.card.view.CardWelcomeGuideView",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "com.sina.weibo.card.view.CardListOldView",
+              "index": -1,
+              "id": "lvCard"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.LinearLayout",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.sina.weibo.card.view.CardWelcomeGuideView",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.sina.weibo.card.view.CardListOldView",
+              "index": -1,
+              "id": "lvCard"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.sina.weibo.view.SquareCoverPullDownView",
+              "index": -1,
+              "id": "pdCard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.sina.weibo.weiyou.chat.single.DMSingleChatActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "LinearLayout",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "id": "parentView"
+        }
+      ]
+    },
+    {
+      "activityName": "com.sina.weibo.weiyou.userlist.stranger.DMStrangerListActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "PullDownView",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "id": "pd_msgbox_list"
+        }
+      ]
+    },
+    {
+      "activityName": "com.sina.weibo.weiyou.chat.group.DMGroupChatActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "LinearLayout",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "id": "parentView"
+        }
+      ]
+    },
+    {
+      "activityName": "com.sina.weibo.page.SearchResultActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "CardMblogView",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "viewName": "com.sina.weibo.page.CardListAdapter$GapView",
+              "parent": 0,
+              "index": 1
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "rl_column"
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "mylayout"
+            },
+            {
+              "parent": 4,
+              "viewName": "com.sina.weibo.card.view.PageSlidingTabLayout",
+              "index": -1,
+              "id": "tab_layout"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "back_layout"
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "real_search_bar"
+            },
+            {
+              "parent": 4,
+              "viewName": "com.sina.weibo.page.NewCardListActivity$FragmentViewGroup",
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.sina.weibo.page.NewSuperPageGroupActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.sina.weibo.card.view.CardCouponItemView",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.sina.weibo.card.view.CardListOldView",
+              "index": -1,
+              "id": "lvCard"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1,
+              "id": "llCard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.sina.weibo.composerinde.appendix.AtSuggestionActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.widget.ListView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "id": "lvFollow"
+        }
+      ]
+    },
+    {
+      "activityName": "com.sina.weibo.supergroup.profile.SGProfileActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.sina.weibo.card.widget.GridView",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.LinearLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.sina.weibo.card.view.Card202View",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "com.sina.weibo.supergroup.profile.SGProfileCardListView",
+              "index": -1,
+              "id": "lv_content"
+            }
+          ]
+        },
+        {
+          "viewName": "com.sina.weibo.page.cardlist.immersion.view.StateObservedTextView",
+          "id": "titleBack",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "rltitleBack"
+            },
+            {
+              "parent": 2,
+              "viewName": "com.sina.weibo.page.cardlist.immersion.view.CardListImmersionLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.sina.weibo.page.cardlist.immersion.view.StateObservedTextView",
+          "id": "titleSave",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "rightBtn_wrapper"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "lyTitleBar"
+            }
+          ]
+        },
+        {
+          "viewName": "android.view.View",
+          "id": "bg_img_mask",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "bg_container"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.sina.weibo.wboxsdk.page.acts.WBXPageActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "androidx.appcompat.widget.AppCompatTextView",
+          "id": "tv_title_option",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.sina.weibo.wboxsdk.page.view.WBXTitleBarView",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "wbox_page_root"
+            }
+          ]
+        },
+        {
+          "viewName": "com.sina.weibo.wboxsdk.page.view.SinglePageView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "wbox_page_root"
+            },
+            {
+              "parent": 1,
+              "viewName": "androidx.appcompat.widget.ContentFrameLayout",
+              "index": -1,
+              "id": "content"
+            },
+            {
+              "parent": 2,
+              "viewName": "androidx.appcompat.widget.FitWindowsLinearLayout",
+              "index": -1,
+              "id": "action_bar_root"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.sina.weibo.weiyou.userlist.notice.DMNewGroupNoticeActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.sina.weibo.view.PullDownView",
+          "id": "pd_group_notice_list",
+          "forceDark": true,
+          "usage": 105,
+          "backgroundUsage": 105,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.sina.weibo.view.BaseLayout",
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.sina.weibo.composerinde.OriginalComposerActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.widget.ImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.sina.weibo.composerinde.element.view.HotSubjectGuideElementView",
+              "index": -1,
+              "id": "hot_subject_guide_element_view"
+            },
+            {
+              "parent": 1,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "composer_fix_view"
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "fixed_element_container"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "forceDarkViewGlobalConfigList": [
+    {
+      "viewName": "android.widget.ImageView",
+      "id": "shade_left",
+      "forceDark": true,
+      "usage": 1
+    },
+    {
+      "viewName": "android.widget.ImageView",
+      "id": "shade_right",
+      "forceDark": true,
+      "usage": 1
+    },
+    {
+      "viewName": "commonavatar.CircularImageView",
+      "forceDark": false
+    },
+    {
+      "viewName": "view.FeedItemPicView",
+      "forceDark": false
+    },
+    {
+      "viewName": "StateObservedImageView",
+      "forceDark": true,
+      "usage": 103,
+      "backgroundUsage": 103
+    },
+    {
+      "viewName": "SplitDraggableImageView",
+      "forceDark": false,
+      "id": "image_view"
+    }
+  ]
+}

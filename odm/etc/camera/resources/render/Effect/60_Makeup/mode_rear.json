@@ -1,0 +1,17 @@
+{
+	"##":"后置妆容",
+	"Type":"Effect",
+	"ExtraOption":
+	{
+		"EnvLightType": 2,
+		"EnableGenderMakeup":false
+	},
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/0_ModeRear/effect.json",
+			"Index":0,
+			"Mode":"All"
+		}
+	]
+}

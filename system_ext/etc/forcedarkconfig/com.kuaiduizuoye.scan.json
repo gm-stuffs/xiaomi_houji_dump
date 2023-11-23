@@ -1,0 +1,123 @@
+{
+  "packageName": "com.kuaiduizuoye.scan",
+  "forceDark": true,
+  "mainRule": 1024,
+  "secondaryRule": 0,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.kuaiduizuoye.scan.activity.main.activity.MainActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.kuaiduizuoye.scan.widget.stateview.StateNormalView",
+          "id": "v_upload",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout"
+            }
+          ]
+        },
+        {
+          "viewName": "android.widget.ImageView",
+          "id": "iv_tab_indicator",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout"
+            }
+          ]
+        },
+        {
+          "viewName": "com.kuaiduizuoye.scan.widget.stateview.StateImageView",
+          "id": "siv_upload",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "id": "rl_content"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.kuaiduizuoye.scan.activity.scan.activity.BookCompleteDetailsPictureBrowseActivity",
+      "forceDark": false
+    },
+    {
+      "activityName": "com.kuaiduizuoye.scan.activity.scan.activity.SearchScanCodeResultActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.kuaiduizuoye.scan.widget.stateview.StateNormalView",
+          "id": "favourite_icon",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout"
+            }
+          ]
+        },
+        {
+          "viewName": "com.kuaiduizuoye.scan.widget.stateview.StateNormalView",
+          "id": "download_icon",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout"
+            }
+          ]
+        },
+        {
+          "viewName": "com.kuaiduizuoye.scan.widget.stateview.StateNormalView",
+          "id": "share_icon",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "androidx.constraintlayout.widget.ConstraintLayout"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.kuaiduizuoye.scan.activity.scan.activity.SearchSugActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.kuaiduizuoye.scan.widget.stateview.StateImageView",
+          "id": "siv_back",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.kuaiduizuoye.scan.widget.stateview.StateFrameLayout",
+              "id": "sfl_back"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

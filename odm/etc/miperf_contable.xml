@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CONTABLE>
+    <CMD name="PERF_RES_LITTLE_CORE_CTR_ONLINE_MIN">
+        <Entry path="/sys/devices/system/cpu/cpu0/core_ctl/min_cpus"></Entry>
+    </CMD>
+    <CMD name="PERF_RES_LITTLE_CORE_CTR_ONLINE_MAX">
+        <Entry path="/sys/devices/system/cpu/cpu0/core_ctl/max_cpus"></Entry>
+    </CMD>
+    <CMD name="PERF_RES_BIG_CORE_CTR_ONLINE_MIN">
+        <Entry path="/sys/devices/system/cpu/cpu4/core_ctl/min_cpus"></Entry>
+    </CMD>
+    <CMD name="PERF_RES_BIG_CORE_CTR_ONLINE_MAX">
+        <Entry path="/sys/devices/system/cpu/cpu4/core_ctl/max_cpus"></Entry>
+    </CMD>
+    <CMD name="PERF_RES_PRIME_CORE_CTR_ONLINE_MIN">
+        <Entry path="/sys/devices/system/cpu/cpu7/core_ctl/min_cpus"></Entry>
+    </CMD>
+    <CMD name="PERF_RES_PRIME_CORE_CTR_ONLINE_MAX">
+        <Entry path="/sys/devices/system/cpu/cpu7/core_ctl/max_cpus"></Entry>
+    </CMD>
+    <CMD name="PERF_RES_MIN_FREQ_CPU">
+        <Entry path="/sys/module/msm_performance/parameters/cpu_min_freq"></Entry>
+    </CMD>
+    <CMD name="PERF_RES_MAX_FREQ_CPU">
+        <Entry path="/sys/module/msm_performance/parameters/cpu_max_freq"></Entry>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_UPMIGRATE">
+        <Entry path="/proc/sys/kernel/sched_upmigrate"></Entry>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_DOWNMIGRATE">
+        <Entry path="/proc/sys/kernel/sched_downmigrate"></Entry>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_BOOST">
+        <Entry path="/proc/sys/kernel/sched_boost"></Entry>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_PREFER_SPREAD">
+        <Entry path="proc/sys/kernel/sched_prefer_spread"></Entry>
+    </CMD>
+    <CMD name="PERF_RES_BCK_CPUS">
+        <Entry path="/dev/cpuset/background/cpus"></Entry>
+    </CMD>
+    <CMD name="PERF_RES_FOR_CPUS">
+        <Entry path="/dev/cpuset/foreground/cpus"></Entry>
+    </CMD>
+    <CMD name="PERF_RES_TOP_APP_CPUS">
+        <Entry path="/dev/cpuset/top-app/cpus"></Entry>
+    </CMD>
+    <CMD name="PERF_RES_SYSTEM_BACK_CPUS">
+        <Entry path="/dev/cpuset/system-background/cpus"></Entry>
+    </CMD>
+    <CMD name="PERF_RES_GPU_MIN_FREQ">
+        <Entry path="/sys/class/kgsl/kgsl-3d0/devfreq/min_freq"></Entry>
+    </CMD>
+    <CMD name="PERF_RES_GPU_MAX_FREQ">
+        <Entry path="/sys/class/kgsl/kgsl-3d0/devfreq/max_freq"></Entry>
+    </CMD>
+</CONTABLE>

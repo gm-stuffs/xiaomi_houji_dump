@@ -1,0 +1,12 @@
+ro.carrier.name=ct
+ro.miui.region=CN
+ro.miui.mcc=9460
+ro.miui.mnc=9003
+ro.miui.cust_variant=cn_chinatelecom
+ro.build.hardware.version=V1
+ro.miui.cust_hardware=V1
+ro.vendor.miui.region=CN
+ro.vendor.miui.mcc=9460
+ro.vendor.miui.mnc=9003
+ro.vendor.miui.cust_variant=cn_chinatelecom
+ro.vendor.miui.cust_hardware=V1

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+
+    <!-- These applications all handle URLs to their websites by default -->
+    <app-link package="com.xiaomi.market" />
+    <app-link package="com.miui.hybrid" />
+</config>

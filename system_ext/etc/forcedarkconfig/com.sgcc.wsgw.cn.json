@@ -1,0 +1,60 @@
+{
+  "packageName": "com.sgcc.wsgw.cn",
+  "forceDark": true,
+  "mainRule": 1024,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.sgcc.wsgw.rnbundle.activity.MyReactActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "ReactImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "ReactViewGroup",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "ReactScrollView",
+              "parent": 2,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "ReactImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "ReactViewGroup",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "ReactScrollView",
+              "parent": 3,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.sgcc.wsgw.mainbundle.HomeActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "android.widget.TextView",
+          "id": "tabDrawable",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103
+        }
+      ]
+    }
+  ]
+}

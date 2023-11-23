@@ -1,0 +1,1692 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<EventRoot version="">
+    <Event id="901001001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="50" PrivacyLevel="L2"/>
+        <Param id="1" name="Stacktrace" type="string"  len="3000"/>
+        <Param id="2" name="Summary" type="string"  len="300"/>
+        <Param id="3" name="Digest" type="string"  len="40"/>
+        <Param id="4" name="CurrentTime" type="long" />
+        <Param id="5" name="CrashType" type="string"  len="50"/>
+        <Param id="6" name="Keyword" type="string"  len="300"/>
+    </Event>
+
+    <Event id="901001002" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="50" PrivacyLevel="L2"/>
+        <Param id="1" name="Stacktrace" type="string"  len="3000"/>
+        <Param id="2" name="Summary" type="string"  len="200"/>
+        <Param id="3" name="Digest" type="string"  len="40"/>
+        <Param id="4" name="CurrentTime" type="long" />
+        <Param id="5" name="WatchdogType" type="string"  len="20"/>
+        <Param id="6" name="Keyword" type="string"  len="300"/>
+    </Event>
+
+    <Event id="901001003" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="50" PrivacyLevel="L2"/>
+        <Param id="1" name="Stacktrace" type="string"  len="3000"/>
+        <Param id="2" name="Summary" type="string"  len="300"/>
+        <Param id="3" name="Digest" type="string"  len="40"/>
+        <Param id="4" name="CurrentTime" type="long" />
+        <Param id="5" name="CrashType" type="string"  len="50"/>
+        <Param id="6" name="Keyword" type="string"  len="300"/>
+    </Event>
+
+    <Event id="901002012" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="PackageNames" type="string" len="500" PrivacyLevel="L2"/>
+        <Param id="1" name="Total" type="int"/>
+    </Event>
+
+    <Event id="901003001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="50" PrivacyLevel="L2"/>
+        <Param id="1" name="Stacktrace" type="string"  len="3000"/>
+        <Param id="2" name="Summary" type="string"  len="300"/>
+        <Param id="3" name="Digest" type="string"  len="40"/>
+        <Param id="4" name="CurrentTime" type="long" />
+        <Param id="5" name="AnrType" type="string"  len="30"/>
+        <Param id="6" name="Keyword" type="string"  len="300"/>
+        <Param id="7" name="IsSystemRoot" type="bool"/>
+        <Param id="8" name="IsForeground" type="bool"/>
+    </Event>
+
+    <Event id="901003004" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="50" PrivacyLevel="L2"/>
+        <Param id="1" name="ActivityName" type="string" len="100" PrivacyLevel="L2"/>
+        <Param id="2" name="Duration" type="int"/>
+    </Event>
+
+    <Event id="901003005" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="50" PrivacyLevel="L2"/>
+        <Param id="1" name="Times" type="int"/>
+    </Event>
+
+    <Event id="901003006" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="50" PrivacyLevel="L2"/>
+        <Param id="1" name="Duration" type="int"/>
+    </Event>
+
+    <Event id="901003007" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="50" PrivacyLevel="L2"/>
+        <Param id="1" name="Duration" type="int"/>
+    </Event>
+
+    <Event id="901003101" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="50" PrivacyLevel="L2"/>
+        <Param id="1" name="WindowName" type="string" len="100" PrivacyLevel="L2"/>
+        <Param id="2" name="Duration" type="int"/>
+    </Event>
+
+    <Event id="901004201" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="50" PrivacyLevel="L2"/>
+        <Param id="1" name="DmaBuf" type="string"  len="3000"/>
+        <Param id="2" name="Summary" type="string"  len="500"/>
+        <Param id="3" name="Digest" type="string"  len="40"/>
+        <Param id="4" name="CurrentTime" type="long" />
+    </Event>
+
+    <Event id="901004202" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="50" PrivacyLevel="L2"/>
+        <Param id="1" name="Gpu" type="string" len="3000" />
+        <Param id="2" name="Summary" type="string" len="500" />
+        <Param id="3" name="Digest" type="string"  len="40"/>
+        <Param id="4" name="CurrentTime" type="long" />
+    </Event>
+
+    <Event id="901004203" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="50" PrivacyLevel="L2"/>
+        <Param id="1" name="RssInfo" type="string"  len="3000"/>
+        <Param id="2" name="Summary" type="string"  len="500"/>
+        <Param id="3" name="Digest" type="string"  len="40"/>
+        <Param id="4" name="CurrentTime" type="long" />
+    </Event>
+
+     <Event id="901004204" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="50" PrivacyLevel="L2"/>
+        <Param id="1" name="Stacktrace" type="string"  len="3000"/>
+        <Param id="2" name="Summary" type="string"  len="500"/>
+        <Param id="3" name="Digest" type="string"  len="40"/>
+        <Param id="4" name="CurrentTime" type="long" />
+    </Event>
+
+    <Event id="901004205" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="50" PrivacyLevel="L2"/>
+        <Param id="1" name="Stacktrace" type="string"  len="3000"/>
+        <Param id="2" name="Summary" type="string"  len="500"/>
+        <Param id="3" name="Digest" type="string"  len="40"/>
+        <Param id="4" name="CurrentTime" type="long" />
+    </Event>
+
+    <Event id="901006001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="Stacktrace" type="string" len="3000" />
+        <Param id="1" name="Type" type="string" len="40" />
+        <Param id="2" name="Summary" type="string" len="400" />
+        <Param id="3" name="CurrentTime" type="string" len="20" />
+    </Event>
+
+    <Event id="901006002" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="Stacktrace" type="string" len="3000" />
+        <Param id="1" name="Type" type="string" len="40" />
+        <Param id="2" name="Summary" type="string" len="400" />
+        <Param id="3" name="CurrentTime" type="string" len="20" />
+    </Event>
+
+    <Event id="901006003" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="Stacktrace" type="string" len="3000" />
+        <Param id="1" name="Type" type="string" len="40" />
+        <Param id="2" name="Summary" type="string" len="400" />
+        <Param id="3" name="CurrentTime" type="string" len="20" />
+    </Event>
+
+    <Event id="901006004" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="Stacktrace" type="string" len="3000" />
+        <Param id="1" name="Type" type="string" len="40" />
+        <Param id="2" name="Summary" type="string" len="400" />
+        <Param id="3" name="CurrentTime" type="string" len="20" />
+    </Event>
+
+    <Event id="901006005" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="Stacktrace" type="string" len="3000" />
+        <Param id="1" name="Type" type="string" len="40" />
+        <Param id="2" name="Summary" type="string" len="400" />
+        <Param id="3" name="CurrentTime" type="string" len="20" />
+    </Event>
+
+    <Event id="901006006" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="Stacktrace" type="string" len="3000" />
+        <Param id="1" name="Type" type="string" len="40" />
+        <Param id="2" name="Summary" type="string" len="400" />
+        <Param id="3" name="CurrentTime" type="string" len="20" />
+    </Event>
+
+    <Event id="901006019" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="Stacktrace" type="string" len="3000" />
+        <Param id="1" name="Type" type="string" len="40" />
+        <Param id="2" name="Summary" type="string" len="400" />
+        <Param id="3" name="CurrentTime" type="string" len="20" />
+    </Event>
+
+    <Event id="901006020" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="Stacktrace" type="string" len="3000" />
+        <Param id="1" name="Type" type="string" len="40" />
+        <Param id="2" name="Summary" type="string" len="400" />
+        <Param id="3" name="CurrentTime" type="string" len="20" />
+    </Event>
+
+    <Event id="901006021" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="Stacktrace" type="string" len="3000" />
+        <Param id="1" name="Type" type="string" len="40" />
+        <Param id="2" name="Summary" type="string" len="400" />
+        <Param id="3" name="CurrentTime" type="string" len="20" />
+    </Event>
+
+    <Event id="901006022" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="Stacktrace" type="string" len="3000" />
+        <Param id="1" name="Type" type="string" len="40" />
+        <Param id="2" name="Summary" type="string" len="400" />
+        <Param id="3" name="CurrentTime" type="string" len="20" />
+    </Event>
+
+    <Event id="901006023" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="Stacktrace" type="string" len="3000" />
+        <Param id="1" name="Type" type="string" len="40" />
+        <Param id="2" name="Summary" type="string" len="400" />
+        <Param id="3" name="CurrentTime" type="string" len="20" />
+    </Event>
+
+    <Event id="901006029" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="Stacktrace" type="string" len="3000" />
+        <Param id="1" name="Type" type="string" len="40" />
+        <Param id="2" name="Summary" type="string" len="400" />
+        <Param id="3" name="CurrentTime" type="string" len="20" />
+    </Event>
+
+    <Event id="902001001" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L2">
+        <Param id="0" name="ParaClass" type="class" classID="902001150"/>
+    </Event>
+
+    <Event id="902001002" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ParaClass" type="class" classID="902001153"/>
+    </Event>
+
+    <Event id="902001003" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ParaClass" type="class" classID="902001153"/>
+    </Event>
+
+    <Event id="902001004" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="30" PrivacyLevel="L2"/>
+        <Param id="1" name="UID" type="int" />
+        <Param id="2" name="PID" type="int" />
+        <Param id="3" name="MonitorTime" type="long" />
+        <Param id="4" name="VsyncFrame" type="int" />
+        <Param id="5" name="Callbacks" type="string" len="30" />
+    </Event>
+
+    <Event id="902001005" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="LockName" type="string" len="30" />
+        <Param id="1" name="PackageName" type="string" len="30" PrivacyLevel="L2" />
+        <Param id="2" name="MsgPID" type="int" />
+        <Param id="3" name="MsgWallTime" type="long" />
+        <Param id="4" name="LockContentionThread" type="string" len="30" />
+        <Param id="5" name="LockLatency" type="long" />
+        <Param id="6" name="WaitLockFileName" type="string" len="30"  />
+        <Param id="7" name="WaitLockLine" type="int"/>
+        <Param id="8" name="WaitLockFunction" type="string" len="30" />
+        <Param id="9" name="HoldLockFileName" type="string" len="30" />
+        <Param id="10" name="HoldLockLine" type="int"/>
+        <Param id="11" name="HoldLockFunction" type="string" len="30" />
+        <Param id="12" name="MsgPlanTime" type="long" />
+        <Param id="13" name="Latency" type="long" />
+        <Param id="14" name="MsgSeq" type="int" />
+        <Param id="15" name="TargetName" type="string" len="30" />
+        <Param id="16" name="Callback" type="string" len="30" />
+        <Param id="17" name="MsgWhat" type="int" />
+    </Event>
+
+    <Event id="902001006" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="30" PrivacyLevel="L2"/>
+        <Param id="1" name="UID" type="int" />
+        <Param id="2" name="PID" type="int" />
+        <Param id="3" name="MonitorTime" type="long" />
+        <Param id="4" name="VsyncFrame" type="int" />
+        <Param id="5" name="MessureTime" type="long" />
+        <Param id="6" name="LayoutTime" type="long" />
+        <Param id="7" name="DrawTime" type="long" />
+        <Param id="8" name="Mode" type="string" len="30" />
+        <Param id="9" name="DispatchTime" type="long" />
+        <Param id="10" name="OnPreDrawTime" type="long" />
+        <Param id="11" name="OnDrawTime" type="long" />
+        <Param id="12" name="ViewDraw" type="long" />
+    </Event>
+
+    <Event id="902001050" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="Latency" type="long" />
+        <Param id="1" name="SFDisplayName" type="string" len="30" />
+        <Param id="2" name="SFDisplayWhere" type="string" len="30" />
+    </Event>
+
+    <Event id="902001100" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ParaClass" type="class" classID="902001150"/>
+    </Event>
+
+    <Event id="902001101" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ParaClass" type="class" classID="902001150"/>
+    </Event>
+
+    <Event id="902001102" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ParaClass" type="class" classID="902001150"/>
+    </Event>
+
+    <Event id="902001103" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ParaClass" type="class" classID="902001150"/>
+    </Event>
+
+    <Event id="902001104" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ParaClass" type="class" classID="902001150"/>
+    </Event>
+
+    <Event id="902001150" FaultType="SUBCLASS" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="30" PrivacyLevel="L2" />
+        <Param id="1" name="PID" type="int" />
+        <Param id="2" name="MsgWallTime" type="long"/>
+        <Param id="3" name="CpuUTime" type="long" />
+        <Param id="4" name="CpuSTime" type="long" />
+        <Param id="5" name="IOTime" type="long" />
+        <Param id="6" name="SwapinTime" type="long" />
+        <Param id="7" name="ReclaimTime" type="long" />
+        <Param id="8" name="MsgPlanTime" type="long" />
+        <Param id="9" name="Latency" type="long" />
+        <Param id="10" name="MsgSeq" type="int" />
+        <Param id="11" name="TargetName" type="string" len="30"   />
+        <Param id="12" name="Callback" type="string" len="30"  />
+        <Param id="13" name="MsgWhat" type="int" />
+    </Event>
+
+    <Event id="902001153" FaultType="SUBCLASS" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="30"  PrivacyLevel="L2"/>
+        <Param id="1" name="PID" type="int" />
+        <Param id="2" name="Latency" type="int" />
+        <Param id="3" name="MsgPlanTime" type="long"  />
+    </Event>
+
+    <Event id="902001200" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ParaClass" type="class" classID="902001251"/>
+    </Event>
+
+    <Event id="902001201" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="LockName" type="string" len="30" />
+        <Param id="1" name="PackageName" type="string" len="30"  PrivacyLevel="L2"/>
+        <Param id="2" name="MsgPID" type="int" />
+        <Param id="3" name="MsgWallTime" type="long" />
+        <Param id="4" name="Interface" type="string" len="30" />
+        <Param id="5" name="Code" type="int"  />
+        <Param id="6" name="LockContentionThread" type="string" len="30" />
+        <Param id="7" name="LockLatency" type="long" />
+        <Param id="8" name="WaitLockFileName" type="string" len="30" />
+        <Param id="9" name="WaitLockLine" type="int"/>
+        <Param id="10" name="WaitLockFunction" type="string" len="30" />
+        <Param id="11" name="HoldLockFileName" type="string" len="30" />
+        <Param id="12" name="HoldLockLine" type="int"/>
+        <Param id="13" name="HoldLockFunction" type="string" len="30" />
+        <Param id="14" name="MsgPlanTime" type="long" />
+        <Param id="15" name="Latency" type="long" />
+        <Param id="16" name="MsgSeq" type="int" />
+        <Param id="17" name="TargetName" type="string" len="30" />
+        <Param id="18" name="Callback" type="string" len="30" />
+        <Param id="19" name="MsgWhat" type="int" />
+    </Event>
+
+    <Event id="902001202" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="30"  PrivacyLevel="L2"/>
+        <Param id="1" name="Pid" type="int" />
+        <Param id="2" name="MsgWallTime" type="long"/>
+        <Param id="3" name="BinderTargetTime" type="long" />
+        <Param id="4" name="MsgPlanTime" type="long" />
+        <Param id="5" name="Latency" type="long" />
+        <Param id="6" name="MsgSeq" type="int"/>
+        <Param id="7" name="TargetName" type="string" len="30"   />
+        <Param id="8" name="Callback" type="string" len="30"  />
+        <Param id="9" name="MsgWhat" type="int" />
+    </Event>
+
+    <Event id="902001203" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ParaClass" type="class" classID="902001251"/>
+    </Event>
+
+    <Event id="902001204" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ParaClass" type="class" classID="902001250"/>
+    </Event>
+
+    <Event id="902001205" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ParaClass" type="class" classID="902001250"/>
+    </Event>
+
+    <Event id="902001206" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ParaClass" type="class" classID="902001250"/>
+    </Event>
+
+    <Event id="902001250" FaultType="SUBCLASS" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="30"  PrivacyLevel="L2" />
+        <Param id="1" name="PID" type="int" />
+        <Param id="2" name="MsgWallTime" type="long"/>
+        <Param id="3" name="SystemBinderCostTime" type="long" />
+        <Param id="4" name="Interface" type="string" len="30"  />
+        <Param id="5" name="Code" type="int"  />
+        <Param id="6" name="MsgPlanTime" type="long" />
+        <Param id="7" name="Latency" type="long" />
+        <Param id="8" name="MsgSeq" type="int"/>
+        <Param id="9" name="TargetName" type="string" len="30"   />
+        <Param id="10" name="Callback" type="string" len="30"  />
+        <Param id="11" name="MsgWhat" type="int" />
+    </Event>
+
+    <Event id="902001251" FaultType="SUBCLASS" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="BinderName" type="string" len="30" />
+        <Param id="1" name="BinderPid" type="int" />
+        <Param id="2" name="MsgName" type="string" len="30" />
+        <Param id="3" name="MsgPid" type="int" />
+        <Param id="4" name="BinderTargetBlkio" type="long" />
+        <Param id="5" name="BinderTargetSwapin" type="long" />
+        <Param id="6" name="BinderTargetFreepages" type="long" />
+        <Param id="7" name="BinderTargetRunning" type="long" />
+        <Param id="8" name="BinderTargetRunnable" type="long" />
+        <Param id="9" name="BinderTargetUTime" type="long" />
+        <Param id="10" name="BinderTargetSTime" type="long" />
+        <Param id="11" name="Interface" type="string" len="30" />
+        <Param id="12" name="Code" type="int"  />
+        <Param id="13" name="MsgPlanTime" type="long" />
+        <Param id="14" name="Latency" type="long" />
+        <Param id="15" name="MsgSeq" type="int"/>
+        <Param id="16" name="TargetName" type="string" len="30" />
+        <Param id="17" name="Callback" type="string" len="30" />
+        <Param id="18" name="MsgWhat" type="int" />
+    </Event>
+
+    <Event id="902001300" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="UID" type="int" />
+        <Param id="1" name="PID" type="int" />
+        <Param id="2" name="ServiceStartType" type="int" />
+        <Param id="3" name="DispatchTime" type="long" />
+        <Param id="4" name="MonitorTime" type="long" />
+        <Param id="5" name="Type" type="string" len="20" />
+        <Param id="6" name="ProcessName" type="string" len="30"  />
+        <Param id="7" name="ServiceName" type="string" len="30"  />
+        <Param id="8" name="PackageName" type="string" len="30"  PrivacyLevel="L2"/>
+        <Param id="9" name="ServiceType" type="string" len="30"  />
+        <Param id="10" name="Flags" type="string" len="30"/>
+    </Event>
+
+    <Event id="902001301" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="UID" type="int" />
+        <Param id="1" name="PID" type="int" />
+        <Param id="2" name="ServiceStartType" type="string" len="30"  />
+        <Param id="3" name="BeginTime" type="long" />
+        <Param id="4" name="MonitorTime" type="long" />
+        <Param id="5" name="IsForground" type="bool" />
+        <Param id="6" name="ProcessName" type="string" len="30"  />
+        <Param id="7" name="ServiceName" type="string" len="30"  />
+        <Param id="8" name="PackageName" type="string" len="30"  PrivacyLevel="L2"/>
+        <Param id="9" name="ServiceType" type="string" len="30"  />
+        <Param id="10" name="BroadcastIntent" type="string" len="30"  />
+    </Event>
+
+    <Event id="902001302" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L2">
+        <Param id="0" name="UID" type="int" />
+        <Param id="1" name="PID" type="int" />
+        <Param id="2" name="MonitorTime" type="long" />
+        <Param id="3" name="IsForground" type="bool" />
+        <Param id="4" name="IsOrder" type="bool" />
+        <Param id="5" name="Broadcast" type="string" len="30"    />
+        <Param id="6" name="BroadcastIntent" type="string" len="30"  />
+    </Event>
+
+    <Event id="902001303" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L2">
+        <Param id="0" name="UID" type="int" />
+        <Param id="1" name="PID" type="int" />
+        <Param id="2" name="MonitorTime" type="long"/>
+        <Param id="3" name="ProviderAuthority" type="string" len="30"    />
+        <Param id="4" name="ProviderClassName" type="string" len="30"    />
+        <Param id="5" name="ProviderInteger" type="string" len="30"    />
+        <Param id="6" name="IsMultiprocess" type="bool" />
+    </Event>
+
+    <Event id="902002001" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L2">
+        <Param id="0" name="Latency" type="long" />
+        <Param id="1" name="InputChannel" type="string" len="30"  />
+        <Param id="2" name="InputAction" type="string" len="30"   />
+    </Event>
+
+    <Event id="902002002" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L2">
+        <Param id="0" name="UID" type="int" />
+        <Param id="1" name="PID" type="int" />
+        <Param id="2" name="InputAction" type="string" len="30"   />
+        <Param id="3" name="MonitorTime" type="long" />
+        <Param id="4" name="EventsSeq" type="int" />
+        <Param id="5" name="PackageName" type="string" len="30" PrivacyLevel="L2" />
+    </Event>
+
+    <Event id="902002003" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="PackageName" type="string" len="30"  PrivacyLevel="L2"  />
+        <Param id="1" name="Pid" type="int" />
+        <Param id="2" name="Latency" type="long" />
+        <Param id="3" name="InputEventsInfo" type="string" len="30"   />
+    </Event>
+
+    <Event id="902003001" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="UID" type="int" />
+        <Param id="1" name="ProcessName" type="string" len="30"  PrivacyLevel="L2"  />
+        <Param id="2" name="OomAdj" type="int" />
+        <Param id="3" name="MinOomAdj" type="int" />
+        <Param id="4" name="Reason" type="int" />
+    </Event>
+
+    <Event id="902005000" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="EventTime" type="long" />
+        <Param id="1" name="Type" type="string" len = "10" />
+        <Param id="2" name="Module" type="string" len="10" />
+        <Param id="3" name="SubModule" type="string" len="10" />
+        <Param id="4" name="PackageName" type="string" len="30"  PrivacyLevel="L2"/>
+        <Param id="5" name="Pid" type="int" />
+        <Param id="6" name="Reason" type="string" len="256" />
+    </Event>
+
+    <Event id="902005001" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="Scence" type="string" len="20" />
+        <Param id="1" name="PackageName" type="string" len="30" />
+        <Param id="2" name="StartTime" type="long" />
+        <Param id="3" name="Duration" type="long" />
+        <Param id="4" name="DropFrameCount" type="int" />
+        <Param id="5" name="TraceFileName" type="string" len="100" />
+    </Event>
+
+    <Event id="902005002" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="Scence" type="string" len="20" />
+        <Param id="1" name="ComponentName" type="string" len="30" />
+        <Param id="2" name="DelayTime" type="long" />
+        <Param id="3" name="TraceFileName" type="string" len="100" />
+    </Event>
+
+    <Event id="902051001" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2"/>
+        <Param id="1" name="targetFPS" type="int"/>
+        <Param id="2" name="realTargetFPS" type="int"/>
+        <Param id="3" name="currentFPS" type="int"/>
+        <Param id="4" name="boosterPolicy" type="int"/>
+        <Param id="5" name="governorInfo" type="string"/>
+        <Param id="6" name="currentGPUFreq" type="long"/>
+        <Param id="7" name="perfMode" type="string"/>
+        <Param id="8" name="virtualSensorTemp" type="long"/>
+        <Param id="9" name="currentCPUFreq" type="long"/>
+        <Param id="10" name="glkMax" type="long"/>
+        <Param id="11" name="displayRefreshRate" type="float"/>
+    </Event>
+
+    <Event id="902052001" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="cloudVersion" type="long" />
+    </Event>
+
+    <Event id="902052011" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2"/>
+        <Param id="1" name="dynamicFps" type="int"/>
+        <Param id="2" name="targetFPS" type="int"/>
+        <Param id="3" name="realTargetFPS" type="int"/>
+        <Param id="4" name="currentFPS" type="int"/>
+        <Param id="5" name="boosterPolicy" type="int"/>
+        <Param id="6" name="governorInfo" type="string"/>
+        <Param id="7" name="currentGPUFreq" type="long"/>
+        <Param id="8" name="perfMode" type="string"/>
+        <Param id="9" name="virtualSensorTemp" type="long"/>
+        <Param id="10" name="currentCPUFreq" type="long"/>
+        <Param id="11" name="glkMax" type="long"/>
+        <Param id="12" name="scalingMinFreq" type="long"/>
+        <Param id="13" name="displayRefreshRate" type="float"/>
+    </Event>
+
+    <Event id="902053002" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2"/>
+        <Param id="1" name="targetFPS" type="int"/>
+        <Param id="2" name="realTargetFPS" type="int"/>
+        <Param id="3" name="currentFPS" type="int"/>
+        <Param id="4" name="boosterPolicy" type="int"/>
+        <Param id="5" name="governorInfo" type="string"/>
+        <Param id="6" name="currentGPUFreq" type="long"/>
+        <Param id="7" name="perfMode" type="string"/>
+        <Param id="8" name="virtualSensorTemp" type="long"/>
+        <Param id="9" name="currentCPUFreq" type="long"/>
+        <Param id="10" name="glkMax" type="long"/>
+        <Param id="11" name="scaling_min_freq" type="long"/>
+        <Param id="12" name="displayRefreshRate" type="float"/>
+    </Event>
+
+    <Event id="903111101" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="isRestore" type="bool"/>
+        <Param id="1" name="avgCurrent" type="int"/>
+    </Event>
+
+    <Event id="903111201" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="logTypes" type="string" arrLen="20" len="20"/>
+    </Event>
+
+    <Event id="903111311" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="wakeupSource" type="class" classID="903111601" arrLen="5"/>
+        <Param id="1" name="wakeupType" type="string" len="16"/>
+    </Event>
+
+    <Event id="903111401" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="partialWakelocks" type="class" classID="903111601" arrLen="5"/>
+        <Param id="1" name="wakelockPkgs" type="string" len="126"/>
+    </Event>
+
+    <Event id="903111402" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="kernelWakelocks" type="class" classID="903111601" arrLen="5"/>
+    </Event>
+
+    <Event id="903111410" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="flashlight_ratio" type="int"/>
+        <Param id="1" name="flashlight_time" type="int"/>
+    </Event>
+
+    <Event id="903111411" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="subsystem_name" type="string" len="126"/>
+        <Param id="1" name="subsystem_sleep_time" type="int"/>
+        <Param id="2" name="subsystem_sleep_ratio" type="int"/>
+    </Event>
+
+    <Event id="903111412" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="idle_ratio_deep" type="int"/>
+        <Param id="1" name="idle_ratio_all" type="int"/>
+        <Param id="2" name="screen_off_time" type="int"/>
+    </Event>
+
+    <Event id="903111413" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="duration" type="int"/>
+        <Param id="1" name="poor_duration" type="int"/>
+    </Event>
+
+    <Event id="903111414" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="duration" type="int"/>
+        <Param id="1" name="poor_duration" type="int"/>
+    </Event>
+
+    <Event id="903111501" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="avgCurrent" type="int"/>
+    </Event>
+
+    <Event id="903112000" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2"/>
+        <Param id="1" name="avgCurrent" type="float"/>
+        <Param id="2" name="reason" type="string" len="64"/>
+    </Event>
+
+    <Event id="903111601" FaultType="SUBCLASS" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="pkgName" type="string" len="126"/>
+        <Param id="1" name="tag" type="string" len="126"/>
+        <Param id="2" name="count" type="int"/>
+        <Param id="3" name="duration" type="int"/>
+    </Event>
+
+    <Event id="904001001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904001002" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904001003" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904001004" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904002001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904002002" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904004001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904004002" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904004003" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904005001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904005002" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904005003" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904005004" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904005005" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904006001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904006002" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904006003" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904008001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904008002" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904008003" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904008004" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904009001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904009002" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904011001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904011002" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904011003" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904011004" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="904011005" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="appname" type="string" len="15"/>
+    </Event>
+
+    <Event id="905001000" FaultType="STATICS" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="time" type="string"/>
+        <Param id="1" name="ambitiom" type="int"/>
+    </Event>
+
+    <Event id="905001001" FaultType="STATICS" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="time" type="string"/>
+        <Param id="1" name="broadTemp" type="int"/>
+        <Param id="2" name="packageName" type="string" PrivacyLevel="L2" />
+        <Param id="3" name="scenarioName" type="string"/>
+    </Event>
+
+    <Event id="905001002" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2" />
+        <Param id="1" name="scenarioName" type="string"/>
+        <Param id="2" name="startTemp" type="int"/>
+        <Param id="3" name="broadTemp" type="int"/>
+    </Event>
+
+    <Event id="905001003" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2" />
+        <Param id="1" name="scenarioName" type="string"/>
+        <Param id="2" name="broadTemp" type="int"/>
+        <Param id="3" name="ambientTemp" type="int"/>
+        <Param id="4" name="startTemp" type="int"/>
+        <Param id="5" name="current" type="string"/>
+        <Param id="6" name="modem" type="int"/>
+        <Param id="7" name="wifi" type="int"/>
+        <Param id="8" name="tempState" type="int"/>
+        <Param id="9" name="brightness" type="int"/>
+        <Param id="10" name="cpu" type="string"/>
+        <Param id="11" name="gpu" type="int"/>
+        <Param id="12" name="ntc" type="string"/>
+    </Event>
+
+    <Event id="905001010" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ntcDatas" type="string" arrLen="20" />
+    </Event>
+
+    <Event id="905001011" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2" />
+        <Param id="1" name="scenarioName" type="string"/>
+        <Param id="2" name="broadTemp" type="int"/>
+        <Param id="3" name="batteryTemp" type="int"/>
+    </Event>
+
+    <Event id="905001020" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2" />
+        <Param id="1" name="scenarioName" type="int"/>
+        <Param id="2" name="broadTemp" type="string"/>
+        <Param id="3" name="cpuName" type="string"/>
+        <Param id="4" name="targetCpuFreq" type="int"/>
+        <Param id="5" name="scalingMaxFreqs" type="int"/>
+        <Param id="6" name="cpuCurrentFreqs" type="int"/>
+    </Event>
+
+    <Event id="905001021" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2" />
+        <Param id="1" name="scenarioName" type="string"/>
+        <Param id="2" name="broadTemp" type="int"/>
+        <Param id="3" name="gpuName" type="string"/>
+        <Param id="4" name="targetGpuFreq" type="int"/>
+        <Param id="5" name="gpuMaxFreq" type="int"/>
+        <Param id="6" name="gpuCurrentFreq" type="int"/>
+    </Event>
+
+    <Event id="905001022" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2" />
+        <Param id="1" name="scenarioName" type="string"/>
+        <Param id="2" name="broadTemp" type="int"/>
+        <Param id="3" name="configName" type="string"/>
+        <Param id="4" name="modemMax" type="string"/>
+        <Param id="5" name="modemCurrent" type="string"/>
+    </Event>
+
+    <Event id="905001023" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2" />
+        <Param id="1" name="scenarioName" type="string"/>
+        <Param id="2" name="broadTemp" type="int"/>
+        <Param id="3" name="configName" type="string"/>
+        <Param id="4" name="brightnessMax" type="string"/>
+        <Param id="5" name="brightnessCurrent" type="string"/>
+        <Param id="6" name="screenState" type="string"/>
+    </Event>
+
+    <Event id="905001024" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2" />
+        <Param id="1" name="scenarioName" type="string"/>
+        <Param id="2" name="broadTemp" type="int"/>
+        <Param id="3" name="configName" type="string"/>
+        <Param id="4" name="displayFpsMax" type="string"/>
+        <Param id="5" name="displayFpsCurrent" type="string"/>
+    </Event>
+
+    <Event id="905001030" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2" />
+        <Param id="1" name="scenarioName" type="string"/>
+        <Param id="2" name="broadTemp" type="int"/>
+        <Param id="3" name="tempState" type="string"/>
+    </Event>
+
+    <Event id="905001031" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2" />
+        <Param id="1" name="scenarioName" type="string"/>
+        <Param id="2" name="broadTemp" type="int"/>
+        <Param id="3" name="tempState" type="string"/>
+    </Event>
+
+    <Event id="905001032" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2" />
+        <Param id="1" name="scenarioName" type="string"/>
+        <Param id="2" name="broadTemp" type="int"/>
+        <Param id="3" name="tempState" type="string"/>
+    </Event>
+
+    <Event id="905001033" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2" />
+        <Param id="1" name="scenarioName" type="string"/>
+        <Param id="2" name="broadTemp" type="int"/>
+        <Param id="3" name="tempState" type="string"/>
+    </Event>
+
+    <Event id="905001034" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2" />
+        <Param id="1" name="scenarioName" type="string"/>
+        <Param id="2" name="broadTemp" type="int"/>
+        <Param id="3" name="tempState" type="string"/>
+    </Event>
+
+    <Event id="905003050" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2" />
+        <Param id="1" name="scenarioName" type="string"/>
+        <Param id="2" name="thermalId" type="string"/>
+    </Event>
+
+    <Event id="905003051" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2" />
+        <Param id="1" name="scenarioName" type="string"/>
+        <Param id="2" name="callingState" type="bool"/>
+        <Param id="3" name="thermalId" type="string"/>
+    </Event>
+
+    <Event id="905003052" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2" />
+        <Param id="1" name="scenarioName" type="string"/>
+        <Param id="2" name="isPerformance" type="bool"/>
+        <Param id="3" name="thermalId" type="string"/>
+    </Event>
+
+    <Event id="905003053" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="packageName" type="string" PrivacyLevel="L2" />
+        <Param id="1" name="scenarioName" type="string"/>
+        <Param id="2" name="IECtest" type="bool"/>
+        <Param id="3" name="thermalId" type="string"/>
+    </Event>
+
+    <Event id="905003060" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="model" type="string"/>
+        <Param id="1" name="region" type="string" PrivacyLevel="L2" />
+        <Param id="2" name="errType" type="string"/>
+    </Event>
+
+    <Event id="905004000" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="hotplug" type="string"/>
+        <Param id="1" name="gpu" type="int"/>
+    </Event>
+
+    <Event id="906001001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="Keyword" type="string"/>
+        <Param id="1" name="CurrentTime" type="int"/>
+    </Event>
+
+    <Event id="906001051" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="Keyword" type="string"/>
+        <Param id="1" name="Uid" type="int"/>
+    </Event>
+
+    <Event id="906001151" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="direction" type="int"/>
+        <Param id="1" name="route" type="string"/>
+    </Event>
+
+    <Event id="906001152" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+      <Param id="0" name="direction" type="int"/>
+      <Param id="1" name="route" type="string"/>
+      <Param id="2" name="type" type="int"/>
+      <Param id="3" name="device" type="int"/>
+    </Event>
+
+    <Event id="906001153" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="pcmId" type="int"/>
+    </Event>
+
+    <Event id="906001154" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="pcmId" type="int"/>
+    </Event>
+
+    <Event id="906001155" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="pcmId" type="int"/>
+    </Event>
+
+    <Event id="906001301" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="Keyword" type="string"/>
+        <Param id="1" name="isSupportAutoRecovery" type="bool"  defVal="true"/>
+    </Event>
+
+    <Event id="906001351" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="I2cAddress" type="string" PrivacyLevel="L2"/>
+        <Param id="1" name="Keyword" type="string"/>
+    </Event>
+
+    <Event id="906001352" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="I2cAddress" type="string" PrivacyLevel="L2"/>
+        <Param id="1" name="Keyword" type="string"/>
+    </Event>
+
+    <Event id="906001353" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="I2cAddress" type="string" PrivacyLevel="L2"/>
+        <Param id="1" name="Keyword" type="string"/>
+    </Event>
+
+    <Event id="906001354" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="I2cAddress" type="string" PrivacyLevel="L2"/>
+        <Param id="1" name="Keyword" type="string"/>
+    </Event>
+
+    <Event id="906002001" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="Keyword" type="string"/>
+    </Event>
+
+    <Event id="906002002" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="Keyword" type="string"/>
+    </Event>
+
+    <Event id="906002003" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="Keyword" type="string"/>
+        <Param id="1" name="isSupportAutoRecovery" type="bool"  defVal="true"/>
+    </Event>
+
+    <Event id="906002004" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="Keyword" type="string"/>
+    </Event>
+
+    <Event id="906002005" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="Keyword" type="string"/>
+    </Event>
+
+    <Event id="906100001" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="PID" type="int"/>
+        <Param id="1" name="PackageName" type="string" PrivacyLevel="L2"  />
+        <Param id="2" name="ComponentName" type="string" PrivacyLevel="L2"  />
+        <Param id="3" name="Keyword" type="string"/>
+    </Event>
+
+    <Event id="906100002" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="PID" type="int"/>
+        <Param id="1" name="Keyword" type="string"/>
+    </Event>
+
+    <Event id="906100003" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="Keyword" type="string"/>
+    </Event>
+
+    <Event id="906121001" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="Keyword" type="string"/>
+        <Param id="1" name="Summary" type="string"/>
+    </Event>
+
+    <Event id="906130001" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="PID" type="int"/>
+        <Param id="1" name="Keyword" type="string"/>
+    </Event>
+
+    <Event id="906140001" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="Keyword" type="string"/>
+    </Event>
+
+    <Event id="906201001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="type" type="string"/>
+        <Param id="1" name="keyword" type="string"/>
+    </Event>
+
+    <Event id="906201002" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L2">
+        <Param id="0" name="raceObject" type="string"/>
+        <Param id="1" name="keyword" type="string"/>
+    </Event>
+
+    <Event id="906201003" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L2">
+        <Param id="0" name="vibEffectID" type="int"/>
+        <Param id="1" name="vibType" type="string"/>
+        <Param id="2" name="vibDuration" type="int"/>
+        <Param id="3" name="keyword" type="string"/>
+    </Event>
+
+    <Event id="906201004" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="type" type="string"/>
+        <Param id="1" name="Keyword" type="string"/>
+    </Event>
+
+    <Event id="906201005" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="Keyword" type="string"/>
+    </Event>
+
+    <Event id="906202001" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="calVal" type="int"/>
+        <Param id="1" name="keyword" type="string"/>
+    </Event>
+
+    <Event id="906202002" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L2">
+        <Param id="0" name="calVal" type="int"/>
+        <Param id="1" name="defaultVal" type="int"/>
+        <Param id="2" name="keyword" type="string"/>
+    </Event>
+
+    <Event id="908001001" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L2">
+        <Param id="0" name="crashCount" type="int"/>
+   </Event>
+
+    <Event id="908002001" FaultType="STATICS" FaultLevel="IMPORTANT" PrivacyLevel="L2">
+        <Param id="0" name="FilterSecond" type="int"/>
+        <Param id="1" name="FilterLine" type="int"/>
+        <Param id="2" name="Detail" type="class" classID="908002002" arrLen="100"/>
+    </Event>
+
+    <Event id="908002002" FaultType="SUBCLASS" FaultLevel="IMPORTANT" PrivacyLevel="L2">
+        <Param id="0" name="PID" type="int"/>
+        <Param id="1" name="UID" type="int"/>
+        <Param id="2" name="ProcessName" type="string" len="64"/>
+        <Param id="3" name="TotalFilterLog" type="int"/>
+        <Param id="4" name="TotalFilterCnt" type="int"/>
+        <Param id="5" name="MaxFilterCnt" type="int"/>
+        <Param id="6" name="MaxHappenTime" type="string" len="32"/>
+    </Event>
+
+    <Event id="908002003" FaultType="STATICS" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="DirFullPath" type="string"/>
+        <Param id="1" name="DirSizeBefore" type="long"/>
+        <Param id="2" name="DirSizeAfter" type="long"/>
+        <Param id="3" name="IsReuseOpen" type="bool"/>
+        <Param id="4" name="ReuseClearSize" type="long"/>
+        <Param id="5" name="ReuseMoveSize" type="long"/>
+    </Event>
+
+    <Event id="908002004" FaultType="STATICS" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="eventId" type="int"/>
+        <Param id="1" name="maxCnt" type="int"/>
+    </Event>
+
+    <Event id="908003001" FaultType="STATICS" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="detect_mode" type="string"/>
+        <Param id="1" name="detect_version" type="string"/>
+        <Param id="2" name="detect_starttime" type="long"/>
+        <Param id="3" name="detect_endtime" type="long"/>
+        <Param id="4" name="status" type="bool"/>
+        <Param id="5" name="subtypeStatusList" type="class" classID="908003002" arrLen="50"/>
+    </Event>
+
+    <Event id="908003002" FaultType="SUBCLASS" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="subtype" type="string"/>
+        <Param id="1" name="status" type="bool"/>
+    </Event>
+
+    <Event id="908003003" FaultType="STATICS" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="faultCode" type="int"/>
+        <Param id="1" name="happentime" type="int"/>
+        <Param id="2" name="doRecovery" type="bool"/>
+        <Param id="3" name="doRecoverySuccessful" type="bool"/>
+    </Event>
+
+    <Event id="910013002" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="errInfo" type="string" len="100" />
+    </Event>
+
+    <Event id="910022001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="fs" type="string" len="100" />
+    </Event>
+
+    <Event id="911001001" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="pri_panel_reg_esd" type="int"/>
+    </Event>
+
+    <Event id="911001002" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="pri_panel_irq_esd" type="int"/>
+    </Event>
+
+    <Event id="911001003" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="pri_platform_esd" type="int"/>
+    </Event>
+
+    <Event id="911001004" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="dsi_error" type="string" len="64"/>
+    </Event>
+
+    <Event id="911001005" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="panel_hw_resource_get_failed" type="string" len="64"/>
+    </Event>
+
+    <Event id="911001006" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="panel_recognize_err" type="string" len="64"/>
+    </Event>
+
+    <Event id="911001007" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="panel_wp_read_failed" type="string" len="64"/>
+    </Event>
+
+    <Event id="911001008" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="panel_underrun" type="int"/>
+    </Event>
+
+    <Event id="911001101" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="sec_panel_reg_esd" type="int"/>
+    </Event>
+
+    <Event id="911001102" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="sec_panel_irq_esd" type="int"/>
+    </Event>
+
+    <Event id="911001103" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="sec_platform_esd" type="int"/>
+    </Event>
+
+    <Event id="911001999" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="panel_hardware_err" type="string" len="64"/>
+    </Event>
+
+    <Event id="811001001" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="pri_panel_reg_esd_recover" type="int"/>
+        <Param id="1" name="problem_code" type="long"/>
+    </Event>
+
+    <Event id="811001002" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="pri_panel_irq_esd_recover" type="int"/>
+        <Param id="1" name="problem_code" type="long"/>
+    </Event>
+
+    <Event id="811001003" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="pri_platform_esd_recover" type="int"/>
+        <Param id="1" name="problem_code" type="long"/>
+    </Event>
+
+    <Event id="811001004" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="sec_panel_reg_esd_recover" type="int"/>
+        <Param id="1" name="problem_code" type="long"/>
+    </Event>
+
+    <Event id="811001005" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="sec_panel_irq_esd_recover" type="int"/>
+        <Param id="1" name="problem_code" type="long"/>
+    </Event>
+
+    <Event id="811001006" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="sec_platform_esd_recover" type="int"/>
+        <Param id="1" name="problem_code" type="long"/>
+    </Event>
+
+    <Event id="912001001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="panel_id" type="int"/>
+        <Param id="1" name="fault_name" type="string" len="20"/>
+        <Param id="2" name="vendor_name" type="string" len="10"/>
+    </Event>
+
+    <Event id="912001002" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="panel_id" type="int"/>
+        <Param id="1" name="fault_name" type="string" len="20"/>
+        <Param id="2" name="vendor_name" type="string" len="10"/>
+    </Event>
+
+    <Event id="912001003" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="panel_id" type="int"/>
+        <Param id="1" name="fault_name" type="string" len="20"/>
+        <Param id="2" name="vendor_name" type="string" len="10"/>
+        <Param id="3" name="error_code" type="long"/>
+    </Event>
+
+    <Event id="912001004" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="panel_id" type="int"/>
+        <Param id="1" name="fault_name" type="string" len="20"/>
+        <Param id="2" name="error_code" type="int"/>
+    </Event>
+
+    <Event id="912002001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="panel_id" type="int"/>
+        <Param id="1" name="fault_name" type="string" len="20"/>
+        <Param id="2" name="vendor_name" type="string" len="10"/>
+        <Param id="3" name="error_code" type="long"/>
+    </Event>
+
+    <Event id="912002002" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="panel_id" type="int"/>
+        <Param id="1" name="fault_name" type="string" len="20"/>
+        <Param id="2" name="vendor_name" type="string" len="10"/>
+        <Param id="3" name="error_code" type="long"/>
+    </Event>
+
+    <Event id="913002001" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L1" Extend="E:1">
+        <Param id="0" name="EventTime" type="string" len="30" />
+        <Param id="1" name="Distance" type="float"/>
+        <Param id="2" name="AngleDrop" type="int"/>
+    </Event>
+
+    <Event id="914001001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="vendorError" type="int"/>
+        <Param id="1" name="vendorCode" type="int"/>
+    </Event>
+
+    <Event id="914001002" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="vendorError" type="int"/>
+        <Param id="1" name="vendorCode" type="int"/>
+    </Event>
+
+    <Event id="914001003" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="FingerprintTemplateLost" type="int"/>
+    </Event>
+
+    <Event id="914002001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="vendorError" type="int"/>
+        <Param id="1" name="vendorCode" type="int"/>
+    </Event>
+
+    <Event id="914002002" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="vendorError" type="int"/>
+        <Param id="1" name="vendorCode" type="int"/>
+    </Event>
+
+    <Event id="914002003" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="vendorError" type="int"/>
+        <Param id="1" name="vendorCode" type="int"/>
+    </Event>
+
+    <Event id="914002004" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="vendorError" type="int"/>
+        <Param id="1" name="vendorCode" type="int"/>
+    </Event>
+
+    <Event id="914003001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="vendorError" type="int"/>
+        <Param id="1" name="vendorCode" type="int"/>
+    </Event>
+
+    <Event id="914003002" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="vendorError" type="int"/>
+        <Param id="1" name="vendorCode" type="int"/>
+    </Event>
+
+    <Event id="914003003" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="vendorError" type="int"/>
+        <Param id="1" name="vendorCode" type="int"/>
+    </Event>
+
+    <Event id="914003004" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="vendorError" type="int"/>
+        <Param id="1" name="vendorCode" type="int"/>
+    </Event>
+
+    <Event id="914003005" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="vendorError" type="int"/>
+        <Param id="1" name="vendorCode" type="int"/>
+    </Event>
+
+    <Event id="914003006" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="vendorError" type="int"/>
+        <Param id="1" name="vendorCode" type="int"/>
+    </Event>
+
+    <Event id="915000001" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="ifname" type="string"/>
+        <Param id="1" name="dnses" type="string"/>
+        <Param id="2" name="gateways" type="string"/>
+    </Event>
+
+    <Event id="915000002" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="cause" type="int"/>
+    </Event>
+
+    <Event id="915000003" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="Mcc" type="string" PrivacyLevel="L3"/>
+        <Param id="1" name="Mnc" type="string" PrivacyLevel="L3"/>
+        <Param id="2" name="Apn" type="string"/>
+        <Param id="3" name="Type" type="string"/>
+        <Param id="4" name="Protocol" type="string"/>
+        <Param id="5" name="Roaming_protocol" type="string"/>
+    </Event>
+
+    <Event id="915100001" FaultType="STATICS" FaultLevel="IMPORTANT" PrivacyLevel="L2">
+        <Param id="0" name="reattach" type="int"/>
+    </Event>
+
+    <Event id="915100002" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="fromRAT" type="int"/>
+        <Param id="1" name="toRAT" type="int"/>
+    </Event>
+
+    <Event id="915100003" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="fromRAT" type="int"/>
+        <Param id="1" name="toRAT" type="int"/>
+        <Param id="2" name="causeValue" type="int"/>
+    </Event>
+
+    <Event id="915100004" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="rsrpValue" type="int"/>
+    </Event>
+
+    <Event id="915100005" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="SNRValue" type="int"/>
+    </Event>
+
+    <Event id="915100007" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="subId" type="int" />
+        <Param id="1" name="isRegistrationIms" type="bool" />
+        <Param id="2" name="voiceNetworkType" type="string" len="19"/>
+        <Param id="3" name="ddsPhoneId" type="int" />
+        <Param id="4" name="DataRegisterRAT" type="string" len="5"/>
+    </Event>
+
+    <Event id="915100008" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="SubId" type="int" />
+        <Param id="1" name="MsgType" type="int" />
+        <Param id="2" name="Cause" type="int" />
+        <Param id="3" name="ReportType" type="string"/>
+    </Event>
+
+    <Event id="915100009" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="SubId" type="int" />
+        <Param id="1" name="Status" type="int" />
+        <Param id="2" name="ReportType" type="string"/>
+    </Event>
+
+    <Event id="915100010" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="subId" type="int" />
+        <Param id="1" name="isRegistrationIms" type="bool" />
+        <Param id="2" name="errCodeType" type="string"/>
+    </Event>
+
+
+    <Event id="915200001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="EventReason" type="string" len="40"/>
+    </Event>
+
+    <Event id="915200002" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="EventReason" type="string" len="40"/>
+    </Event>
+
+    <Event id="915200003" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="EventReason" type="string" len="40"/>
+    </Event>
+
+    <Event id="915200004" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="EventReason" type="string" len="40"/>
+    </Event>
+
+    <Event id="915200006" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="CRSCall" type="bool"/>
+        <Param id="1" name="ColumeOverZero" type="bool"/>
+        <Param id="2" name="VoiceReport" type="bool"/>
+        <Param id="3" name="DND" type="bool"/>
+        <Param id="4" name="RingingUriIsNull" type="bool"/>
+        <Param id="5" name="RingtonePlayed" type="bool"/>
+        <Param id="6" name="RingtoneVolume" type="int" />
+    </Event>
+
+    <Event id="915200007" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="subId" type="int" />
+        <Param id="1" name="signaling" type="string" len="350"/>
+    </Event>
+
+    <Event id="915200008" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="subId" type="int" />
+        <Param id="1" name="isMt" type="bool" />
+        <Param id="2" name="direction" type="int" />
+        <Param id="3" name="snedTimes" type="int" />
+        <Param id="4" name="rsrp" type="int" />
+        <Param id="5" name="snr" type="int" />
+    </Event>
+
+    <Event id="915200009" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="subId" type="int" />
+        <Param id="1" name="isMt" type="bool" />
+        <Param id="2" name="snedTimes" type="int" />
+        <Param id="3" name="rsrp" type="int" />
+        <Param id="4" name="snr" type="int" />
+    </Event>
+
+    <Event id="915300004" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="oosSubId" type="int" />
+    </Event>
+
+    <Event id="915300006" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="OperatorNumeric" type="string" len="10" PrivacyLevel="L3"/>
+        <Param id="1" name="PhoneId" type="string" len="2"/>
+    </Event>
+
+    <Event id="915300007" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="PhoneId" type="int"/>
+    </Event>
+
+    <Event id="915400001" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="simStackId" type="int" />
+    </Event>
+
+    <Event id="915600001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="rfDeviceStatus1" type="int" />
+        <Param id="1" name="rfDeviceStatus2" type="int" />
+    </Event>
+
+    <Event id="915600002" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="rfMainDeviceStatus" type="int" />
+    </Event>
+
+    <Event id="915700001" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="OperatorNumeric" type="string" len="10" PrivacyLevel="L3"/>
+        <Param id="1" name="PhoneId" type="string" len="2"/>
+    </Event>
+
+    <Event id="815000001" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="RecoveryResult" type="bool"/>
+        <Param id="1" name="ProblemCode" type="long"/>
+    </Event>
+
+    <Event id="815000002" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="RecoveryResult" type="bool"/>
+        <Param id="1" name="ProblemCode" type="long"/>
+    </Event>
+
+    <Event id="815000003" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="RecoveryResult" type="bool"/>
+        <Param id="1" name="ProblemCode" type="long"/>
+    </Event>
+
+    <Event id="815200001" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="RecoveryResult" type="bool" />
+        <Param id="1" name="ProblemCode" type="long" />
+    </Event>
+
+    <Event id="815200002" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="RecoveryResult" type="bool" />
+        <Param id="1" name="ProblemCode" type="long" />
+    </Event>
+
+    <Event id="815200004" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="RecoveryResult" type="bool" />
+        <Param id="1" name="ProblemCode" type="long" />
+    </Event>
+
+    <Event id="815100001" FaultType="STATICS" FaultLevel="IMPORTANT" PrivacyLevel="L2">
+        <Param id="0" name="RecoveryResult" type="bool"/>
+        <Param id="1" name="ProblemCode" type="long"/>
+    </Event>
+
+    <Event id="815100009" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="ProblemCode" type="long"/>
+        <Param id="1" name="RecoveryResult" type="bool"/>
+    </Event>
+
+    <Event id="815100010" FaultType="STATICS" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="subid" type="int"/>
+        <Param id="1" name="RecoveryResult" type="bool"/>
+        <Param id="2" name="ProblemCode" type="long"/>
+    </Event>
+
+
+    <Event id="916011007" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ErrorDesc" type="string"/>
+    </Event>
+
+    <Event id="916012001" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ErrorDesc" type="string"/>
+    </Event>
+
+    <Event id="916012002" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ErrorDesc" type="string"/>
+    </Event>
+
+    <Event id="916012003" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ErrorDesc" type="string"/>
+    </Event>
+
+    <Event id="916013001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="ErrorDesc" type="string"/>
+    </Event>
+
+    <Event id="916013002" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ErrorDesc" type="string"/>
+    </Event>
+
+    <Event id="916013003" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ErrorDesc" type="string"/>
+    </Event>
+
+    <Event id="916022001" FaultType="STATICS" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ErrorDesc" type="string"/>
+        <Param id="1" name="DelayTime" type="float"/>
+    </Event>
+
+    <Event id="916023001" FaultType="STATICS" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ErrorDesc" type="string"/>
+    </Event>
+
+    <Event id="916024001" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ErrorDesc" type="string"/>
+    </Event>
+
+    <Event id="916024002" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ErrorDesc" type="string"/>
+    </Event>
+
+    <Event id="916025001" FaultType="STATICS" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ErrorDesc" type="string"/>
+        <Param id="1" name="DelayTime" type="float"/>
+    </Event>
+
+    <Event id="916031001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="ErrorDesc" type="string"/>
+    </Event>
+
+    <Event id="916032001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="ErrorDesc" type="string"/>
+        <Param id="1" name="ConnFailReason" type="int"/>
+    </Event>
+
+    <Event id="916051001" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ErrorDesc" type="string"/>
+        <Param id="1" name="DisconnReason" type="int"/>
+    </Event>
+
+    <Event id="916061002" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="ErrorDesc" type="string"/>
+    </Event>
+
+    <Event id="816012001" FaultType="STATICS" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ErrorDesc" type="string"/>
+        <Param id="1" name="RecoveryResult" type="bool"/>
+        <Param id="2" name="ProblemCode" type="long"/>
+    </Event>
+
+    <Event id="816013002" FaultType="STATICS" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ErrorDesc" type="string"/>
+        <Param id="1" name="RecoveryResult" type="bool"/>
+        <Param id="2" name="ProblemCode" type="long"/>
+    </Event>
+
+    <Event id="816013003" FaultType="STATICS" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="ErrorDesc" type="string"/>
+        <Param id="1" name="RecoveryResult" type="bool"/>
+        <Param id="2" name="ProblemCode" type="long"/>
+    </Event>
+
+    <Event id="917011001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="btOpenError" type="string"/>
+    </Event>
+
+    <Event id="917011002" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="btCloseError" type="string"/>
+    </Event>
+
+    <Event id="917012001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="btDriverError" type="string"/>
+    </Event>
+
+    <Event id="917042101" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="btScoEstablishError" type="string"/>
+        <Param id="1" name="btScoEstablishErrorReason" type="int"/>
+    </Event>
+
+    <Event id="917042106" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="btScoSelectWarning" type="string"/>
+    </Event>
+
+    <Event id="917043001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="btA2dpStartSuspendError" type="string"/>
+    </Event>
+
+    <Event id="917043204" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="btSlimbusError" type="string"/>
+    </Event>
+
+    <Event id="917053001" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="btPbapConnectWarning" type="string"/>
+    </Event>
+
+    <Event id="917061001" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="btHidConnectWarning" type="string"/>
+    </Event>
+
+    <Event id="918021001" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="code" type="string" len="30" />
+    </Event>
+
+    <Event id="918021002" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="code" type="string" len="30" />
+    </Event>
+
+    <Event id="918022001" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1" >
+        <Param id="0" name="code" type="string" len="30" />
+    </Event>
+
+    <Event id="918023001" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="code" type="string" len="30" />
+    </Event>
+
+    <Event id="918031001" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="code" type="string" len="30" />
+        <Param id="1" name="detailInfo" type="string" len="30" />
+    </Event>
+
+    <Event id="918051001" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="code" type="string" len="30" />
+        <Param id="1" name="detailInfo" type="string" len="30" />
+    </Event>
+
+    <Event id="918061001" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="code" type="string" len="30" />
+        <Param id="1" name="detailInfo" type="string" len="30" />
+    </Event>
+
+    <Event id="818022002" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L1">
+        <Param id="0" name="code" type="string" len="30" />
+        <Param id="1" name="detailInfo" type="string" len="30" />
+    </Event>
+
+    <Event id="919011101" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L2">
+        <Param id="0" name="DataSource" type="string" len="30"/>
+    </Event>
+
+    <Event id="919011102" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="GeocodeError" type="string" len="30"/>
+    </Event>
+
+    <Event id="919012101" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L2">
+        <Param id="0" name="SvCount" type="int"/>
+    </Event>
+
+    <Event id="919021001" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L2">
+        <Param id="0" name="SignalWeak" type="string" len="30"/>
+    </Event>
+
+    <Event id="919022001" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="NetError" type="string" len="30"/>
+    </Event>
+
+    <Event id="919022002" FaultType="FAULT" FaultLevel="GENERAL" PrivacyLevel="L2">
+        <Param id="0" name="AidDataError" type="string" len="30"/>
+    </Event>
+
+    <Event id="919031001" FaultType="FAULT" FaultLevel="CRITICAL" PrivacyLevel="L1">
+        <Param id="0" name="SwitchError" type="string" len="30"/>
+    </Event>
+
+    <Event id="919031002" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="AbnormalClose" type="string" len="30"/>
+    </Event>
+
+    <Event id="919032001" FaultType="FAULT" FaultLevel="IMPORTANT" PrivacyLevel="L1">
+        <Param id="0" name="PermissionError" type="string" len="30"/>
+    </Event>
+</EventRoot>

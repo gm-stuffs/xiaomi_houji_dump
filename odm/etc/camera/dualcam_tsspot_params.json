@@ -1,0 +1,170 @@
+{
+  "/": "Global parameters",
+  "StructGlobal": {
+    "StructDspGpu": {
+      "paramGatherDspSwitch": 1
+    }
+  },
+  "/": "SpotEffect parameters",
+  "StructDownSamp": {
+    "DowSampRat": 4,
+    "DowSampMeth": 0
+  },
+  "StructDownSampHot": {
+    "DowSampRat": 4,
+    "DowSampMeth": 0
+  },
+  "StructTimeControl": {
+    "paramSwitch": 1,
+    "overtimeThres": 4000
+  },
+  "StructEVFusion": {
+    "paramSwitch": 0
+  },
+  "StructTSSpot": {
+    "StructNormBok": {
+      "FOV_1X": {
+        "StructMd": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        },
+        "StructHdr": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        },
+        "StructSe": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        }
+      },
+      "FOV_2X": {
+        "StructMd": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        },
+        "StructHdr": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        },
+        "StructSe": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        }
+      },
+      "FOV_3X": {
+        "StructMd": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        },
+        "StructHdr": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        },
+        "StructSe": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        }
+      }
+    },
+    "StructMadBok": {
+      "FOV_1_4X": {
+        "StructMd": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        },
+        "StructHdr": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        },
+        "StructSe": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        }
+      },
+      "FOV_2X": {
+        "StructMd": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        },
+        "StructHdr": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        },
+        "StructSe": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        }
+      },
+      "FOV_3_26X": {
+        "StructMd": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        },
+        "StructHdr": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        },
+        "StructSe": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        }
+      },
+      "FOV_3_75X": {
+        "StructMd": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        },
+        "StructHdr": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        },
+        "StructSe": {
+          "paraMinDiffThre": 20,
+          "paraMaxDiffThre": 100,
+          "paraMinFusThre": 35,
+          "paraMaxFusThre": 220
+        }
+      }
+    }
+  }
+}

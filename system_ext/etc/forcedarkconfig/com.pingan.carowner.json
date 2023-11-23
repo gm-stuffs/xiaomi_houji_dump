@@ -1,0 +1,62 @@
+{
+  "packageName": "com.pingan.carowner",
+  "forceDark": true,
+  "mainRule": 1040,
+  "secondaryRule": 0,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.pingan.carowner.activity.MainActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "ConstraintLayout",
+          "forceDark": false,
+          "conditions": [
+            {
+              "viewName": "RecyclerView",
+              "parent": 0,
+              "index": -1,
+              "id": "rv_recommend_fragment"
+            }
+          ]
+        },
+        {
+          "viewName": "ReactImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "ReactViewGroup",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "ReactViewGroup",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "ReactImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "ReactViewGroup",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "ReactSmartRefreshLayout",
+              "parent": 3,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

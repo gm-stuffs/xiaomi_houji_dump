@@ -1,0 +1,22 @@
+{
+	"##":"质感妆容",
+	"Type":"Effect",
+	"ExtraOption":
+	{
+		"EnvLightType": 0,
+		"EnableGenderMakeup":false
+	},
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/0_ModeNative/effect_preview.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/0_ModeNative/effect_capture.json",
+			"Index":1,
+			"Mode":"Capture"
+		}
+	]
+}

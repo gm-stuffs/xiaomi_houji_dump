@@ -1,0 +1,30 @@
+{
+	"Type":"EffectCategory",
+	"##":"后置人像(含虚化)模式除美型外的配置：e2e祛斑祛痘 + 匀肤 + E2E去纹 + 磨皮 + 亮眼 + 立体 + 妆容",
+	"TrueSight":
+	[
+		{
+            "ParameterPath":"Parameter/mode_portraitureRear.json"
+        },
+		{
+			"ConfigurePath":"5_DLRetouch/mode_rear_portraiture.json",
+			"Index":5
+		},
+		{
+			"ConfigurePath":"20_FaceRetouch/mode_rear.json",
+			"Index":20
+		},
+		{
+            "ConfigurePath":"30_BasicRetouch/mode_base.json",
+            "Index":30
+        },
+		{
+			"ConfigurePath":"40_FaceStereo/mode_rear.json",
+			"Index":40
+		},
+		{
+            "ConfigurePath":"60_Makeup/mode_rear.json",
+            "Index":60
+        }
+	]
+}

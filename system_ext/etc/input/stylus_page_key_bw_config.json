@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "enable": true,
+  "appWhiteList": [
+    "com.tencent.mm",
+    "com.ss.android.ugc.aweme",
+    "com.tencent.mobileqq",
+    "com.smile.gifmaker",
+    "com.xingin.xhs",
+    "com.kuaishou.nebula",
+    "com.ss.android.ugc.aweme.lite",
+    "com.sina.weibo",
+    "com.ss.android.article.video",
+    "com.ss.android.article.news"
+  ],
+  "activityBlackList": [
+    "com.tencent.mm.ui.LauncherUI",
+    "com.tencent.mm.ui.EmptyActivity",
+    "com.tencent.mm.plugin.sns.ui.SnsTimeLineUI",
+    "com.tencent.mobileqq.activity.ChatActivity"
+  ]
+}

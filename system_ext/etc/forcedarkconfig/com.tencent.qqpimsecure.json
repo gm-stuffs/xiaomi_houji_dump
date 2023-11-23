@@ -1,0 +1,141 @@
+{
+  "packageName": "com.tencent.qqpimsecure",
+  "forceDark": true,
+  "mainRule": 144,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.tencent.server.fore.QuickLoadActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "forceDark": true,
+          "viewName": "LottieAnimationView",
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "QRelativeLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "QLinearLayout",
+              "parent": 1,
+              "index": -1,
+              "id": "tab_layout"
+            }
+          ]
+        },
+        {
+          "forceDark": true,
+          "viewName": "QRelativeLayout",
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "JourneyGuardianView",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "forceDark": false,
+          "viewName": "TextView",
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "FlutterScrollableLayout",
+              "parent": 4,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "TextView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "viewName": "QRelativeLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "FooterView",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.tencent.qqpimsecure.plugin.main.home.journeyguardian.JourneyGuardianView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.tencent.qqpimsecure.plugin.main.home.MainContentScrollView",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "uilib.components.QFrameLayout",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "uilib.components.QTextView",
+          "id": "guardian_title",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "uilib.components.QRelativeLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "com.tencent.qqpimsecure.plugin.main.home.MainContentScrollView",
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.tencent.server.fore.StandardActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "forceDark": true,
+          "viewName": "ImageView",
+          "usage": 105,
+          "conditions": [
+            {
+              "viewName": "VIPCenterPageViewPager",
+              "parent": 1,
+              "index": -1,
+              "id":"er"
+            }
+          ]
+        },
+        {
+          "forceDark": true,
+          "viewName": "dhl",
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

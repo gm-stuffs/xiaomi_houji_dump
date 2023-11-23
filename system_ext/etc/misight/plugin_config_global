@@ -1,0 +1,4 @@
+plugins:1
+BSPLogManager[thread:bspLogMgr]:0 static
+pipelines:0
+pipelinetriggers:0

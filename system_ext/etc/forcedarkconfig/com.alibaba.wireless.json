@@ -1,0 +1,139 @@
+{
+  "packageName": "com.alibaba.wireless",
+  "forceDark": true,
+  "mainRule": 16,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.alibaba.wireless.detail_dx.activity.OfferDetailActivityDX",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "forceDark": true,
+          "viewName": "com.alibaba.wireless.image.fresco.view.AlibabaImageView",
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "forceDark": true,
+          "viewName": "ImageView",
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "forceDark": true,
+          "viewName": "AliUriImageView",
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "DXNativeFrameLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.alibaba.wireless.container.windvane.AliWindvaneActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "forceDark": true,
+          "viewName": "ImageView",
+          "usage": 103,
+          "id": "v5_common_return",
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.alibaba.wireless.launch.home.V5HomeActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "forceDark": true,
+          "viewName": "SafeLottieView",
+          "usage": 103,
+          "id": "new_homebar_tab_img_0"
+        },
+        {
+          "forceDark": true,
+          "viewName": "AliUrlImageView",
+          "usage": 103,
+          "conditions": [
+            {
+              "viewName": "DXRootView",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "DinamicRenderContainer",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.taobao.message.chat.page.chat.ChatActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.taobao.uikit.feature.view.TImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "root_view"
+            }
+          ]
+        },
+        {
+          "viewName": "com.taobao.uikit.feature.view.TImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "root_view"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+plugins:9
+EventPrivacyCompliance[thread:eventInfo]:0 static
+EventInfoPack[thread:eventInfo]:0 static
+EventStorageManager[thread:eventInfo]:0 static
+EventLogProcessor[thread:eventInfo]:0 static
+EventRadiator[thread:eventRadiator]:0 static
+BSPLogManager[thread:bspLogMgr]:0 static
+PerfLogAnalyzer[thread:perflog]:0 static
+EventLogturboSource[thread:logturbo]:0 static
+RunLogManager[thread:sysLogCtrl]:0 static
+pipelines:2
+dftFaultEvent:EventPrivacyCompliance EventStorageManager EventLogProcessor EventInfoPack
+logTurboEvent:PerfLogAnalyzer
+pipelinetriggers:2
+EventRadiator:dftFaultEvent
+EventLogturboSource:logTurboEvent

@@ -1,0 +1,145 @@
+{
+  "packageName": "com.pingan.lifeinsurance",
+  "forceDark": true,
+  "mainRule": 1024,
+  "secondaryRule": 0,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.pingan.lifeinsurance.shell.activity.HomePageActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "FrameLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "RelativeLayout",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "AppCompatImageView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "IndexHecateIndicatorViewPager",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.pingan.lifeinsurance.activities.newactivitys.activity.ActivitiesIndexActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.pingan.lifeinsurance.activities.newactivitys.view.WonderfulActTitleView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "viewName": "LinearLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "android.widget.HorizontalScrollView",
+              "parent": 2,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.pingan.lifeinsurance.framework.reactnative.activity.ParsReactActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.facebook.react.views.view.ReactViewGroup",
+          "forceDark": false,
+          "conditions": [
+            {
+              "viewName": "com.facebook.react.views.view.ReactViewGroup",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "com.facebook.react.views.scroll.ReactScrollView",
+              "parent": 3,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.pingan.lifeinsurance.basic.qrcode.activity.CommQRActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.pingan.lifeinsurance.basic.qrcode.v33.ViewfinderView",
+          "forceDark": false,
+          "conditions": [
+            {
+              "viewName": "FrameLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "android.support.v7.widget.ContentFrameLayout",
+              "id": "content",
+              "parent": 1,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "activityName": "com.pingan.lifeinsurance.search.activity.GlobalSearchActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.pingan.lifeinsurance.framework.uikit.imageview.PARSImageView",
+          "forceDark": true,
+          "usage": 105,
+          "conditions": [
+            {
+              "viewName": "RelativeLayout",
+              "parent": 0,
+              "index": -1
+            },
+            {
+              "viewName": "com.pingan.lifeinsurance.search.view.GlobalSearchHotContentRecyclerView",
+              "parent": 1,
+              "index": -1
+            },
+            {
+              "viewName": "com.pingan.lifeinsurance.search.view.GlobalSearchHotContainer",
+              "parent": 3,
+              "index": -1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
