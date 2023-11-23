@@ -1,0 +1,11 @@
+service bootanim /system/bin/bootanimation
+    class core animation
+    # MIUI MOD: DMS_BootAnimationPolicy
+    # user graphics
+    user audioserver
+    # END DMS_BootAnimationPolicy
+    group graphics audio
+    disabled
+    oneshot
+    ioprio rt 0
+    task_profiles MaxPerformance

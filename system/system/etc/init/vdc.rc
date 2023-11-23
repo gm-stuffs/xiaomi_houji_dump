@@ -1,0 +1,12 @@
+# MIUI ADD: FileSystem_ABReuse
+on boot && property:persist.sys.stability.abreuse_status=on
+    exec - root -- /system/bin/vdc AB reuse
+on property:persist.sys.stability.abreuse_status=on && property:persist.sys.abreuse.otastatus=ota_complete
+    exec - root -- /system/bin/vdc AB reuse
+on property:persist.sys.stability.abreuse_status=on && property:persist.sys.abreuse.otastatus=ota_start
+    exec - root -- /system/bin/vdc AB reuse
+on property:persist.sys.stability.abreuse_status=on && property:persist.sys.abreuse.otastatus=ota_rolledBack
+    exec - root -- /system/bin/vdc AB reuse
+on property:persist.sys.abreuse.abstatus=yes && property:persist.sys.stability.abreuse_status=off
+    exec - root -- /system/bin/vdc AB reuse
+# END FileSystem_ABReuse

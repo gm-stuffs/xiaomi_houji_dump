@@ -1,0 +1,24 @@
+service uncrypt /system/bin/uncrypt
+    class main
+    socket uncrypt stream 660 system system
+    disabled
+    oneshot
+
+# MIUI ADD: Recovery_StabilityEnhance
+service cust_data_keeper /system/bin/uncrypt --cust-data-keeper
+    class main
+    disabled
+    oneshot
+# END Recovery_StabilityEnhance
+
+service setup-bcb /system/bin/uncrypt --setup-bcb
+    class main
+    socket uncrypt stream 660 system system
+    disabled
+    oneshot
+
+service clear-bcb /system/bin/uncrypt --clear-bcb
+    class main
+    socket uncrypt stream 660 system system
+    disabled
+    oneshot

@@ -1,0 +1,23 @@
+# MIUI ADD: Camera_PerformanceEnhance
+on property:persist.sys.camera.cameraservice.uid_idle=1
+    exec_background /system/bin/micompactmemory ${persist.vendor.camera.provider.pid} anon
+# END Camera_PerformanceEnhance
+
+service cameraserver /system/bin/cameraserver
+    class main
+    user cameraserver
+# MIUI ADD: Camera_MemoryEnhance
+#   group audio camera input drmrpc
+    group audio camera input drmrpc readproc
+# END Camera_MemoryEnhance
+    ioprio rt 4
+# MIUI ADD: Camera_PerformanceEnhance
+#    task_profiles CameraServiceCapacity HighPerformance
+    task_profiles CameraServiceCapacity CameraServicePerformance
+# END Camera_PerformanceEnhance
+    rlimit rtprio 10 10
+    onrestart class_restart cameraWatchdog
+    interface aidl android.frameworks.cameraservice.service.ICameraService/default
+# MIUI ADD: Camera_MemoryEnhance
+    writepid /dev/memcg/camera/service/cgroup.procs
+# END Camera_MemoryEnhance
