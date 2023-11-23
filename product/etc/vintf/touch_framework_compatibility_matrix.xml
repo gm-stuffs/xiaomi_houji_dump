@@ -1,0 +1,13 @@
+<!--
+    Input:
+        vendor/xiaomi/proprietary/touch/touch_ssi/interfaces/touch_framework_compatibility_matrix.xml
+-->
+<compatibility-matrix version="7.0" type="framework">
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hw.touchfeature</name>
+        <interface>
+            <name>ITouchFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>

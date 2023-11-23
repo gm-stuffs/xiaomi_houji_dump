@@ -1,0 +1,10 @@
+<permissions>
+
+    <privapp-permissions package="com.mobiletools.systemhelper">
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+    </privapp-permissions>
+
+</permissions>

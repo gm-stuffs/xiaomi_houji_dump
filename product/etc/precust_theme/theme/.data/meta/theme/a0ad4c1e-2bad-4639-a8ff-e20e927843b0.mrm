@@ -1,0 +1,146 @@
+{
+    "localId": "a0ad4c1e-2bad-4639-a8ff-e20e927843b0",
+    "onlineId": null,
+    "assemblyId": null,
+    "productId": null,
+    "hash": "6f36679e641fb0630254c981b26c7cd3b8010ab5",
+    "platform": 10,
+    "size": 15693644,
+    "updatedTime": 0,
+    "version": "1.0",
+    "titles": {
+        "zh_TW": "無界",
+        "bo_CN": "མཚམས་མེད།",
+        "en_US": "Limitless",
+        "ug_CN": "چەكسىز",
+        "zh_CN": "无界"
+    },
+    "descriptions": {},
+    "builtInThumbnails": {
+        "en_US": [
+            "en_US_lockscreen_0.jpg",
+            "en_US_launcher_0.jpg",
+            "en_US_launcher_1.jpg",
+            "en_US_statusbar_0.jpg",
+            "en_US_statusbar_1.jpg",
+            "en_US_statusbar_2.jpg",
+            "en_US_contact_0.jpg",
+            "en_US_mms_0.jpg",
+            "en_US_mms_1.jpg",
+            "en_US_icons_small_0.jpg"
+        ],
+        "fallback": [
+            "preview_lockscreen_0.jpg",
+            "preview_launcher_0.jpg",
+            "preview_launcher_1.jpg",
+            "preview_statusbar_0.jpg",
+            "preview_statusbar_1.jpg",
+            "preview_statusbar_2.jpg",
+            "preview_contact_0.jpg",
+            "preview_mms_0.jpg",
+            "preview_mms_1.jpg",
+            "preview_icons_small_0.jpg",
+            "preview_icons_0.jpg"
+        ]
+    },
+    "builtInPreviews": {
+        "en_US": [
+            "en_US_lockscreen_0.jpg",
+            "en_US_launcher_0.jpg",
+            "en_US_launcher_1.jpg",
+            "en_US_statusbar_0.jpg",
+            "en_US_statusbar_1.jpg",
+            "en_US_statusbar_2.jpg",
+            "en_US_contact_0.jpg",
+            "en_US_mms_0.jpg",
+            "en_US_mms_1.jpg"
+        ],
+        "fallback": [
+            "preview_lockscreen_0.jpg",
+            "preview_launcher_0.jpg",
+            "preview_launcher_1.jpg",
+            "preview_statusbar_0.jpg",
+            "preview_statusbar_1.jpg",
+            "preview_statusbar_2.jpg",
+            "preview_contact_0.jpg",
+            "preview_mms_0.jpg",
+            "preview_mms_1.jpg",
+            "preview_icons_0.jpg"
+        ]
+    },
+    "thumbnails": [],
+    "previews": [],
+    "parentResources": [],
+    "subResources": [
+        {
+            "localId": "197f7325-4008-4efd-9f39-06cb49e59ed2",
+            "resourceCode": "wallpaper",
+            "extraMeta": {},
+            "metaPath": null,
+            "contentPath": null
+        },
+        {
+            "localId": "71b056ca-0eb4-4b48-bc8b-2be3d4444173",
+            "resourceCode": "launcher",
+            "extraMeta": {},
+            "metaPath": null,
+            "contentPath": null
+        },
+        {
+            "localId": "3d1ddf3d-23f5-4968-a9a3-f6ec3bf5a259",
+            "resourceCode": "lockscreen",
+            "extraMeta": {},
+            "metaPath": null,
+            "contentPath": null
+        },
+        {
+            "localId": "2ba14164-c216-4817-a830-96d662fab0b4",
+            "resourceCode": "com.miui.gallery",
+            "extraMeta": {},
+            "metaPath": null,
+            "contentPath": null
+        },
+        {
+            "localId": "9778bc8b-37ad-49cf-a523-6d2ff8ccf8f1",
+            "resourceCode": "framework-miui-res",
+            "extraMeta": {},
+            "metaPath": null,
+            "contentPath": null
+        },
+        {
+            "localId": "02179790-09b5-48d9-b7f5-10e45a957ad7",
+            "resourceCode": "icons",
+            "extraMeta": {},
+            "metaPath": null,
+            "contentPath": null
+        },
+        {
+            "localId": "168301bb-8582-405b-98e3-b6d4c01f9850",
+            "resourceCode": "plugin_config.xml",
+            "extraMeta": {},
+            "metaPath": null,
+            "contentPath": null
+        }
+    ],
+    "extraMeta": {},
+    "metaPath": null,
+    "contentPath": null,
+    "rightsPath": null,
+    "screenRatio": null,
+    "authors": {
+        "zh_HK": "小米主題",
+        "en_US": "Xiaomi Themes",
+        "zh_TW": "小米主題",
+        "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+        "zh_CN": "小米主题",
+        "ug_CN": "شياۋمى ئۇسلۇبى"
+    },
+    "designers": {
+        "zh_HK": "小米主題",
+        "en_US": "Xiaomi Themes",
+        "zh_TW": "小米主題",
+        "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+        "zh_CN": "小米主题",
+        "ug_CN": "شياۋمى ئۇسلۇبى"
+    }
+}

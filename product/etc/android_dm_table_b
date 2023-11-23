@@ -1,0 +1,15 @@
+create mireuse_b
+linear 0       503808 /dev/block/by-name/modemfirmware_b        0
+linear 503808  413696 /dev/block/by-name/modem_b                0
+linear 917504  196608 /dev/block/by-name/boot_b                 0
+linear 1114112 204800 /dev/block/by-name/recovery_b             0
+linear 1318912 196608 /dev/block/by-name/vendor_boot_b          0
+linear 1515520 131072 /dev/block/by-name/dsp_b                  0
+linear 1646592 98304  /dev/block/by-name/imagefv_b              0
+linear 1744896 49152  /dev/block/by-name/dtbo_b                 0
+linear 1794048 16384  /dev/block/by-name/init_boot_b            0
+linear 1810432 8192   /dev/block/by-name/bluetooth_b            0
+linear 1818624 4096   /dev/block/by-name/xbl_ramdump_b          0
+linear 1822720 512    /dev/block/by-name/qweslicstore_b         0
+linear 1823232 256    /dev/block/by-name/featenabler_b          0
+linear 1823488 256    /dev/block/by-name/qupfw_b                0

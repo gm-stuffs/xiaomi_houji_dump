@@ -1,0 +1,67 @@
+{
+    "localId": "02179790-09b5-48d9-b7f5-10e45a957ad7",
+    "onlineId": null,
+    "assemblyId": null,
+    "productId": null,
+    "hash": "f9968f3e8de7611916db8baab666c6ce6572708c",
+    "platform": 10,
+    "size": 3169340,
+    "updatedTime": 0,
+    "version": "1.0",
+    "titles": {
+        "zh_TW": "無界",
+        "bo_CN": "མཚམས་མེད།",
+        "en_US": "Limitless",
+        "ug_CN": "چەكسىز",
+        "zh_CN": "无界"
+    },
+    "descriptions": {},
+    "builtInThumbnails": {
+        "en_US": [
+            "en_US_icons_small_0.jpg"
+        ],
+        "fallback": [
+            "preview_icons_small_0.jpg",
+            "preview_icons_0.jpg"
+        ]
+    },
+    "builtInPreviews": {
+        "en_US": [],
+        "fallback": [
+            "preview_icons_0.jpg"
+        ]
+    },
+    "thumbnails": [],
+    "previews": [],
+    "parentResources": [
+        {
+            "localId": "a0ad4c1e-2bad-4639-a8ff-e20e927843b0",
+            "resourceCode": "theme",
+            "extraMeta": {},
+            "metaPath": null,
+            "contentPath": null
+        }
+    ],
+    "subResources": [],
+    "extraMeta": {},
+    "metaPath": null,
+    "contentPath": null,
+    "rightsPath": null,
+    "screenRatio": null,
+    "authors": {
+        "zh_HK": "小米主題",
+        "en_US": "Xiaomi Themes",
+        "zh_TW": "小米主題",
+        "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+        "zh_CN": "小米主题",
+        "ug_CN": "شياۋمى ئۇسلۇبى"
+    },
+    "designers": {
+        "zh_HK": "小米主題",
+        "en_US": "Xiaomi Themes",
+        "zh_TW": "小米主題",
+        "bo_CN": "ཞའོ་མཱི་གཙོ་དོན།",
+        "zh_CN": "小米主题",
+        "ug_CN": "شياۋمى ئۇسلۇبى"
+    }
+}

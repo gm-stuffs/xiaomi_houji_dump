@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<app-category-config>
+    <category id="1" name="GAME">
+        <pkg cateId="1" name="com.tencent.tmgp.sgame" />
+        <pkg cateId="1" name="com.tencent.tmgp.pubgmhd" />
+        <pkg cateId="1" name="com.tencent.lolm" />
+        <pkg cateId="1" name="com.tencent.jkchess" />
+        <pkg cateId="1" name="com.miHoYo.Yuanshen" />
+        <pkg cateId="1" name="com.tencent.mf.uam" />
+        <pkg cateId="1" name="com.tencent.tmgp.cf" />
+        <pkg cateId="1" name="com.tencent.tmgp.supercell.clashofclans" />
+        <pkg cateId="1" name="com.netease.party.mi" />
+        <pkg cateId="1" name="com.tencent.KiHan" />
+        <pkg cateId="1" name="com.happyelements.AndroidAnimal" />
+        <pkg cateId="1" name="com.tencent.tmgp.cod" />
+        <pkg cateId="1" name="com.tencent.tmgp.speedmobile" />
+        <pkg cateId="1" name="com.hypergryph.arknights" />
+        <pkg cateId="1" name="com.tencent.toaa" />
+        <pkg cateId="1" name="com.bf.sgs.hdexp.mi" />
+        <pkg cateId="1" name="com.netease.sky.mi" />
+        <pkg cateId="1" name="com.netease.dwrg" />
+        <pkg cateId="1" name="com.netease.pes.mi" />
+        <pkg cateId="1" name="com.aligames.sgzzlb.mi" />
+        <pkg cateId="1" name="cn.jj" />
+        <pkg cateId="1" name="com.netease.onmyoji" />
+        <pkg cateId="1" name="com.qqgame.hlddz" />
+        <pkg cateId="1" name="com.habby.danke.mi" />
+        <pkg cateId="1" name="com.supercell.boombeach.mi" />
+        <pkg cateId="1" name="com.tencent.tmgp.djsy" />
+        <pkg cateId="1" name="com.netease.mc.mi" />
+        <pkg cateId="1" name="com.miHoYo.enterprise.NGHSoD" />
+        <pkg cateId="1" name="com.qqgame.happymj" />
+        <pkg cateId="1" name="com.bilibili.azurlane" />
+        <pkg cateId="1" name="com.tencent.tmgp.supercell.clashroyale" />
+        <pkg cateId="1" name="com.aligames.sgzzlb.aligames" />
+        <pkg cateId="1" name="com.netease.stzb.netease" />
+        <pkg cateId="1" name="com.netease.my" />
+        <pkg cateId="1" name="com.tencent.fiftyone.yc" />
+        <pkg cateId="1" name="com.minitech.miniworld.TMobile.mi" />
+        <pkg cateId="1" name="com.tencent.tmgp.WePop" />
+        <pkg cateId="1" name="com.tencent.qqgame.xq" />
+        <pkg cateId="1" name="com.meta.box" />
+        <pkg cateId="1" name="com.kiloo.subwaysurf" />
+        <pkg cateId="1" name="com.kurogame.haru.hero" />
+    </category>
+    <category id="2" name="VIDEO">
+        <pkg cateId="2" name="com.ss.android.ugc.aweme" />
+        <pkg cateId="2" name="tv.danmaku.bili" />
+        <pkg cateId="2" name="com.smile.gifmaker" />
+        <pkg cateId="2" name="com.ss.android.ugc.aweme.lite" />
+        <pkg cateId="2" name="com.kuaishou.nebula" />
+        <pkg cateId="2" name="com.tencent.qqlive" />
+        <pkg cateId="2" name="com.qiyi.video" />
+        <pkg cateId="2" name="com.ss.android.article.video" />
+        <pkg cateId="2" name="com.duowan.kiwi" />
+        <pkg cateId="2" name="com.youku.phone" />
+        <pkg cateId="2" name="com.miui.video" />
+        <pkg cateId="2" name="air.tv.douyu.android" />
+        <pkg cateId="2" name="com.ss.android.ugc.live" />
+        <pkg cateId="2" name="com.hunantv.imgo.activity" />
+        <pkg cateId="2" name="com.baidu.haokan" />
+    </category>
+    <category id="3" name="MUSIC_READ">
+        <pkg cateId="3" name="com.dragon.read" />
+        <pkg cateId="3" name="com.qidian.QDReader" />
+        <pkg cateId="3" name="com.kmxs.reader" />
+        <pkg cateId="3" name="com.duokan.reader" />
+        <pkg cateId="3" name="com.tencent.weread" />
+        <pkg cateId="3" name="com.qq.reader" />
+        <pkg cateId="3" name="com.xs.fm" />
+        <pkg cateId="3" name="com.jjwxc.reader" />
+        <pkg cateId="3" name="com.chaozh.iReaderFree" />
+        <pkg cateId="3" name="com.tencent.qqmusic" />
+        <pkg cateId="3" name="com.netease.cloudmusic" />
+        <pkg cateId="3" name="com.kugou.android" />
+        <pkg cateId="3" name="com.ximalaya.ting.android" />
+        <pkg cateId="3" name="com.miui.player" />
+        <pkg cateId="3" name="com.tencent.karaoke" />
+    </category>
+    <category id="4" name="FINANCE_LEARN">
+        <pkg cateId="4" name="com.eg.android.AlipayGphone" />
+        <pkg cateId="4" name="com.icbc" />
+        <pkg cateId="4" name="com.chinamworld.main" />
+        <pkg cateId="4" name="cmb.pb" />
+        <pkg cateId="4" name="com.android.bankabc" />
+        <pkg cateId="4" name="com.unionpay" />
+        <pkg cateId="4" name="cn.xuexi.android" />
+        <pkg cateId="4" name="com.chaoxing.mobile" />
+        <pkg cateId="4" name="com.handsgo.jiakao.android" />
+        <pkg cateId="4" name="com.baidu.homework" />
+    </category>
+    <category id="5" name="NEWS">
+        <pkg cateId="5" name="com.ss.android.article.news" />
+        <pkg cateId="5" name="com.sina.weibo" />
+        <pkg cateId="5" name="com.ss.android.article.lite" />
+        <pkg cateId="5" name="com.tencent.news" />
+        <pkg cateId="5" name="com.weico.international" />
+        <pkg cateId="5" name="com.netease.newsreader.activity" />
+        <pkg cateId="5" name="com.yidian.xiaomi" />
+        <pkg cateId="5" name="com.sohu.newsclient" />
+        <pkg cateId="5" name="com.android.browser" />
+        <pkg cateId="5" name="com.UCMobile" />
+        <pkg cateId="5" name="com.baidu.searchbox" />
+        <pkg cateId="5" name="com.quark.browser" />
+        <pkg cateId="5" name="com.tencent.mtt" />
+        <pkg cateId="5" name="com.android.chrome" />
+        <pkg cateId="5" name="com.microsoft.emmx" />
+        <pkg cateId="5" name="com.baidu.searchbox.lite" />
+        <pkg cateId="5" name="com.jiaohua_browser" />
+        <pkg cateId="5" name="mark.via" />
+    </category>
+    <category id="6" name="SHOPPING">
+        <pkg cateId="6" name="com.sankuai.meituan" />
+        <pkg cateId="6" name="com.xiaomi.smarthome" />
+        <pkg cateId="6" name="me.ele" />
+        <pkg cateId="6" name="com.sankuai.meituan.takeoutnew" />
+        <pkg cateId="6" name="com.dianping.v1" />
+        <pkg cateId="6" name="com.taobao.taobao" />
+        <pkg cateId="6" name="com.xunmeng.pinduoduo" />
+        <pkg cateId="6" name="com.jingdong.app.mall" />
+        <pkg cateId="6" name="com.taobao.idlefish" />
+        <pkg cateId="6" name="com.achievo.vipshop" />
+        <pkg cateId="6" name="com.shizhuang.duapp" />
+        <pkg cateId="6" name="com.xiaomi.shop" />
+        <pkg cateId="6" name="com.taobao.litetao" />
+        <pkg cateId="6" name="com.alibaba.wireless" />
+        <pkg cateId="6" name="com.tmall.wireless" />
+        <pkg cateId="6" name="com.hupu.shihuo" />
+    </category>
+    <category id="7" name="PHOTO">
+        <pkg cateId="7" name="com.android.camera" />
+        <pkg cateId="7" name="com.miui.gallery" />
+        <pkg cateId="7" name="com.lemon.lv" />
+        <pkg cateId="7" name="com.mt.mtxx.mtxx" />
+        <pkg cateId="7" name="com.miui.mediaeditor" />
+        <pkg cateId="7" name="com.xt.retouch" />
+    </category>
+    <category id="8" name="TRAVEL">
+        <pkg cateId="8" name="com.autonavi.minimap" />
+        <pkg cateId="8" name="com.baidu.BaiduMap" />
+        <pkg cateId="8" name="com.sdu.didi.gsui" />
+        <pkg cateId="8" name="com.jingyao.easybike" />
+        <pkg cateId="8" name="com.sdu.didi.psnger" />
+    </category>
+    <category id="9" name="SOCIAL">
+        <pkg cateId="9" name="com.tencent.mm" />
+        <pkg cateId="9" name="com.tencent.mobileqq" />
+        <pkg cateId="9" name="com.xingin.xhs" />
+        <pkg cateId="9" name="com.zhihu.android" />
+        <pkg cateId="9" name="com.baidu.tieba" />
+        <pkg cateId="9" name="cn.soulapp.android" />
+        <pkg cateId="9" name="com.twitter.android" />
+        <pkg cateId="9" name="com.immomo.momo" />
+        <pkg cateId="9" name="com.lofter.android" />
+        <pkg cateId="9" name="com.soft.blued" />
+        <pkg cateId="9" name="org.telegram.messenger" />
+        <pkg cateId="9" name="com.douban.frodo" />
+        <pkg cateId="9" name="com.p1.mobile.putong" />
+        <pkg cateId="9" name="com.xiaomi.vipaccount" />
+        <pkg cateId="9" name="com.alibaba.android.rimet" />
+        <pkg cateId="9" name="com.tencent.wework" />
+        <pkg cateId="9" name="com.baidu.netdisk" />
+        <pkg cateId="9" name="com.tencent.wemeet.app" />
+        <pkg cateId="9" name="com.hpbr.bosszhipin" />
+        <pkg cateId="9" name="cn.wps.moffice_eng" />
+        <pkg cateId="9" name="com.ss.android.lark" />
+        <pkg cateId="9" name="com.tencent.tim" />
+    </category>
+</app-category-config>
